@@ -92,7 +92,8 @@ const NavFotter = styled.nav`
 a{
     padding: 8px;
     color: black;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 14px;
     transition: 0.5s;
     position: relative;
     &::after{
