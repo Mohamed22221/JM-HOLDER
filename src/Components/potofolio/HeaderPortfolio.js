@@ -1,29 +1,29 @@
 import React from 'react'
-import backsection2 from"../../assets/backsection2.jpeg"
+import backsection10 from"../../assets/backsection10.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 
-const Section3 = () => {
+const HeaderPortfolio = () => {
   return (
-    <MainSectionThre  >
+    <StyleHeaderPortfolio  >
          <HeaderHome
-      Titleh1="PEOPLE, KNOWLEDGE, VALUES"
+      Titleh1="Portfolio"
       paragraph="We offer our clients the most complete and unique open 
       air adventure thrills they have ever experienced complete with
        unforgettable moments. Your safety is our most important mission and 
        for this reason"   
       /> 
-    </MainSectionThre>
+    </StyleHeaderPortfolio>
   )
 }
-const MainSectionThre= styled.div`
+const StyleHeaderPortfolio= styled.div`
 
 position: relative;
-background-image: url(${backsection2});
+background-image: url(${backsection10});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
-height: 100vh;
+height: 90vh;
 transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
@@ -39,9 +39,9 @@ right: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #00000020;
+background-color: #00000025;
 z-index: -1;
 }
 
 `
-export default Section3
+export default HeaderPortfolio

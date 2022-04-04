@@ -28,31 +28,17 @@ const Navbar = () => {
     <Container maxWidth="xl">
       <nav>
           <div className="logo">
-          <Link onClick={boxHandler} to="/Jm-holder" >
+          <Link onClick={boxHandler} to="/JM-HOLDER" >
           <img src={Logo}/>
           </Link>
            
         </div>
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
         
-           <li><Link onClick={boxHandler} to="/Jm-holder" > HOME</Link></li>
-        <li>
-            
-            <Link onClick={boxHandler} to="/About" >  
-            ABOUT
-            </Link>
-          </li>
-          <li>
-            
-            <a onClick={boxHandler} href="#Home"  >
-            TEAM
-            </a>
-          </li>
-          <li>
-            <a onClick={boxHandler} href='#About' >
-            PORTFOLIO
-            </a>
-          </li>
+          <li><Link onClick={boxHandler} to="/JM-HOLDER" > HOME</Link></li>
+          <li> <Link onClick={boxHandler} to="/About" >  ABOUT</Link></li>
+          <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li>
+          <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>
           <li>
             <a onClick={boxHandler} href="#Contact">
             PROPOSALS

@@ -2,11 +2,11 @@ import React from 'react'
 import backsection1 from"../../assets/backsection1.jpeg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
-
+import { motion } from 'framer-motion'
 const MainHeaderHome = ({}) => {
   return (
-    <MainHeader>
-      <HeaderHome
+    <MainHeader as={motion.div} animate={{ opacity: 1 }}>
+      <HeaderHome 
       Titleh1="PEOPLE, KNOWLEDGE, VALUES"
       paragraph="We offer our clients the most complete and unique open 
       air adventure thrills they have ever experienced complete with
@@ -20,12 +20,14 @@ const MainHeaderHome = ({}) => {
 }
 
 const MainHeader= styled.div`
+opacity: 0;
+transition:opacity 0.3s;
 position: relative;
 background-image: url(${backsection1});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
-height: 100vh;
+height: 90vh;
 width: 100%;
 transform: translateY(-70px);
 z-index: 10;

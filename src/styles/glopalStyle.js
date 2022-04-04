@@ -51,7 +51,10 @@ body{
     background-color: #a3a3a3;
      height: calc(100% - 70px );
      width: 100%;
-    ;
+    
+}
+.loading-css{
+  height: 1000px;
 }
 
 

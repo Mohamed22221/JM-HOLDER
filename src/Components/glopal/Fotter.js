@@ -1,33 +1,34 @@
 import React from 'react'
-import backsection2 from"../../assets/backsection2.jpeg"
+import backsection2 from "../../assets/backsection2.jpeg"
 import styled from 'styled-components'
 import Logo from '../../assets/logo.svg'
 import { Container } from '@mui/material'
+import { Link } from "react-router-dom";
 const Fotter = () => {
   return (
     <StyleFotter>
-        <Container maxWidth="xl">
-      <MainFotter>
-        <ImgLogo>
-        <img src={Logo}/>
-        </ImgLogo>
-        <NavFotter>
-            
-            <a href='#'>HOME</a>
-            <a href='#'>ABOUT</a>
-            <a href='#'>TEAM</a>
-            <a href='#'>PORTFOLIO</a>
+      <Container maxWidth="xl">
+        <MainFotter>
+          <ImgLogo>
+            <img src={Logo} />
+          </ImgLogo>
+          <NavFotter>
+
+            <Link to="/JM-HOLDER" > HOME</Link>
+            <Link to="/About" >  ABOUT</Link>
+            <Link to="/Team"  >TEAM </Link>
+            <Link to='/Portfolio' >PORTFOLIO</Link>
             <a href='#'>PROPOSALS</a>
             <a href='#'>JOBS</a>
             <a href='#'>INTERNSHIPS</a>
             <a href='#'>GIVING BACK</a>
             <a href='#'>BLOG</a>
             <a href='#'>CONTACT</a>
-        </NavFotter>
-        <h4>Join Our NewsLetter</h4>
-        <h2>JM HOLDING @2022</h2>
-      </MainFotter> 
-        </Container>
+          </NavFotter>
+          <h4>Join Our NewsLetter</h4>
+          <h2>JM HOLDING @2022</h2>
+        </MainFotter>
+      </Container>
     </StyleFotter>
   )
 }
@@ -83,7 +84,7 @@ h2{
 
 const ImgLogo = styled.div`
 `
-const NavFotter= styled.nav`
+const NavFotter = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;

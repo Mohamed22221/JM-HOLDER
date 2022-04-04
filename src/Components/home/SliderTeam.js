@@ -44,13 +44,16 @@ const SliderTeam = () => {
 }
 const RightTeamHome = styled.div`
 position: relative;
-width: 850px;
+width: 950px;
+display: flex;
+  align-items: center;
+  justify-content: center;
 
 @media (max-width:1250px) {
  width: 650px;    
 }
 @media (max-width:950px) {
- width: 350px;    
+  width: 370px;    
 }
 .controls-wrapper {
   width: 100%;
@@ -81,7 +84,7 @@ const Item = styled.div`
     width: 100%;
     height: 320px;
     user-select: none;
-    transition: 0.7s;
+    transition:0.7s;
   }
   &:hover .img img{
     transform: scale(1.2);

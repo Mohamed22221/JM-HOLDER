@@ -3,13 +3,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
 import Button from '../glopal/Button'
+import { motion } from 'framer-motion'
 const HeaderHome = ({Titleh1,paragraph}) => {
   return (
 
     <Container maxWidth="xl">
-    <MainHeader>
-    <h1>{Titleh1}</h1>
-    <p>{paragraph}</p>
+    <MainHeader >
+    <h1 >{Titleh1}</h1>
+    <motion.p animate={{ y: -7 }}>{paragraph}</motion.p>
     <Button title="read more"/>
     </MainHeader>
     </Container>
@@ -28,12 +29,15 @@ text-align: center;
 
 h1{
   font-size: 50px;
+  transition: 0.3s;
 }
 p{
-  padding:20px 0 ;
+  transition: 0.3s;
+  padding:20px 10px ;
   width:720px;
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
+  font-weight: 600;
 }
 @media (max-width:900px ) {
   top: 18%;

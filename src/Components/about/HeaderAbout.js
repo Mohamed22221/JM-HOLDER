@@ -4,10 +4,10 @@ import backsection6 from"../../assets/backsection6.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
-
+import { motion } from 'framer-motion'
 const HeaderAbout = () => {
   return (
-    <StyleHeaderAbout>
+    <StyleHeaderAbout as={motion.div} animate={{ opacity: 1 }}>
       <Container maxWidth="xl">
      <HeaderHome
       Titleh1="About"
@@ -21,7 +21,8 @@ const HeaderAbout = () => {
   )
 }
 const StyleHeaderAbout = styled.div`
-
+opacity: 0;
+transition: 0.4s;
 position: relative;
 background-image: url(${backsection6});
 background-size: cover;

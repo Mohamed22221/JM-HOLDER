@@ -33,6 +33,7 @@ background-position: center center;
 height: 100%;
 transform: translateY(-70px);
 z-index: 10;
+
 ::after{
 content: "";
 position: absolute;

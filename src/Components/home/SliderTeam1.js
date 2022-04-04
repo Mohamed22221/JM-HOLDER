@@ -7,10 +7,10 @@ import  Button  from '../glopal/Button';
 const SliderTeam = () => {
 
     const breakPoints = [
-        { width: 1, itemsToShow: 1 },
-        { width: 550, itemsToShow: 2 },
-        { width: 768, itemsToShow: 3 },
-        { width: 1200, itemsToShow: 1 },
+      { width: 1, itemsToShow: 1 },
+      { width: 550, itemsToShow: 2 },
+      { width: 768, itemsToShow: 3 },
+      { width: 1200, itemsToShow: 4 }
      ];
   return (
     <RightTeamHome>
@@ -46,14 +46,18 @@ const SliderTeam = () => {
 }
 const RightTeamHome = styled.div`
 position: relative;
-width: 850px;
-margin: 0;
+
+
+ width: 950px;    
+
 @media (max-width:1250px) {
  width: 650px;    
 }
 @media (max-width:950px) {
- width: 350px;    
+ width: 370px;    
 }
+
+
 .controls-wrapper {
   width: 100%;
 }
