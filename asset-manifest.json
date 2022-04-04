@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/JM-HOLDER/static/css/main.e54652a2.css",
+    "main.js": "/JM-HOLDER/static/js/main.211a82c1.js",
+    "static/media/backsection6.svg": "/JM-HOLDER/static/media/backsection6.0ba242b7b3cd8e464f229d8a4aac3896.svg",
+    "static/media/team5.jpg": "/JM-HOLDER/static/media/team5.e6da7eae69c38c1c5bd8.jpg",
+    "static/media/team6.jpg": "/JM-HOLDER/static/media/team6.8ca20d33cfca4176c848.jpg",
+    "static/media/backsection9.jpg": "/JM-HOLDER/static/media/backsection9.7033e0cb87466c9543b5.jpg",
+    "static/media/team4.jpg": "/JM-HOLDER/static/media/team4.c91a3b2a03ab11d08fad.jpg",
+    "static/media/backsection10.jpg": "/JM-HOLDER/static/media/backsection10.bf4ae8de8d872e789922.jpg",
+    "static/media/backsection6.jpg": "/JM-HOLDER/static/media/backsection6.04e1c4ccbbfc60f0d20d.jpg",
+    "static/media/backsection8.jpg": "/JM-HOLDER/static/media/backsection8.fe2c6d5bb4ee222e1d69.jpg",
+    "static/media/team1.jpg": "/JM-HOLDER/static/media/team1.5bae1d73175501987b6a.jpg",
+    "static/media/backsection1.jpeg": "/JM-HOLDER/static/media/backsection1.95994294a3277dc5c9b4.jpeg",
+    "static/media/backsection7.jpg": "/JM-HOLDER/static/media/backsection7.f66a73bc88234a67dfaa.jpg",
+    "static/media/team2.jpg": "/JM-HOLDER/static/media/team2.61048aa8af44456c1eef.jpg",
+    "static/media/team3.jpg": "/JM-HOLDER/static/media/team3.2566dc6a9b80fc7dda73.jpg",
+    "static/media/backsection3.jpg": "/JM-HOLDER/static/media/backsection3.2c56b8962e3c4ff33dc7.jpg",
+    "static/media/backsection5.jpeg": "/JM-HOLDER/static/media/backsection5.8013ae5c6c4a4abc1ca0.jpeg",
+    "static/media/backsection11.jpg": "/JM-HOLDER/static/media/backsection11.ab3c9180b76e88942ea1.jpg",
+    "static/media/backsection2.jpeg": "/JM-HOLDER/static/media/backsection2.427ca0c9d08bca976fad.jpeg",
+    "static/media/logo.svg": "/JM-HOLDER/static/media/logo.a93838e41c00777894f5e26125abfbdd.svg",
+    "index.html": "/JM-HOLDER/index.html",
+    "main.e54652a2.css.map": "/JM-HOLDER/static/css/main.e54652a2.css.map",
+    "main.211a82c1.js.map": "/JM-HOLDER/static/js/main.211a82c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e54652a2.css",
+    "static/js/main.211a82c1.js"
+  ]
+}
