@@ -3,6 +3,7 @@ import React from 'react'
 import backsection3 from"../../assets/backsection3.jpg"
 import styled from 'styled-components'
 import SliderTeam from './SliderTeam'
+import SliderTeam1 from './SliderTeam1'
 const TeamHome = () => {
   return (
     <StyleTeamHome>
@@ -14,7 +15,7 @@ const TeamHome = () => {
             </LeftTeamHome>
             <RightSliderHome>
               <SliderTeam/> 
-              <SliderTeam/> 
+              <SliderTeam1/> 
 
             </RightSliderHome>
             </MainTeamHome>
@@ -65,6 +66,7 @@ padding:15px 0 ;
 p{
 font-size: 22px;
 line-height: 38px;
+user-select: none;
 }
 @media (max-width:750px) {
 width: 100%;

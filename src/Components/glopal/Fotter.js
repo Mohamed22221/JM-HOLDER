@@ -92,6 +92,35 @@ a{
     padding: 8px;
     color: black;
     font-weight: 700;
+    transition: 0.5s;
+    position: relative;
+    &::after{
+  content: "";
+  position :absolute ;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+  left: 0;
+  bottom:  0;
+  right: 0;
+  left: 0;
+  width:0%;
+  height: 7%;
+  overflow: hidden;
+  color: white;
+  z-index: 0;
+
+  }
+  &:hover::after{
+ 
+ color: white;
+ width: 95%;
+ z-index: -1;
+   
+ }
+    &:hover{
+      color: var(--primary-color);
+      
+    }
 
 }
 `

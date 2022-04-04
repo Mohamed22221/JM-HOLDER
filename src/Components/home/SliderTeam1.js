@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Carousel from "react-elastic-carousel";
-import DataSlider1 from '../glopal/DataSlider1';
+import DataSlider2 from '../glopal/DataSlider2';
 import  Button  from '../glopal/Button';
 const SliderTeam = () => {
+
     const breakPoints = [
         { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 2 },
@@ -15,11 +16,12 @@ const SliderTeam = () => {
     <RightTeamHome>
          <Carousel breakPoints={breakPoints}
           pagination={false}
-           enableAutoPlay 
-           autoPlaySpeed={3000}
-              >
-        
-          {DataSlider1.map((item)=>{
+           enableAutoPlay
+            autoPlaySpeed={3000}
+          
+           >
+              
+          {DataSlider2.map((item)=>{
             return(
               <Item key={item.id}>
               <div className='img'>
