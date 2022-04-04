@@ -13,7 +13,7 @@ const GlopalStyle = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cairo', sans-serif;
     margin: 0;
     padding: 0;
    
@@ -47,9 +47,9 @@ html {
     }
   }
 body{
-  font-family: 'Open Sans', sans-serif;
-    
-     height: 3000px;
+  font-family: 'Cairo', sans-serif;
+    background-color: #a3a3a3;
+     height: calc(100% - 70px );
      width: 100%;
     ;
 }

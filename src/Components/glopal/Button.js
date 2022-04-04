@@ -16,10 +16,15 @@ button{
   color: black;
   background-color: transparent; 
   border:1px solid black ;
-  border-radius: 8px;
+  border-radius: 3px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: 0.5s;
+  &:hover{
+    
+  border-color: var(--primary-color);
+ }
   span{
    z-index: 10; 
    color:black ;
@@ -28,7 +33,7 @@ button{
   &::after{
   content: "";
   position :absolute ;
-  background-color: black;
+  background-color: var(--primary-color);
   transition: 0.5s;
   left: 0;
   top: 0;
@@ -39,8 +44,10 @@ button{
   overflow: hidden;
   color: white;
   z-index: 0;
+
   }
   &:hover::after{
+ 
   color: white;
   width: 100%;
   z-index: -1;

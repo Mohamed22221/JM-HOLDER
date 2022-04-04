@@ -33,16 +33,17 @@ p{
   padding:20px 0 ;
   width:720px;
   text-align: center;
+  font-size: 18px;
 }
 @media (max-width:900px ) {
-  top: 25%;
+  top: 18%;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transform: translateX(0);
-  padding: 20px;
+  padding: 20px 0;
   p{
   width:100%;
   text-align: center;

@@ -26,10 +26,11 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
 height: 100vh;
+width: 100%;
 transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
-background-position: top center;
+background-position: center center;
 height: 70vh;
 }
 ::after{

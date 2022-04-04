@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
+
 import Carousel from "react-elastic-carousel";
 const SliderTeam = () => {
     const breakPoints = [
@@ -14,7 +11,7 @@ const SliderTeam = () => {
      ];
   return (
     <RightTeamHome>
-         <Carousel breakPoints={breakPoints}>
+         <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={3000}  >
         <Item>Crypto1</Item>
         <Item>Crypto2</Item>
         <Item>Crypto3</Item>
