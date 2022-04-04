@@ -45,7 +45,7 @@ const SliderTeam = () => {
 const RightTeamHome = styled.div`
 position: relative;
 width: 850px;
-margin: 0;
+
 @media (max-width:1250px) {
  width: 650px;    
 }
@@ -65,11 +65,11 @@ margin: 0;
 `
 const Item = styled.div`
 
-  height: 300px;
+  height: 320px;
   width: 100%;
   background: white;
   color: var(--primary-color);
-  margin: 0 0px;
+  margin: 15px 15px;
   font-size: 2em;
   user-select: none;
   position: relative;
@@ -81,6 +81,10 @@ const Item = styled.div`
     width: 100%;
     height: 320px;
     user-select: none;
+    transition: 0.7s;
+  }
+  &:hover .img img{
+    transform: scale(1.2);
   }
   &:hover .apout-person{
     opacity: 1;

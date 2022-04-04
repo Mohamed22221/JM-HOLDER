@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Container } from '@mui/material';
 import "./Navbar.css";
 import Logo from"../../assets/logo.svg"
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     //change color in scroll
   const [color, setColor] = useState(false);
@@ -28,23 +28,19 @@ const Navbar = () => {
     <Container maxWidth="xl">
       <nav>
           <div className="logo">
-          <a onClick={boxHandler} href="#Home"  >
+          <Link onClick={boxHandler} to="/Jm-holder" >
           <img src={Logo}/>
-            </a>
+          </Link>
            
         </div>
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
+        
+           <li><Link onClick={boxHandler} to="/Jm-holder" > HOME</Link></li>
         <li>
             
-            <a onClick={boxHandler} href="#Home"  >
-            HOME
-            </a>
-          </li>
-          <li>
-            
-            <a onClick={boxHandler} href="#Home"  >
+            <Link onClick={boxHandler} to="/About" >  
             ABOUT
-            </a>
+            </Link>
           </li>
           <li>
             

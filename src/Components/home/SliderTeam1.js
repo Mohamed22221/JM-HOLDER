@@ -66,23 +66,27 @@ margin: 0;
 }
 `
 const Item = styled.div`
-
-  height: 300px;
+margin: 15px 15px;
+  height: 320px;
   width: 100%;
   background: white;
   color: var(--primary-color);
-  margin: 0 0px;
+
   font-size: 2em;
   user-select: none;
   position: relative;
   cursor: -moz-grab;
   cursor: -webkit-grab;
+
   .img img{
     position: absolute;
-
+    transition:0.8s;
     width: 100%;
     height: 320px;
     user-select: none;
+  }
+  &:hover .img img{
+    transform: scale(1.2);
   }
   &:hover .apout-person{
     opacity: 1;
