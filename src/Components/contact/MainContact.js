@@ -18,7 +18,7 @@ const MainContact = () => {
 const StyleMainContact = styled.div`
 height: 650px;
 @media (max-width:1000px ) {
-  height: 900px;
+  height: 1000px;
 }
 
 display: flex;

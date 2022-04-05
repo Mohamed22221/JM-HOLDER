@@ -12,25 +12,25 @@ const FormContact = () => {
         <form>
 
       <InputForm 
-      name="What's your name"
+      name=" your name"
       placeholder="Type your name"
       type="text"
       settypeInput={settypeInput}
       />
       <InputForm 
-      name="What's your email"
+      name=" your email"
       placeholder="Type your Email"
       type="email"
       settypeInput={settypeInput}
       />
       <InputForm 
-      name="What's your  phone"
+      name="your  phone"
       placeholder="Type your Phone"
       type="text"
       settypeInput={settypeInput}
       />
       <InputForm 
-      name="What's your  message"
+      name=" your  message"
       placeholder="Type your Comment"
       type="textar"
       settypeInput={settypeInput}
@@ -42,7 +42,11 @@ const FormContact = () => {
   )
 }
 const StyleForm = styled.div`
-margin-top: 20px;
+margin-top: 10px;
+@media (max-width:1150px) {
+  margin-top: 65px;
+}
+
 
 button{
   margin-top: 15px;
