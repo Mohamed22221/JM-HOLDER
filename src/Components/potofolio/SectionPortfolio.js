@@ -14,7 +14,7 @@ const SectionPortfolio = () => {
                
                {DataPortFolio.map((item)=>{
                    return (
-                       <ItemPortFolio>
+                       <ItemPortFolio key={item.id}>
                            <img src={item.img} />
                        </ItemPortFolio>
                    )

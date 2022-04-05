@@ -6,6 +6,7 @@ import About from "./bages/About";
 import styled from 'styled-components'
 import Team from "./bages/Team";
 import Portfolio from "./bages/Portfolio";
+import Contact from "./bages/Contact";
 function App() {
 
 
@@ -19,7 +20,7 @@ function App() {
         <Route path="About" element={<About />} />
         <Route path="Team" element={<Team />} />
         <Route path="Portfolio" element={<Portfolio />} />
-        
+        <Route path="Contact" element={<Contact />} />
       </Routes>
      <Fotter/>
     </>

@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const Button = ({title}) => {
   return (
 
     <ButtonStyleHome>
-      <button><span>{title}</span></button>  
+      <button><span>{title} <ArrowForwardIosIcon className='icon-arrow'/></span></button>  
     </ButtonStyleHome>
   )
 }
 const ButtonStyleHome = styled.div`
 button{
-
   all: unset;
-  padding: 10px 40px;
+  padding: 10px 55px 10px 40px;
   color: black;
   background-color: transparent; 
   border:1px solid black ;
@@ -24,6 +24,10 @@ button{
   &:hover{
     
   border-color: var(--primary-color);
+  .icon-arrow{
+   
+      animation: ButtonAnimate 0.5s infinite linear;
+  }
  }
   span{
    z-index: 10; 
@@ -58,6 +62,12 @@ button{
  
 
     
+  }
+  .icon-arrow{
+    position: absolute;
+    top: 13px;
+    right: 24px;
+
   }
 
 }

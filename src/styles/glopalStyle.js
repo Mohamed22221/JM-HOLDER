@@ -30,25 +30,25 @@ html {
       transform:translateY(20px);
     }
   }
-  @keyframes  MoveUpDownLeft {
+  @keyframes  ButtonAnimate {
     0%, 100% {
-    right: 4rem;
+    right: 20px;
     }
     50% {
-    right: 5rem;
+    right: 24px;
     }
   }
   @keyframes Scale {
     0% {
-        transform: scale(1.2)
+        transform: scale(0.8)
     }
     100% {
-        transform: rotate(0.8)
+        transform: rotate(1)
     }
   }
 body{
   font-family: 'Cairo', sans-serif;
-    background-color: #a3a3a3;
+    background-color: white;
      height: calc(100% - 70px );
      width: 100%;
     

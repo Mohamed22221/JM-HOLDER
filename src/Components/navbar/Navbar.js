@@ -67,11 +67,7 @@ const Navbar = () => {
             </a>
           </li>
           
-          <li>
-            <a onClick={boxHandler}  href="#Powerd BY">
-            CONTACT
-            </a>
-          </li>
+          <li><Link onClick={boxHandler}  to="/Contact">CONTACT</Link></li>
           
           
 

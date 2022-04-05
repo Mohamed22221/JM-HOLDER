@@ -122,7 +122,7 @@ margin: 15px 15px;
     }
     button{
       transition: 0.5s;
-      padding: 6px 30px;
+      padding: 10px 50px 10px 40px;
       font-size: 16px;
       margin-top: 10px;
     }
