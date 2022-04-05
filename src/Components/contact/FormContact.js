@@ -42,7 +42,7 @@ const FormContact = () => {
   )
 }
 const StyleForm = styled.div`
-
+margin-top: 20px;
 
 button{
   margin-top: 15px;
