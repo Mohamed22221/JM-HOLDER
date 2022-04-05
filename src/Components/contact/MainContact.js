@@ -8,7 +8,7 @@ const MainContact = () => {
     
         <Container maxWidth="xl">
             <StyleMainContact>
-            
+            <Map/>
             <FormContact/>
             </StyleMainContact>
         </Container>
