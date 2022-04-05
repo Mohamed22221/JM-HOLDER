@@ -5,7 +5,7 @@ import HeaderHome from '../glopal/HeaderHome'
 const HeaderContact = () => {
   return (
     <StyleHeaderContact>
-          <HeaderHome
+          <HeaderHome 
       Titleh1="Contact"
       paragraph="We offer our clients the most complete and unique open 
       air adventure thrills they have ever experienced complete with

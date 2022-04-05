@@ -5,7 +5,7 @@ const Button = ({title}) => {
   return (
 
     <ButtonStyleHome>
-      <button><span>{title} <ArrowForwardIosIcon className='icon-arrow'/></span></button>  
+      <button data-aos="fade-left"><span>{title} <ArrowForwardIosIcon className='icon-arrow'/></span></button>  
     </ButtonStyleHome>
   )
 }

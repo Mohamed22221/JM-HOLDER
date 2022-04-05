@@ -2,6 +2,7 @@ import React from 'react'
 import backsection5 from"../../assets/backsection5.jpeg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
+
 const Section4 = () => {
   return (
     <MainSectionFour>
@@ -37,9 +38,10 @@ right: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #00000020;
+background-color: #00000029;
 z-index: -1;
 }
+
 
 `
 export default Section4

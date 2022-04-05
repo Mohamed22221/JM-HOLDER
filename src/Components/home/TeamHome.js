@@ -4,12 +4,13 @@ import backsection3 from"../../assets/backsection3.jpg"
 import styled from 'styled-components'
 import SliderTeam from './SliderTeam'
 import SliderTeam1 from './SliderTeam1'
+import svg from"../../assets/svg.png"
 const TeamHome = () => {
   return (
     <StyleTeamHome>
         <Container maxWidth="xl">
             <MainTeamHome>
-             <LeftTeamHome>
+             <LeftTeamHome data-aos="fade-right">
                  <h1>TEAM</h1>
                  <p>We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason</p>
             </LeftTeamHome>
@@ -46,6 +47,7 @@ height: 100%;
 background-color: #00000029;
 z-index: -1;
 }
+
 `
 const MainTeamHome = styled.div`
 

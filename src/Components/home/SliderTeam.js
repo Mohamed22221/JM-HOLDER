@@ -12,7 +12,7 @@ const SliderTeam = () => {
         { width: 1200, itemsToShow: 1 },
      ];
   return (
-    <RightTeamHome>
+    <RightTeamHome data-aos="fade-left">
          <Carousel breakPoints={breakPoints}
           pagination={false}
            enableAutoPlay 

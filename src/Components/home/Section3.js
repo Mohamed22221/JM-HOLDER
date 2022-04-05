@@ -2,7 +2,7 @@ import React from 'react'
 import backsection2 from"../../assets/backsection2.jpeg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
-
+import svg from"../../assets/svg.png"
 const Section3 = () => {
   return (
     <MainSectionThre  >
@@ -39,7 +39,7 @@ right: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #00000020;
+background-color: #00000029;
 z-index: -1;
 }
 

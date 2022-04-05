@@ -9,9 +9,9 @@ const HeaderHome = ({Titleh1,paragraph}) => {
 
     <Container maxWidth="xl">
     <MainHeader >
-    <h1 >{Titleh1}</h1>
-    <motion.p animate={{ y: -7 }}>{paragraph}</motion.p>
-    <Button title="read more"/>
+    <h1 data-aos="zoom-in" >{Titleh1}</h1>
+    <p data-aos="fade-up" >{paragraph}</p>
+    <Button title="read more" />
     </MainHeader>
     </Container>
    
