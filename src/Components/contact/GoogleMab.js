@@ -1,44 +1,19 @@
-import React from "react";
-import {
-  withGoogleMap,
-  withScriptjs,
-  GoogleMap,
-  Marker
-} from "react-google-maps";
-import styled from "styled-components";
+import React from 'react'
+import { useGoogleMaps } from "react-hook-google-maps";
 
-class Map extends React.Component {
-  render = () => {
-    return (
-      <StyleMap>
-      <GoogleMap
-        defaultZoom={12}
-        defaultCenter={{ lat: 29.082970, lng: 48.061740 }}
-      >
-        <Marker
-          position={{
-            lat: 29.082970,
-            lng: 48.061740
-          }}
-        />
-      </GoogleMap>
-      </StyleMap>
-    );
-  };
+const Mab = () => {
+  const { ref, map, google } = useGoogleMaps(
+    // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
+    "AIzaSyBJUO-6elU5K4gslpNITLk2LK9Q01sh-VE",
+    // NOTE: even if you change options later
+    {
+      center: { lat: 0, lng: 0 },
+      zoom: 3
+    }
+  );
+  console.log(map); // instance of created Map object (https://developers.google.com/maps/documentation/javascript/reference/map)
+  console.log(google); // google API object (easily get google.maps.LatLng or google.maps.Marker or any other Google Maps class)
+  return <div ref={ref} style={{ width: 400, height: 300 }} />;
 }
 
-const MapComponent = withScriptjs(withGoogleMap(Map));
-const StyleMap = styled.div`
-width: 500px;
-
-
-`
-
-export default () => (
-  <MapComponent
-    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUO-6elU5K4gslpNITLk2LK9Q01sh-VE"
-    loadingElement={<div style={{ height: `100%` }} />}
-    containerElement={<div style={{ height: `400px`}} />}
-    mapElement={<div style={{ height: `100%` }} />}
-  />
-);
+export default Mab
