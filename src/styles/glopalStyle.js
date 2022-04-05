@@ -38,12 +38,12 @@ html {
     right: 5rem;
     }
   }
-  @keyframes Rotate {
+  @keyframes Scale {
     0% {
-        transform: rotate(0deg)
+        transform: scale(1.2)
     }
     100% {
-        transform: rotate(360deg)
+        transform: rotate(0.8)
     }
   }
 body{

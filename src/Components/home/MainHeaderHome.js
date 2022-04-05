@@ -20,6 +20,8 @@ const MainHeaderHome = ({}) => {
 }
 
 const MainHeader= styled.div`
+overflow: hidden;
+animation:Scale 2s 1 ease-in-out ;
 opacity: 0;
 transition:opacity 0.3s;
 position: relative;
