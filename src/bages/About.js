@@ -8,12 +8,8 @@ const About = () => {
 
   return (
     <StyleAbout>
-     
-      
       <HeaderAbout/>
       <Section2About/>
-   
-  
     </StyleAbout>
   )
 }

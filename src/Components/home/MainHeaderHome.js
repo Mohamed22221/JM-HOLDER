@@ -8,10 +8,9 @@ const MainHeaderHome = ({}) => {
     <MainHeader as={motion.div} animate={{ opacity: 1 }}>
       <HeaderHome 
       Titleh1="PEOPLE, KNOWLEDGE, VALUES"
-      paragraph="We offer our clients the most complete and unique open 
-      air adventure thrills they have ever experienced complete with
-       unforgettable moments. Your safety is our most important mission and 
-       for this reason"   
+      paragraph="In our humble small team, we are together. This is the beginning. Staying together is progress. Work is
+      success. We have the ability to work with a common vision. We take responsibility for each other and the
+      companies we work with equally"   
       /> 
        
     </MainHeader>

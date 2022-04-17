@@ -69,9 +69,36 @@ padding: 50px 0;
 const ItemPortFolio= styled.div`
 padding: 50px;
 border: 2px solid white;
-transition: 0.3s;
+transition: 0.6s;
+position: relative;
+::after{
+    transition: 0.6s;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+::before{
+    transition: 0.6s;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 3px;
+    height: 0%;
+    background-color: var(--primary-color);
+}
 &:hover{
     border: 2px solid var(--primary-color);
+}
+&:hover::after{
+   width: 100%;
+}
+&:hover::before{
+   height: 100%;
 }
 `
 export default SectionPortfolio

@@ -12,7 +12,12 @@ const TeamHome = () => {
             <MainTeamHome>
              <LeftTeamHome data-aos="fade-right">
                  <h1>TEAM</h1>
-                 <p>We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason</p>
+                 <p>We know that entrepreneurship at its core is an approach to solving problems and risks and striving for
+the highest steps of success. We are keen in our mission to the basics of our work
+Our mission is to provide an incubator environment for creativity and development, so our team
+contributes to creating new job opportunities for entrepreneurs by marketing their entrepreneurial
+ideas and contributing to transforming research, experiences and pioneering studies of projects into
+practical. prosperous.</p>
             </LeftTeamHome>
             <RightSliderHome>
               <SliderTeam/> 
