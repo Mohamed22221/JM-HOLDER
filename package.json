@@ -20,6 +20,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-google-maps": "^9.4.5",
     "react-hook-google-maps": "^0.0.3",
+    "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-spinners": "^0.11.0",

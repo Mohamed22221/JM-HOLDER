@@ -10,6 +10,7 @@ import Contact from "./bages/Contact";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Propisals from "./bages/Propisals";
 
 function App() {
   useEffect(()=>{
@@ -28,6 +29,7 @@ function App() {
         <Route path="About" element={<About />} />
         <Route path="Team" element={<Team />} />
         <Route path="Portfolio" element={<Portfolio />} />
+        <Route path="proposal" element={<Propisals />} />
         <Route path="Contact" element={<Contact />} />
       </Routes>
      <Fotter/>

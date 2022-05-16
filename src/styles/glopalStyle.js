@@ -11,7 +11,6 @@ const GlopalStyle = createGlobalStyle`
 } 
 *{
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
     font-family: 'Cairo', sans-serif;
     margin: 0;

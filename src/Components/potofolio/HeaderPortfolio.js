@@ -28,7 +28,8 @@ transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
 background-position: top center;
-height: 70vh;
+height: 80vh;
+
 }
 ::after{
 content: "";

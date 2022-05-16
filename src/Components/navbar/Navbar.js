@@ -39,11 +39,8 @@ const Navbar = () => {
           <li> <Link onClick={boxHandler} to="/About" >  ABOUT</Link></li>
           <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li>
           <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>
-          <li>
-            <a onClick={boxHandler} href="#Contact">
-            PROPOSALS
-            </a>
-          </li>
+          <li><Link onClick={boxHandler} to='/proposal' >PROPOSALS</Link></li>
+
           <li>
             <a onClick={boxHandler}  href="#Powerd BY">
             JOBS
