@@ -28,8 +28,11 @@ color: black;
 text-align: center;
 
 h1{
-  font-size: 50px;
+  font-size: 30px;
   transition: 0.3s;
+  @media (max-width: 550px) {
+    font-size: 30px;
+  }
 }
 p{
   transition: 0.3s;

@@ -11,6 +11,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Propisals from "./bages/Propisals";
+import Jops from "./bages/Jops";
+import InterShips from "./bages/InterShips";
 
 function App() {
   useEffect(()=>{
@@ -31,6 +33,10 @@ function App() {
         <Route path="Portfolio" element={<Portfolio />} />
         <Route path="proposal" element={<Propisals />} />
         <Route path="Contact" element={<Contact />} />
+        <Route path="Jops" element={<Jops />} />
+        <Route path="internships" element={<InterShips />} />
+
+
       </Routes>
      <Fotter/>
     </>

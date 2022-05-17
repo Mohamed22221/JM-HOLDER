@@ -111,10 +111,12 @@ margin: 30px 0 10px 0 ;
     p{
         margin-top: 10px;
         padding: 10px 0;
+        color: var(--font);
     }
     .item-ul{
         display: flex;
         flex-direction: column;
+        color: var(--font);
         span{
             padding: 10px;
             &::first-letter{
@@ -143,6 +145,7 @@ margin: 30px 0 10px 0 ;
             ::placeholder{
                 font-weight: bold;
             }
+
         }
         .two-input{
             margin: 10px 0;

@@ -40,17 +40,10 @@ const Navbar = () => {
           <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li>
           <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>
           <li><Link onClick={boxHandler} to='/proposal' >PROPOSALS</Link></li>
+          <li><Link onClick={boxHandler} to='/Jops' >JOBS</Link></li>
+          <li><Link onClick={boxHandler} to='/internships' >INTERNSHIPS</Link></li>
 
-          <li>
-            <a onClick={boxHandler}  href="#Powerd BY">
-            JOBS
-            </a>
-          </li>
-          <li>
-            <a onClick={boxHandler}  href="#Powerd BY">
-            INTERNSHIPS
-            </a>
-          </li>
+
           
           <li>
             <a onClick={boxHandler}  href="#Powerd BY">
@@ -58,11 +51,7 @@ const Navbar = () => {
             </a>
           </li>
           
-          <li>
-            <a onClick={boxHandler}  href="#Powerd BY">
-            BLOG
-            </a>
-          </li>
+
           
           <li><Link onClick={boxHandler}  to="/Contact">CONTACT</Link></li>
           

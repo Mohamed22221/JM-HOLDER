@@ -1,38 +1,38 @@
 import React from 'react'
-import backsection7 from"../../assets/backsection7.jpg"
+import backsection8 from"../../assets/backsection8.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
 
-const HeaderProposal = () => {
+const HeaderJops = () => {
   return (
-    <StyleHeaderProposal as={motion.div} animate={{ opacity: 1 }}>
+    <StyleHeaderJops as={motion.div} animate={{ opacity: 1 }}>
     <Container maxWidth="xl">
    <HeaderHome
-    Titleh1="APPLY FOR FUNDING"
-    paragraph="We are committed to investing in the next generation of entrepreneurs with willing minds that are ready to go the extra mile for what they believe in."   
+    Titleh1="OUR DOORS ARE ALWAYS OPEN TO INNOVATION, DEDICATION, AND TEAM SPIRIT "
     /> 
     </Container>
-  </StyleHeaderProposal>
+    </StyleHeaderJops>
   )
 }
-const StyleHeaderProposal = styled.div`
+const StyleHeaderJops= styled.div`
 opacity: 0;
 transition: 0.4s;
 position: relative;
-background-image: url(${backsection7});
+background-image: url(${backsection8});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
 height: 90vh;
 transform: translateY(-70px);
 z-index: 10;
+
 @media (max-width:800px) {
 background-position: top center;
-height: 80vh;
-
+height: 60vh;
 }
+
 ::after{
 content: "";
 position: absolute;
@@ -54,4 +54,4 @@ button{
     }
 }
 `
-export default HeaderProposal
+export default HeaderJops
