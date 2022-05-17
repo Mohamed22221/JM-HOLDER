@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import Propisals from "./bages/Propisals";
 import Jops from "./bages/Jops";
 import InterShips from "./bages/InterShips";
+import GivingbBack from "./bages/GivingbBack";
 
 function App() {
   useEffect(()=>{
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
     <Navbar/> 
+    
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="JM-HOLDER" element={<Home />} />
@@ -35,9 +37,9 @@ function App() {
         <Route path="Contact" element={<Contact />} />
         <Route path="Jops" element={<Jops />} />
         <Route path="internships" element={<InterShips />} />
-
-
+        <Route path="givingback" element={<GivingbBack />} />
       </Routes>
+
      <Fotter/>
     </>
   );

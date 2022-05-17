@@ -1,38 +1,36 @@
 import React from 'react'
-import backsection8 from"../../assets/backsection8.jpg"
+import backsection6 from"../../assets/backsection6.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
-
-const HeaderJops = () => {
+const HeaderGiving = () => {
   return (
-    <StyleHeaderJops as={motion.div} animate={{ opacity: 1 }}>
-    <Container maxWidth="xl">
-   <HeaderHome
-    Titleh1="OUR DOORS ARE ALWAYS OPEN TO INNOVATION, DEDICATION, AND TEAM SPIRIT "
-    /> 
-    </Container>
-    </StyleHeaderJops>
+    <StyleHeaderAbout as={motion.div} animate={{ opacity: 1 }}>
+      <Container maxWidth="xl">
+     <HeaderHome
+      Titleh1="GIVING BACK"
+      paragraph="JM-HOLDING, we are committed to the growth and betterment of where we live and operate. "   
+      /> 
+      </Container>
+    </StyleHeaderAbout>
   )
 }
-const StyleHeaderJops= styled.div`
+const StyleHeaderAbout = styled.div`
 opacity: 0;
 transition: 0.4s;
 position: relative;
-background-image: url(${backsection8});
+background-image: url(${backsection6});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
 height: 90vh;
 transform: translateY(-70px);
 z-index: 10;
-
 @media (max-width:800px) {
 background-position: top center;
 height: 60vh;
 }
-
 ::after{
 content: "";
 position: absolute;
@@ -50,8 +48,8 @@ button{
 }
 @media (max-width:900px ) {
     h1{
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 `
-export default HeaderJops
+export default HeaderGiving

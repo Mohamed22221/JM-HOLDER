@@ -18,12 +18,12 @@ const Fotter = () => {
             <Link to="/About" >  ABOUT</Link>
             <Link to="/Team"  >TEAM </Link>
             <Link to='/Portfolio' >PORTFOLIO</Link>
-            <a href='#'>PROPOSALS</a>
-            <a href='#'>JOBS</a>
-            <a href='#'>INTERNSHIPS</a>
-            <a href='#'>GIVING BACK</a>
-            <a href='#'>BLOG</a>
-            <a href='#'>CONTACT</a>
+            <Link to='/proposal' >JOBS</Link>
+            <Link to='/Jops' >INTERNSHIPS</Link>
+            <Link to='/internships' >GIVING BACK</Link>
+            <Link to='/givingback' >BLOG</Link>
+            <Link to='/Contact' >CONTACT</Link>
+
           </NavFotter>
           <h4>Join Our NewsLetter</h4>
           <h2>JM HOLDING @2022</h2>

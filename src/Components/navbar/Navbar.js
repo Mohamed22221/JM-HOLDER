@@ -42,20 +42,8 @@ const Navbar = () => {
           <li><Link onClick={boxHandler} to='/proposal' >PROPOSALS</Link></li>
           <li><Link onClick={boxHandler} to='/Jops' >JOBS</Link></li>
           <li><Link onClick={boxHandler} to='/internships' >INTERNSHIPS</Link></li>
-
-
-          
-          <li>
-            <a onClick={boxHandler}  href="#Powerd BY">
-            GIVING BACK
-            </a>
-          </li>
-          
-
-          
+          <li><Link onClick={boxHandler} to='/givingback' >GIVING BACK</Link></li> 
           <li><Link onClick={boxHandler}  to="/Contact">CONTACT</Link></li>
-          
-          
 
         </ul>
         <div onClick={handleToggle} className="toggle-button">
