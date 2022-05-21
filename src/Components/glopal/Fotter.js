@@ -40,14 +40,14 @@ background-image: url(${backsection2});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
-height: 450px;
+height: 390px;
 transform: translateY(-70px);
 z-index: 10;
 padding: 70px 0;
 
 @media (max-width:800px) {
 background-position: top center;
-height: 550px;
+height: 450px;
 }
 ::after{
 content: "";
@@ -73,11 +73,11 @@ h4{
         margin-top: 60px;
     }
 
-    padding: 40px 0;
+    padding: 20px 0;
 }
 h2{
 
-    padding: 40px 0;
+    padding: 20px 0;
     color: var(--primary-color);
 }
 `

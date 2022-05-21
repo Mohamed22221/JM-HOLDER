@@ -29,7 +29,7 @@ class Map extends React.Component {
 
 const MapComponent = withScriptjs(withGoogleMap(Map));
 const StyleMap = styled.div`
-width: 700px;
+width: 620px;
 @media (max-width:1150px ) {
   width: 600px;
 }

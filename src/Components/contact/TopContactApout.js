@@ -30,20 +30,18 @@ const TopContactApout = () => {
 const StyleTopContact = styled.div`
 height: 200px;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 @media (max-width:570px) {
 justify-content: flex-start;
 flex-direction: column;
-height: 340px;
+height: 280px;
 }
 .title{
-width: 420px;
+width: 450px;
 @media (max-width:570px) {
 width:100%
 }
-h1{
-    
-}
+
 }
 .main-office {
     display: flex;

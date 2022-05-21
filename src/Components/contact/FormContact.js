@@ -44,13 +44,13 @@ const FormContact = () => {
 const StyleForm = styled.div`
 margin-top: 10px;
 @media (max-width:1150px) {
-  margin-top: 65px;
+  margin-top: 60px;
 }
 
 
 button{
-  margin-top: 15px;
-margin-left: 10px;
+margin: 40px 10px 40px 10px;
+
 }
 `
 export default FormContact

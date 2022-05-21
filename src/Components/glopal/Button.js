@@ -59,7 +59,7 @@ button{
   }
   &:hover span{
   color: white;
- 
+
 
     
   }

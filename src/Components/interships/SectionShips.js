@@ -61,11 +61,11 @@ position: relative;
 height: 100%;
 transform: translateY(-70px);
 z-index: 10;
-padding: 40px 0;
+padding: 30px 0;
 .main-ships{
-    padding: 10px 0;
+    padding: 5px 0;
     h1{
-        padding: 10px 0;
+        padding: px 0;
     }
     p{
         margin: 20px 0;

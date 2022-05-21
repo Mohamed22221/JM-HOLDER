@@ -8,24 +8,26 @@ const MainContact = () => {
     
         <Container maxWidth="xl">
             <StyleMainContact>
-            <Map/>
             <FormContact/>
+            <Map/>
             </StyleMainContact>
         </Container>
 
   )
 }
 const StyleMainContact = styled.div`
-height: 650px;
+height: 600px;
 @media (max-width:1000px ) {
-  height: 1000px;
+  height: 1050px;
 }
 
+
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 @media (max-width:1000px) {
   flex-direction: column;
   justify-content: flex-start;
+  
 }
 `
 export default MainContact

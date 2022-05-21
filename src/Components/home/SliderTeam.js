@@ -28,7 +28,7 @@ const SliderTeam = () => {
               <div className='apout-person'>
                 <h5>{item.name}</h5>
                 <p>{item.jop}</p>
-                <Button title='read more'/>
+                <Button title='Read more'/>
 
               </div>
               </Item>

@@ -70,7 +70,7 @@ form{
         }
 
         .Attachments{
-            margin: 18px 0;
+            margin: 10px 0;
             .file-Attachments{
                 display: flex;
                 align-items: center;
