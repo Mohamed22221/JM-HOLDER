@@ -231,7 +231,7 @@ margin: 30px 0 10px 0 ;
         flex-direction: column;
         color: var(--font);
         span{
-            padding: 10px;
+            padding: 5px;
             &::first-letter{
                 font-size: 20px;
                 padding: 0 8px;

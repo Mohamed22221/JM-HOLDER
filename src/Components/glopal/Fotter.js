@@ -49,7 +49,7 @@ const Fotter = () => {
           </div>
           
           }
-          <h2>JM HOLDING @2022</h2>
+          <h3>JM HOLDING @2022</h3>
         </MainFotter>
       </Container>
     </StyleFotter>
@@ -100,8 +100,8 @@ h4{
 
 
 }
-h2{
-
+h3{
+    font-size: 14px;
     padding: 10px 0;
     color: var(--primary-color);
 
