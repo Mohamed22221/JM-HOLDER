@@ -14,7 +14,7 @@ return (
     <StyleHome>
 
         <MainHeaderHome/>
-        <TeamHome/>
+        {/*<TeamHome/>*/}
         <Section3 />
         <Section4/>
         <Section5 />

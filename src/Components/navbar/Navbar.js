@@ -35,14 +35,14 @@ const Navbar = () => {
         </div>
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
         
-          <li><Link onClick={boxHandler} to="/JM-HOLDER" > HOME</Link></li>
+          
           <li> <Link onClick={boxHandler} to="/About" >  ABOUT</Link></li>
-          <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li>
-          <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>
+         {/* <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li> */}
+         {/* <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>*/}
           <li><Link onClick={boxHandler} to='/proposal' >PROPOSALS</Link></li>
           <li><Link onClick={boxHandler} to='/Jops' >JOBS</Link></li>
           <li><Link onClick={boxHandler} to='/internships' >INTERNSHIPS</Link></li>
-          <li><Link onClick={boxHandler} to='/givingback' >GIVING BACK</Link></li> 
+          {/*<li><Link onClick={boxHandler} to='/givingback' >GIVING BACK</Link></li> */}
           <li><Link onClick={boxHandler}  to="/Contact">CONTACT</Link></li>
 
         </ul>

@@ -1,31 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import backsection2 from "../../assets/backsection2.jpeg"
 import styled from 'styled-components'
 import Logo from '../../assets/logo.svg'
 import { Container } from '@mui/material'
 import { Link } from "react-router-dom";
 const Fotter = () => {
+  const [join , setJoin] = useState(false)
+  const [Successfully , setSuccessfully] = useState(false)
+
+  const ClickJoinNewsLetter = () =>{
+    setJoin(true)
+  }
+  const SubscribeSuccessfully = () =>{
+    setSuccessfully(true)
+    setJoin(false)
+  }
   return (
     <StyleFotter>
       <Container maxWidth="xl">
-        <MainFotter>
+        <MainFotter join={join}>
           <ImgLogo>
             <img src={Logo} />
           </ImgLogo>
           <NavFotter>
 
-            <Link to="/JM-HOLDER" > HOME</Link>
+            
             <Link to="/About" >  ABOUT</Link>
-            <Link to="/Team"  >TEAM </Link>
-            <Link to='/Portfolio' >PORTFOLIO</Link>
+           {/* <Link to="/Team"  >TEAM </Link> */}
+          {/*<Link to='/Portfolio' >PORTFOLIO</Link> */}
             <Link to='/proposal' >JOBS</Link>
             <Link to='/Jops' >INTERNSHIPS</Link>
-            <Link to='/internships' >GIVING BACK</Link>
+           {/* <Link to='/internships' >GIVING BACK</Link> */}
             <Link to='/givingback' >BLOG</Link>
             <Link to='/Contact' >CONTACT</Link>
 
           </NavFotter>
-          <h4>Join Our NewsLetter</h4>
+          
+          { Successfully ==false ?
+          <div className='center'>
+          <h4 onClick={ClickJoinNewsLetter}>Join Our NewsLetter</h4>
+          <div className='join'>
+            <input type="email" placeholder='Enter your email here' required  />
+            <button onClick={SubscribeSuccessfully}>Subscribe</button>
+            </div>
+          </div> :
+          <div className='Successfully'>
+            <p>Successfully saved the request.</p>
+          </div>
+          
+          }
           <h2>JM HOLDING @2022</h2>
         </MainFotter>
       </Container>
@@ -69,16 +92,62 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 h4{
+  cursor: pointer;
+  padding: 10px 0;
     @media (max-width:550px) {
         margin-top: 60px;
     }
 
-    padding: 20px 0;
+
 }
 h2{
 
-    padding: 20px 0;
+    padding: 10px 0;
     color: var(--primary-color);
+
+}
+.center{
+  text-align: center;
+}
+@media (max-width:750px ) {
+  .Successfully p{
+  padding-top: 30px;
+}
+}
+
+.join{
+display:  ${props => props.join ? "block" : "none "};
+   
+input,button{
+  padding: 5px 14px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 17px;
+  color: var(--font);
+}
+input{
+  width: 450px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-right:none ;
+  
+  ::placeholder{
+    color: var(--font);
+  }
+  @media (max-width:750px) {
+    width: 200px;
+  }
+}
+button{
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  transition: 0.4s;
+  background-color: var(--primary-color);
+  
+  &:hover{
+    opacity: 0.8;
+    
+  }
+}
 }
 `
 
