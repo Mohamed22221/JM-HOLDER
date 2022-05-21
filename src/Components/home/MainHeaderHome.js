@@ -3,16 +3,20 @@ import backsection1 from"../../assets/backsection1.jpeg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { motion } from 'framer-motion'
+import Button from '../glopal/Button'
 const MainHeaderHome = ({}) => {
   return (
     <MainHeader as={motion.div} animate={{ opacity: 1 }}>
+      <div>
       <HeaderHome 
       Titleh1="PEOPLE, KNOWLEDGE, VALUES"
-      paragraph="In our humble small team, we are together. This is the beginning. Staying together is progress. Work is
-      success. We have the ability to work with a common vision. We take responsibility for each other and the
-      companies we work with equally"   
-      /> 
+      paragraph="Jm-Holding is a venture capital firm investing in talented founders building long-term value by developing sound operations at home and abroad."   
+      title="Read more"
+      links="/About"
+     /> 
        
+       </div>
+      
     </MainHeader>
  
   )
@@ -32,7 +36,7 @@ transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
 background-position: center center;
-height: 70vh;
+height: 90vh;
 }
 ::after{
 content: "";
@@ -46,6 +50,7 @@ height: 100%;
 background-color: #00000029;
 z-index: -1;
 }
+
 
 `
 

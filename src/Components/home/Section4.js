@@ -7,11 +7,10 @@ const Section4 = () => {
   return (
     <MainSectionFour>
           <HeaderHome
-      Titleh1="PEOPLE, KNOWLEDGE, VALUES"
-      paragraph="We offer our clients the most complete and unique open 
-      air adventure thrills they have ever experienced complete with
-       unforgettable moments. Your safety is our most important mission and 
-       for this reason"   
+      Titleh1="WE SEE A WORLD IN WHICH EVERY YOUNG PERSON KNOWS THEY ARE"
+      paragraph="Faith Capital is committed to investing in the next generation of  entrepreneurs. With this in mind, we have specified certain decision criteria for our investments in order to ensure the maximum likelihood of success."
+       title="Submit"
+       links="/proposal"   
       /> 
     </MainSectionFour>
   )
@@ -26,8 +25,8 @@ height: 100vh;
 transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
-background-position: top center;
-height: 70vh;
+background-position: center center;
+height: 100vh;
 }
 ::after{
 content: "";

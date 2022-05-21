@@ -14,6 +14,7 @@ import Propisals from "./bages/Propisals";
 import Jops from "./bages/Jops";
 import InterShips from "./bages/InterShips";
 import GivingbBack from "./bages/GivingbBack";
+import Terms from "./Components/glopal/Terms";
 
 function App() {
   useEffect(()=>{
@@ -38,6 +39,8 @@ function App() {
         <Route path="Jops" element={<Jops />} />
         <Route path="internships" element={<InterShips />} />
         <Route path="givingback" element={<GivingbBack />} />
+        <Route path="Terms" element={<Terms />} />
+
       </Routes>
 
      <Fotter/>

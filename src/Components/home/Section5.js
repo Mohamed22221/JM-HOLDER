@@ -11,7 +11,9 @@ const Section5 = () => {
       paragraph="We offer our clients the most complete and unique open 
       air adventure thrills they have ever experienced complete with
        unforgettable moments. Your safety is our most important mission and 
-       for this reason"   
+       for this reason" 
+       title="Read more"
+       links="/internships"    
       /> 
     </MainSectionfife>
   )
@@ -26,8 +28,8 @@ height: 100vh;
 transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
-background-position: top center;
-height: 70vh;
+background-position: center center;
+height: 100vh;
 }
 ::after{
 content: "";

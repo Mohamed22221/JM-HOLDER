@@ -31,7 +31,7 @@ const Fotter = () => {
             <Link to='/proposal' >JOBS</Link>
             <Link to='/Jops' >INTERNSHIPS</Link>
            {/* <Link to='/internships' >GIVING BACK</Link> */}
-            <Link to='/givingback' >BLOG</Link>
+            
             <Link to='/Contact' >CONTACT</Link>
 
           </NavFotter>
@@ -49,8 +49,10 @@ const Fotter = () => {
           </div>
           
           }
+          <div className='terms'>
           <h3>JM HOLDING @2022</h3>
-          <a href='asd'>Terms and Conditions</a>
+          <Link to='/Terms'>Terms and Conditions</Link>
+          </div>
         </MainFotter>
       </Container>
     </StyleFotter>
@@ -91,7 +93,7 @@ const MainFotter = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
+justify-content: space-evenly;
 h4{
   cursor: pointer;
   padding: 10px 0;
@@ -118,7 +120,7 @@ h3{
 
 .join{
 display:  ${props => props.join ? "block" : "none "};
-   
+   padding: 10px 0;
 input,button{
   padding: 5px 14px;
   background-color: transparent;
@@ -149,6 +151,20 @@ button{
     
   }
 }
+}
+.terms{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--font) ;
+  justify-content: center;
+  flex-wrap: wrap;
+  h3,a{
+    margin: 1px 20px;
+  }
+  a{
+    font-size: 14px;
+    color: black;
+  }
 }
 `
 

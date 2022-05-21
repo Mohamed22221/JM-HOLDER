@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-const Button = ({title}) => {
+import { Link } from 'react-router-dom';
+const Button = ({title,links}) => {
   return (
 
     <ButtonStyleHome>
-      <button data-aos="fade-left"><span>{title} <ArrowForwardIosIcon className='icon-arrow'/></span></button>  
+     <Link to={`${links}`}> <button data-aos="fade-left"><span>{title} <ArrowForwardIosIcon className='icon-arrow'/></span></button> </Link> 
     </ButtonStyleHome>
   )
 }
