@@ -50,6 +50,7 @@ const Fotter = () => {
           
           }
           <h3>JM HOLDING @2022</h3>
+          <a href='asd'>Terms and Conditions</a>
         </MainFotter>
       </Container>
     </StyleFotter>
@@ -95,7 +96,7 @@ h4{
   cursor: pointer;
   padding: 10px 0;
     @media (max-width:550px) {
-        margin-top: 60px;
+        margin-top: 10px;
     }
 
 
