@@ -15,7 +15,7 @@ import Jops from "./bages/Jops";
 import InterShips from "./bages/InterShips";
 import GivingbBack from "./bages/GivingbBack";
 import Terms from "./Components/glopal/Terms";
-
+import ScrollToTop from './ScrollToTop'
 function App() {
   useEffect(()=>{
     AOS.init({
@@ -27,8 +27,8 @@ function App() {
   return (
     <>
     <Navbar/> 
-    
-        <Routes>
+      <ScrollToTop />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="JM-HOLDER" element={<Home />} />
         <Route path="About" element={<About />} />
@@ -40,8 +40,8 @@ function App() {
         <Route path="internships" element={<InterShips />} />
         <Route path="givingback" element={<GivingbBack />} />
         <Route path="Terms" element={<Terms />} />
-
-      </Routes>
+        
+        </Routes>
 
      <Fotter/>
     </>
