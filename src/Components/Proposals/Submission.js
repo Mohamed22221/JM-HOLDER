@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState, useRef} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
@@ -21,7 +21,10 @@ const Submission = () => {
         file2: null,
         file3: null,
     }
-    const [proposal , setProposal] = useState()
+    const [proposal, setProposal] = useState(initialData)
+    const fileInput = useRef()
+    const fileInput2 = useRef()
+    const fileInput3 = useRef()
   
     const HandelProposal = async (e) =>{
         const data = {...proposal}
@@ -30,23 +33,31 @@ const Submission = () => {
             Reader.onload = () =>{
                 if (Reader.readyState === 2) {
                     setProposal({...proposal , [e.target.id]: e.target.files[0] }) 
-                    console.log('e.target.files[0]', e.target.files[0]);
+                    // console.log('e.target.files[0]', e.target.files[0]);
                 }
             }
             // console.log('dfkldfdfkljkl', [e.target.id], e.target.files[0]);
             // console.log('e.target.files[02]', Reader.result);
+
+             fileInput.value = "";
+             fileInput2.value = "";
+             fileInput3.value = "";
             Reader.readAsDataURL(e.target.files[0])
         } else {
             data[e.target.id] = e.target.value
             setProposal(data)
         }
-        console.log(data)
+        // console.log(data)
     }
 
-    const handelSubmet = async (e) =>{
+    const handelSubmet = (e) =>{
         e.preventDefault()
-        postFromData('proposal', proposal).then(_ => {
+        postFromData('proposal', proposal).then(res => {
+            console.log('initialData', initialData);
+            console.log('res', res);
             setProposal(initialData)
+        }).catch(err => {
+            console.log(err);
         })
     }
 
@@ -64,7 +75,7 @@ const Submission = () => {
                     <span>-Market Size –   The company’s addressable market is sufficiently large to sustain high potential startups while displaying clear growth.</span>
                     <span>-Exit Strategy – The company has a clear viable exit strategy with a reasonable expectation of a high return on investment over a 3-5 years.</span>
                 </div>
-                <form onSubmit={(e) => handelSubmet(e)}>
+                <form onSubmit={handelSubmet}>
                     <>
                     <label>Founder:</label>
                     <div className='two-input'>
@@ -129,15 +140,15 @@ const Submission = () => {
                         <p>Kindly attach your company presentation and any relevant files</p>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" value={proposal.file} id='file' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" ref={fileInput} id='file'  onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" value={proposal.file2} id='file2' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" ref={fileInput2} id='file2' onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" value={proposal.file3} id='file3' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" ref={fileInput3} id='file3' onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>
                     <div className='button'>

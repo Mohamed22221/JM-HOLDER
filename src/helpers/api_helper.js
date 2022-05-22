@@ -12,14 +12,14 @@ axiosApi.interceptors.response.use(
   error => Promise.reject(error)
 )
 
-export function postFromData(url, data) {
+export async function postFromData(url, data) {
   const formData = new FormData()
   for (let item in data) {
     formData.append(item, data[item])
-    console.log('item', item);
+    // console.log('item', item);
   }
-  console.log('data', data);
-  console.log('formData', formData);
+  // console.log('data', data);
+  // console.log('formData', formData);
   axiosApi({
     url: url,
     method: 'POST',
