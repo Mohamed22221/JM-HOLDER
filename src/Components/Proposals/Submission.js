@@ -61,6 +61,16 @@ const Submission = () => {
         })
     }
 
+    const HandelProposal1 = (ref) => {
+        fileInput = ref.current.value
+    }
+    const HandelProposal2 = (ref) => {
+        fileInput2 = ref.current.value
+    }
+    const HandelProposal3 = (ref) => {
+        fileInput3 = ref.current.value
+    }
+
 
   return (
     <ManiStyleSectionSubmation>
@@ -140,15 +150,15 @@ const Submission = () => {
                         <p>Kindly attach your company presentation and any relevant files</p>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" ref={fileInput} id='file'  onChange={(e) => HandelProposal(e)} />
+                            <input type="file" ref={fileInput} id='file'  onChange={HandelProposal1} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" ref={fileInput2} id='file2' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" ref={fileInput2} id='file2' onChange={HandelProposal2} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" ref={fileInput3} id='file3' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" ref={fileInput3} id='file3' onChange={HandelProposal3} />
                         </div>
                     </div>
                     <div className='button'>
