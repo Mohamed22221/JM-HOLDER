@@ -1,122 +1,56 @@
 import React ,{useState} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
-import axios from 'axios';
+import {postFromData} from './../../helpers/api_helper';
 
 const Submission = () => {
- 
-    const [proposal , setProposal] = useState({
-        firstname: "",
-        lastName :"" ,
-        title:"",
-        email:"",
-        companyname:"",
-        countryname:"",
-        industry:"",
-        day:"",
-        month:"",
-        year:"",
-        stage:"",
-        attach1:"",
-        attach2:"",
-        attach3:"",
-    })
+    const initialData = {
+        Fname: "",
+        Lname: "",
+        title: "",
+        email: "",
+        phone: "",
+        Company_Name: "",
+        country: "",
+        cindustry: "",
+        d: "",
+        m: "",
+        y: "",
+        stage: "",
+        file: null,
+        file2: null,
+        file3: null,
+    }
+    const [proposal , setProposal] = useState()
   
     const HandelProposal = async (e) =>{
         const data = {...proposal}
-         data[e.target.id] = e.target.value
-         setProposal(data)
-         console.log(data)
+        if (e.target.type === 'file') {
+            const Reader = new FileReader()
+            Reader.onload = () =>{
+                if (Reader.readyState === 2) {
+                    setProposal({...proposal , [e.target.id]: e.target.files[0] }) 
+                    console.log('e.target.files[0]', e.target.files[0]);
+                }
+            }
+            // console.log('dfkldfdfkljkl', [e.target.id], e.target.files[0]);
+            // console.log('e.target.files[02]', Reader.result);
+            Reader.readAsDataURL(e.target.files[0])
+        } else {
+            data[e.target.id] = e.target.value
+            setProposal(data)
+        }
+        console.log(data)
     }
 
     const handelSubmet = async (e) =>{
         e.preventDefault()
-        
-        var formdata = new FormData();
-        formdata.append("Fname", "اختبارs");
-        formdata.append("Lname", "asasdadfc");
-        formdata.append("title", "ascdsdfgfgsfgasc");
-        formdata.append("email", "gdfgdfgdfg@gmail.com");
-        formdata.append("phone", "213354567");
-        formdata.append("Company_Name", "dfgdfgdgdgf");
-        formdata.append("cindustry", "dfgdfgdgdf");
-        formdata.append("country", "dfgdfgdfgdg");
-        formdata.append("d", "ascasc");
-        formdata.append("m", "asascasc");
-        formdata.append("y", "asccascsa");
-        formdata.append("stage", "ascasc");
-        formdata.append("file", proposal.attach1);
-        formdata.append("file2", proposal.attach2);
-        formdata.append("file3", proposal.attach3);
-        
-        var requestOptions = {
-          method: 'POST',
-          body: formdata,
-         // redirect: 'follow',
-          headers : {
-            //"Accept": 'application/json',
-            //"Content-Type" :'application/json'
-          }
-
-        };
-        
-        fetch("jmgroupkw.com/jm/api/store/proposal", requestOptions)
-          
-          .then(result => console.log(result))
-          .catch(error => console.log('error', error));
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*
-         
-            
-          
-            var formdata = {
-                Fname: proposal.firstname,
-                Lname: proposal.lastName,
-                title:proposal.title ,
-                email:proposal.email ,
-                Company_Name: proposal.companyname,
-                cindustry:proposal.industry,
-                country:proposal.country,
-                d:proposal.day,
-                m:proposal.month,
-                y:proposal.year,
-                stage:proposal.stage,
-                file:proposal.attach1,
-                file2:proposal.attach2,
-                file3:proposal.attach3,
-            }
-
-            var requestOptions = {
-              method: 'POST',
-              body: formdata,
-              redirect: 'follow'
-            };
-            
-            fetch("jmgroupkw.com/jm/api/store/proposal", requestOptions)
-              
-              .then(result => setProposal(result))
-              .catch(error => console.log('error', error));
-
-*/
-
-
-    
+        postFromData('proposal', proposal).then(_ => {
+            setProposal(initialData)
+        })
     }
+
+
   return (
     <ManiStyleSectionSubmation>
         <Container maxWidth="xl">
@@ -134,19 +68,22 @@ const Submission = () => {
                     <>
                     <label>Founder:</label>
                     <div className='two-input'>
-                        <input placeholder='first Name*' id='firstname' type="text" onChange={(e) => HandelProposal(e)}/>
-                        <input placeholder='last Name*' id='lastName' type="text" onChange={(e) => HandelProposal(e)} />
+                        <input placeholder='first Name*' value={proposal.Fname} id='Fname' type="text" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='last Name*' value={proposal.Lname} id='Lname' type="text" onChange={(e) => HandelProposal(e)} />
                     </div>
                     <div className='two-input'>
-                        <input placeholder='title*' id='title' type="text" onChange={(e) => HandelProposal(e)}/>
-                        <input placeholder='Email*' id='email' type="email" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='title*' value={proposal.title} id='title' type="text" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='Phone*' value={proposal.phone} id='phone' type="number" onChange={(e) => HandelProposal(e)}/>
+                    </div>
+                    <div className='two-input'>                        
+                        <input placeholder='Email*' value={proposal.email} id='email' type="email" onChange={(e) => HandelProposal(e)}/>
                     </div>
                     </>
                     <div className='one-input'>
                     <label>Company:</label>
-                    <input placeholder='Company Name*' id='companyname' type="text" onChange={(e) => HandelProposal(e)} />
-                    <input placeholder='Country Name*' id='countryname' type="text" onChange={(e) => HandelProposal(e)}/>
-                    <select name="cindustry" class="form-control" id='industry' onChange={(e) => HandelProposal(e)}>
+                    <input placeholder='Company Name*' value={proposal.Company_Name} id='Company_Name' type="text" onChange={(e) => HandelProposal(e)} />
+                    <input placeholder='Country Name*' value={proposal.country} id='country' type="text" onChange={(e) => HandelProposal(e)}/>
+                    <select name="cindustry" className="form-control" value={proposal.cindustry} id='cindustry' onChange={(e) => HandelProposal(e)}>
 						<option hidden="">Industry *</option>
 						<option value="Artificial Intelligence ">Artificial Intelligence  </option>
 						<option value="Biotechnology">Biotechnology </option>
@@ -172,13 +109,13 @@ const Submission = () => {
                     <div className='date-input'>
                         <label>Date Founded *</label>
                         <div>
-                            <input placeholder='dd' id='day' onChange={(e) => HandelProposal(e)} />
-                            <input placeholder='mm' id="month" onChange={(e) => HandelProposal(e)} />
-                            <input placeholder='yy' id="year" onChange={(e) => HandelProposal(e)} />
+                            <input placeholder='dd' value={proposal.d} id='d' onChange={(e) => HandelProposal(e)} />
+                            <input placeholder='mm' value={proposal.m} id="m" onChange={(e) => HandelProposal(e)} />
+                            <input placeholder='yy' value={proposal.y} id="y" onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>
                     <div className='one-input'>
-                    <select name="stage" class="form-control" id='stage' onChange={(e) => HandelProposal(e)}>
+                    <select name="stage" className="form-control" value={proposal.stage} id='stage' onChange={(e) => HandelProposal(e)}>
 						<option hidden="" >Stage *</option>
 						<option value="Seed Capital">Seed Capital </option>
 						<option value="Startup Capital">Startup Capital</option>
@@ -192,15 +129,15 @@ const Submission = () => {
                         <p>Kindly attach your company presentation and any relevant files</p>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" id='attach1' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" value={proposal.file} id='file' onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" id='attach2' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" value={proposal.file2} id='file2' onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" id='attach3' onChange={(e) => HandelProposal(e)} />
+                            <input type="file" value={proposal.file3} id='file3' onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>
                     <div className='button'>
