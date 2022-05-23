@@ -15,6 +15,7 @@ import Jops from "./bages/Jops";
 import InterShips from "./bages/InterShips";
 import GivingbBack from "./bages/GivingbBack";
 import Terms from "./Components/glopal/Terms";
+import './styles/style.css';
 import ScrollToTop from './ScrollToTop'
 function App() {
   useEffect(()=>{

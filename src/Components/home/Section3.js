@@ -7,9 +7,13 @@ const Section3 = () => {
   return (
     <MainSectionThre  >
          <HeaderHome
-      Titleh1="WE EMPOWER TOMORROW'S , YOUNG CHANGERS"
-      paragraph="First and foremost, we invest in people and teams. We seek out entrepreneurs with passion, focused execution, and tenacious ambitions" 
-         
+      Titleh1="PEOPLE, KNOWLEDGE, VALUES111"
+      paragraph="In our humble small team, we are together. This is the beginning.
+          Staying together is progress. Work is success. We have the ability to
+          work with a common vision. We take responsibility for each other and
+          the companies we work with equally" 
+         title="Read More"
+        links="/proposal" 
       /> 
     </MainSectionThre>
   )
@@ -40,9 +44,9 @@ height: 100%;
 background-color: #00000029;
 z-index: -1;
 }
-button{
-  display: none;
-}
+// button{
+//   display: none;
+// }
 
 `
 export default Section3

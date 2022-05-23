@@ -24,7 +24,7 @@ top: 45%;
 left: 50%;
 transform: translate(-50%,-50%);
 justify-content: center;
-color: black;
+color: #FFF;
 text-align: center;
 
 h1{
