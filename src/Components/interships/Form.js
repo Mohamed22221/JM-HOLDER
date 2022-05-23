@@ -1,19 +1,55 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
+import {postFromData} from './../../helpers/api_helper';
+
+
 const Form = () => {
+
+
+      const initialState = {
+        name: '',
+        email: '',
+        file: null,
+        file2: null,
+    }
+    const [data, setData] = useState(initialState);
+
+    const handelChange = (e) => {
+         if (e.target.type === 'file') {
+            const Reader = new FileReader()
+            Reader.onload = () =>{
+                if (Reader.readyState === 2) {
+                    setData({...data , [e.target.name]: e.target.files[0] }) 
+                }
+            }
+            Reader.readAsDataURL(e.target.files[0])
+        } else {
+            setData({...data, [e.target.name]: e.target.value});
+        }
+    }
+
+
+     const handleSubmit = (e) => {
+         e.preventDefault()
+         postFromData('internships', data).then(res => {
+             setData(initialState)
+         })
+     }
+
+
     return (
         <StyleForm>
 
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className='one-input'>
-                    <input placeholder='Full Name*' type="text" />
-                    <input placeholder='Email*' type="email" />
+                    <input placeholder='Full Name*' type="text" value={data.name} name='name' onChange={handelChange} />
+                    <input placeholder='Email*' type="email" value={data.email} name='email' onChange={handelChange} />
                 </div>
                 <div className='Attachments'>
                     <label>Attach your transcript</label>
                     <div className='file-Attachments'>
                         <p>Size Limit 5 MB</p>
-                        <input type="file" />
+                        <input type="file" onChange={handelChange} name='file' />
                     </div>
 
                 </div>
@@ -21,12 +57,12 @@ const Form = () => {
                     <label>Attach your resume</label>
                     <div className='file-Attachments'>
                         <p>Size Limit 5 MB</p>
-                        <input type="file" />
+                        <input type="file" onChange={handelChange} name='file2' />
                     </div>
                 </div>
                 <div className='button'>
-                        <button>Submit</button>
-                    </div>
+                    <button>Submit</button>
+                </div>
                 
 
             </form>
