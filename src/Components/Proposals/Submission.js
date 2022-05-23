@@ -1,4 +1,4 @@
-import React ,{useState, useRef} from 'react'
+import React ,{useState} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
@@ -22,9 +22,6 @@ const Submission = () => {
         file3: null,
     }
     const [proposal, setProposal] = useState(initialData)
-    const fileInput = useRef()
-    const fileInput2 = useRef()
-    const fileInput3 = useRef()
   
     const HandelProposal = async (e) =>{
         const data = {...proposal}
@@ -39,38 +36,24 @@ const Submission = () => {
             // console.log('dfkldfdfkljkl', [e.target.id], e.target.files[0]);
             // console.log('e.target.files[02]', Reader.result);
 
-             fileInput.value = "";
-             fileInput2.value = "";
-             fileInput3.value = "";
             Reader.readAsDataURL(e.target.files[0])
         } else {
             data[e.target.id] = e.target.value
             setProposal(data)
         }
-        // console.log(data)
     }
 
     const handelSubmet = (e) =>{
         e.preventDefault()
         postFromData('proposal', proposal).then(res => {
             console.log('initialData', initialData);
-            console.log('res', res);
             setProposal(initialData)
         }).catch(err => {
             console.log(err);
         })
     }
 
-    const HandelProposal1 = (ref) => {
-        fileInput = ref.current.value
-    }
-    const HandelProposal2 = (ref) => {
-        fileInput2 = ref.current.value
-    }
-    const HandelProposal3 = (ref) => {
-        fileInput3 = ref.current.value
-    }
-
+    
 
   return (
     <ManiStyleSectionSubmation>
@@ -89,22 +72,22 @@ const Submission = () => {
                     <>
                     <label>Founder:</label>
                     <div className='two-input'>
-                        <input placeholder='first Name*' value={proposal.Fname} id='Fname' type="text" onChange={(e) => HandelProposal(e)}/>
-                        <input placeholder='last Name*' value={proposal.Lname} id='Lname' type="text" onChange={(e) => HandelProposal(e)} />
+                        <input placeholder='first Name*' value={proposal.Fname} id='Fname' required type="text" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='last Name*' value={proposal.Lname} id='Lname' required type="text" onChange={(e) => HandelProposal(e)} />
                     </div>
                     <div className='two-input'>
-                        <input placeholder='title*' value={proposal.title} id='title' type="text" onChange={(e) => HandelProposal(e)}/>
-                        <input placeholder='Phone*' value={proposal.phone} id='phone' type="number" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='title*' value={proposal.title} id='title' required type="text" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='Phone*' value={proposal.phone} id='phone' required type="number" onChange={(e) => HandelProposal(e)}/>
                     </div>
                     <div className='two-input'>                        
-                        <input placeholder='Email*' value={proposal.email} id='email' type="email" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder='Email*' value={proposal.email} id='email' required type="email" onChange={(e) => HandelProposal(e)}/>
                     </div>
                     </>
                     <div className='one-input'>
                     <label>Company:</label>
-                    <input placeholder='Company Name*' value={proposal.Company_Name} id='Company_Name' type="text" onChange={(e) => HandelProposal(e)} />
-                    <input placeholder='Country Name*' value={proposal.country} id='country' type="text" onChange={(e) => HandelProposal(e)}/>
-                    <select name="cindustry" className="form-control" value={proposal.cindustry} id='cindustry' onChange={(e) => HandelProposal(e)}>
+                    <input placeholder='Company Name*' value={proposal.Company_Name} id='Company_Name' required type="text" onChange={(e) => HandelProposal(e)} />
+                    <input placeholder='Country Name*' value={proposal.country} id='country' required type="text" onChange={(e) => HandelProposal(e)}/>
+                    <select name="cindustry" className="form-control" value={proposal.cindustry} id='cindustry' required onChange={(e) => HandelProposal(e)}>
 						<option hidden="">Industry *</option>
 						<option value="Artificial Intelligence ">Artificial Intelligence  </option>
 						<option value="Biotechnology">Biotechnology </option>
@@ -130,13 +113,13 @@ const Submission = () => {
                     <div className='date-input'>
                         <label>Date Founded *</label>
                         <div>
-                            <input placeholder='dd' value={proposal.d} id='d' onChange={(e) => HandelProposal(e)} />
-                            <input placeholder='mm' value={proposal.m} id="m" onChange={(e) => HandelProposal(e)} />
-                            <input placeholder='yy' value={proposal.y} id="y" onChange={(e) => HandelProposal(e)} />
+                            <input placeholder='dd' value={proposal.d} id='d' required onChange={(e) => HandelProposal(e)} />
+                            <input placeholder='mm' value={proposal.m} id="m" required onChange={(e) => HandelProposal(e)} />
+                            <input placeholder='yy' value={proposal.y} id="y" required onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>
                     <div className='one-input'>
-                    <select name="stage" className="form-control" value={proposal.stage} id='stage' onChange={(e) => HandelProposal(e)}>
+                    <select name="stage" className="form-control" value={proposal.stage} id='stage' required onChange={(e) => HandelProposal(e)}>
 						<option hidden="" >Stage *</option>
 						<option value="Seed Capital">Seed Capital </option>
 						<option value="Startup Capital">Startup Capital</option>
@@ -150,19 +133,21 @@ const Submission = () => {
                         <p>Kindly attach your company presentation and any relevant files</p>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" ref={fileInput} id='file'  onChange={HandelProposal1} />
+                            <input type="file" id='file' required  onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" ref={fileInput2} id='file2' onChange={HandelProposal2} />
+                            <input type="file" id='file2' required onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
                             <p>Size Limit 10 MB</p>
-                            <input type="file" ref={fileInput3} id='file3' onChange={HandelProposal3} />
+                            <input type="file" id='file3' required onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>
                     <div className='button'>
-                        <button>Submit</button>
+                        <button>
+                            Submit
+                        </button>
                     </div>
                 </form>
             </StyleSectionSubmation>
