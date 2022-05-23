@@ -1,5 +1,5 @@
 import React from 'react'
-import backsection2 from"../../assets/backsection2.jpeg"
+import backsection2 from"../../assets/backsection2.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import svg from"../../assets/svg.png"

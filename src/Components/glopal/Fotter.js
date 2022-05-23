@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import backsection2 from "../../assets/backsection2.jpeg"
+import backsection2 from "../../assets/backsection22.jpeg"
 import styled from 'styled-components'
 import Logo from '../../assets/logo.svg'
 import { Container } from '@mui/material'
