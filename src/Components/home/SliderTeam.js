@@ -98,7 +98,7 @@ const Item = styled.div`
   .apout-person{
     position: absolute;
      z-index:15;
-    color: black;
+    color: #FFF;
     display:flex;
     flex-direction: column;
     align-items: center;

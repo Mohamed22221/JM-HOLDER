@@ -1,24 +1,56 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
+import {postFromData} from './../../helpers/api_helper';
 const SectionApply = () => {
+    const initialState = {
+        Fname: '',
+        Lname: '',
+        phone: '',
+        email: '',
+        sector: '',
+        file: null,
+        cv_link: '',
+    }
+    const [data, setData] = useState(initialState);
+
+    const handelChange = (e) => {
+         if (e.target.type === 'file') {
+            const Reader = new FileReader()
+            Reader.onload = () =>{
+                if (Reader.readyState === 2) {
+                    setData({...data , [e.target.name]: e.target.files[0] }) 
+                }
+            }
+            Reader.readAsDataURL(e.target.files[0])
+        } else {
+            setData({...data, [e.target.name]: e.target.value});
+        }
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        postFromData('jobs', data).then(res => {
+            setData(initialState)
+        })
+    }
   return (
     <StyleApplay>
          <Container maxWidth="xl">
-         <form>
+         <form onSubmit={handleSubmit}>
            <h2>JOIN US</h2>
                     <>
                     <label>Founder:</label>
                     <div className='two-input'>
-                        <input placeholder='first Name*' type="text" />
-                        <input placeholder='last Name*' type="text" />
+                        <input placeholder='first Name*' name='Fname' required value={data.Fname} onChange={handelChange} type="text" />
+                        <input placeholder='last Name*' name='Lname' required value={data.Lname} onChange={handelChange} type="text" />
                     </div>
 
                     </>
                     <div className='one-input'>
-                    <input placeholder='Contact Number*' type="text" />
-                    <input placeholder='Email*' type="email" />
-                    <input placeholder='Specialization Sector*' type="text" />
+                    <input placeholder='Contact Number*' name='phone' required value={data.phone} onChange={handelChange} type="number" />
+                    <input placeholder='Email*' type="email" name='email' required value={data.email} onChange={handelChange} />
+                    <input placeholder='Specialization Sector*' type="text" name='sector' required value={data.sector} onChange={handelChange} />
 
                     </div>
 
@@ -29,13 +61,13 @@ const SectionApply = () => {
                         <label>Attach your CV</label>
                         <div className='file-Attachments'>
                             <p>Size Limit 5 MB</p>
-                            <input type="file" />
+                            <input type="file" name='file' onChange={handelChange} />
                         </div>
 
                     </div>
                     <div className='one-input'>
                     <p>* If the file being uploaded is more than 5 MB, place a Dropbox link or any cloud solution in the field below</p>
-                    <input placeholder='Url To Dropbox or any Cloud Solution*' type="text" />
+                    <input placeholder='Url To Dropbox or any Cloud Solution*' type="text" name='cv_link' required value={data.cv_link} onChange={handelChange} />
                     </div>
                     
                     <div className='button'>

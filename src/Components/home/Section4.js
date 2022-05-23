@@ -1,5 +1,5 @@
 import React from 'react'
-import backsection5 from"../../assets/backsection5.jpeg"
+import backsection5 from"../../assets/backsection5.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 
@@ -7,10 +7,13 @@ const Section4 = () => {
   return (
     <MainSectionFour>
           <HeaderHome
-      Titleh1="WE SEE A WORLD IN WHICH EVERY YOUNG PERSON KNOWS THEY ARE"
-      paragraph="Faith Capital is committed to investing in the next generation of  entrepreneurs. With this in mind, we have specified certain decision criteria for our investments in order to ensure the maximum likelihood of success."
-       title="Submit"
-       links="/proposal"   
+      Titleh1="PEOPLE, KNOWLEDGE, VALUES"
+      paragraph="In our humble small team, we are together. This is the beginning.
+        Staying together is progress. Work is success. We have the ability to
+        work with a common vision. We take responsibility for each other and
+        the companies we work with equally"
+       title="Read More"
+       links = "/Jops"
       /> 
     </MainSectionFour>
   )

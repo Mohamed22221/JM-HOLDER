@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import backsection2 from "../../assets/backsection2.jpeg"
+import backsection2 from "../../assets/backsection22.jpeg"
 import styled from 'styled-components'
 import Logo from '../../assets/logo.svg'
 import { Container } from '@mui/material'
@@ -163,7 +163,7 @@ button{
   }
   a{
     font-size: 14px;
-    color: black;
+    color: #FFF;
   }
 }
 `
@@ -177,7 +177,7 @@ const NavFotter = styled.nav`
     flex-wrap: wrap;
 a{
     padding: 8px;
-    color: black;
+    color: #FFF;
     font-weight: 600;
     font-size: 14px;
     transition: 0.5s;

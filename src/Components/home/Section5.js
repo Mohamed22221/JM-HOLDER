@@ -1,5 +1,5 @@
 import React from 'react'
-import backsection6 from"../../assets/backsection6.svg"
+import backsection6 from"../../assets/backsection6.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 
@@ -12,8 +12,6 @@ const Section5 = () => {
       air adventure thrills they have ever experienced complete with
        unforgettable moments. Your safety is our most important mission and 
        for this reason" 
-       title="Read more"
-       links="/internships"    
       /> 
     </MainSectionfife>
   )

@@ -6,22 +6,26 @@ const Button = ({title,links}) => {
   return (
 
     <ButtonStyleHome>
-     <Link to={`${links}`}> <button data-aos="fade-left"><span>{title} <ArrowForwardIosIcon className='icon-arrow'/></span></button> </Link> 
+     <Link to={`${links}`}> <button data-aos="fade-left"><span>{title}</span></button> </Link> 
     </ButtonStyleHome>
   )
 }
 const ButtonStyleHome = styled.div`
 button{
   all: unset;
-  padding: 10px 55px 10px 40px;
-  color: black;
-  background-color: transparent; 
+  padding: 10px 50px;
+  color: #FFF;
+  background-color: #FFF; 
   border:1px solid black ;
   border-radius: 3px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
+  font-size: 24px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-weight: 600;
   &:hover{
     
   border-color: var(--primary-color);
