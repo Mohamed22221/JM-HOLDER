@@ -12,13 +12,13 @@ class Map extends React.Component {
     return (
       <StyleMap>
       <GoogleMap
-        defaultZoom={12}
-        defaultCenter={{ lat: 29.082970, lng: 48.061740 }}
+        defaultZoom={17}
+        defaultCenter={{ lat: 29.362616, lng: 47.9645771 }}
       >
         <Marker
           position={{
-            lat: 29.082970,
-            lng: 48.061740
+            lat: 29.362616,
+            lng: 47.9645771
           }}
         />
       </GoogleMap>

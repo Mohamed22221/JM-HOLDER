@@ -35,7 +35,6 @@ transform: translateY(-70px);
 z-index: 10;
 @media (max-width:800px) {
 background-position: top center;
-height: 60vh;
 }
 ::after{
 content: "";

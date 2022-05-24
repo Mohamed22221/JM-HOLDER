@@ -20,7 +20,7 @@ const HeaderHome = ({Titleh1,paragraph,title,links}) => {
 
 const MainHeader= styled.div`
 position: absolute;
-top: 45%;
+top: 40%;
 left: 50%;
 transform: translate(-50%,-50%);
 justify-content: center;
@@ -33,7 +33,7 @@ h1{
  
   transition: 0.3s;
   @media (max-width: 550px) {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 p{
@@ -41,19 +41,19 @@ p{
   padding:20px 30px ;
 
   text-align: center;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   display: flex;
   align-items: center;
 }
 @media (max-width:900px ) {
-  top: 18%;
+  top: 50%;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateX(0);
+  transform: translateY(-50%);
   padding: 20px 0;
   p{
   width:100%;

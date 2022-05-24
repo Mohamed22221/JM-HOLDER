@@ -26,8 +26,10 @@ button{
   border-radius: 12px;
   border: 1px solid transparent;
   font-weight: 600;
+  @media (max-width:550px) {
+    font-size: 20px;
+  }
   &:hover{
-    
   border-color: var(--primary-color);
   .icon-arrow{
    

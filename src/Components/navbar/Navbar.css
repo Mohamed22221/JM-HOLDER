@@ -8,7 +8,7 @@
     transition: 0.5s;
 }
 .main-nav-color{
-  background-color: rgb(39, 39, 39);
+  background-color: var(--font);
   
 }
 .main-nav-color nav ul li a {
@@ -103,7 +103,7 @@ nav {
   @media screen and (max-width: 1150px) {
     .toggle-button {
       display: block;
-      color: #000;
+      color: rgb(255, 255, 255);
       
     }
     nav ul {
@@ -111,7 +111,7 @@ nav {
       flex-direction: column;
       position: fixed;
       top: 60px;
-      background-color: rgb(39, 39, 39);
+      background-color: var(--font);
       width: 100%;
       height: 100%;
       left: -1150px;
