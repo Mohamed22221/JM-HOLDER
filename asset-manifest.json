@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JM-HOLDER/static/css/main.6a006122.css",
-    "main.js": "/JM-HOLDER/static/js/main.fe23d4b3.js",
+    "main.css": "/JM-HOLDER/static/css/main.c67d8f34.css",
+    "main.js": "/JM-HOLDER/static/js/main.9c310051.js",
     "static/media/backsection2.jpg": "/JM-HOLDER/static/media/backsection2.01f3af370c947f98d49f.jpg",
     "static/media/backsection1.jpg": "/JM-HOLDER/static/media/backsection1.3c81910793eaba6d9448.jpg",
     "static/media/backsection5.jpg": "/JM-HOLDER/static/media/backsection5.79d7a4c74e215b0df569.jpg",
@@ -23,11 +23,11 @@
     "static/media/svg.png": "/JM-HOLDER/static/media/svg.14d52dc1325266ba2978.png",
     "static/media/logo.svg": "/JM-HOLDER/static/media/logo.a93838e41c00777894f5e26125abfbdd.svg",
     "index.html": "/JM-HOLDER/index.html",
-    "main.6a006122.css.map": "/JM-HOLDER/static/css/main.6a006122.css.map",
-    "main.fe23d4b3.js.map": "/JM-HOLDER/static/js/main.fe23d4b3.js.map"
+    "main.c67d8f34.css.map": "/JM-HOLDER/static/css/main.c67d8f34.css.map",
+    "main.9c310051.js.map": "/JM-HOLDER/static/js/main.9c310051.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a006122.css",
-    "static/js/main.fe23d4b3.js"
+    "static/css/main.c67d8f34.css",
+    "static/js/main.9c310051.js"
   ]
 }
