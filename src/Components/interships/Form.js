@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
-
+import Axios from "axios"
 const Form = () => {
 
 
@@ -29,12 +29,28 @@ const Form = () => {
     }
 
 
-     const handleSubmit = (e) => {
-         e.preventDefault()
-         postFromData('internships', data).then(res => {
-             setData(initialState)
+     const handleSubmit = async (e) => {
+        e.preventDefault()
+        // await postFromData('internships', data).then(res => {
+        //      setData(initialState)
+        //     toast.dark("sent successfully!");
+        //     console.log('klddklkldfjdkjldfkjldfkjldfkldfklfjjjjjjjj', res);
+        //  }).catch(err => {
+        //      console.log('dfdfdklfdkllndf', err);
+        //  })
+        const formData = new FormData()
+         for (let item in data) {
+             formData.append(item, data[item])
+         }
+        Axios.post('https://www.jmgroupkw.com/jm/api/store/internships', formData).then(response => {
+            console.log('res', response);
+            setData(initialState)
             toast.dark("sent successfully!");
-         })
+        }).catch(err => {
+            console.log('err', err.response.status);
+        })
+
+        // console.log('this');
      }
  
 
@@ -43,14 +59,14 @@ const Form = () => {
 
             <form onSubmit={handleSubmit}>
                 <div className='one-input'>
-                    <input placeholder='Full Name*' type="text" value={data.name} name='name' onChange={handelChange} />
-                    <input placeholder='Email*' type="email" value={data.email} name='email' onChange={handelChange} />
+                    <input placeholder='Full Name*' required type="text" value={data.name} name='name' onChange={handelChange} />
+                    <input placeholder='Email*' type="email" required value={data.email} name='email' onChange={handelChange} />
                 </div>
                 <div className='Attachments'>
                     <label>Attach your transcript</label>
                     <div className='file-Attachments'>
                         <p>Size Limit 5 MB</p>
-                        <input type="file" onChange={handelChange} name='file' />
+                        <input type="file" required onChange={handelChange} name='file' />
                     </div>
 
                 </div>
@@ -58,7 +74,7 @@ const Form = () => {
                     <label>Attach your resume</label>
                     <div className='file-Attachments'>
                         <p>Size Limit 5 MB</p>
-                        <input type="file" onChange={handelChange} name='file2' />
+                        <input type="file" required onChange={handelChange} name='file2' />
                     </div>
                 </div>
                 <div className='button'>

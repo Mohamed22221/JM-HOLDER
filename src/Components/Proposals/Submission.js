@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
+import Axios from 'axios';
 const Submission = () => {
     const initialData = {
         Fname: "",
@@ -45,12 +46,24 @@ const Submission = () => {
 
     const handelSubmet = (e) =>{
         e.preventDefault()
-        postFromData('proposal', proposal).then(res => {
-            console.log('initialData', initialData);
+        // postFromData('proposal', proposal).then(res => {
+        //     console.log('initialData', initialData);
+        //     setProposal(initialData)
+        //     toast.dark("sent successfully!");
+        //     console.log('res', res);
+        // }).catch(err => {
+        //     console.log(err);
+        // })
+        const formData = new FormData()
+        for (let item in proposal) {
+            formData.append(item, proposal[item])
+        }
+        Axios.post('https://www.jmgroupkw.com/jm/api/store/proposal', formData).then(response => {
+            console.log('res', response);
             setProposal(initialData)
             toast.dark("sent successfully!");
         }).catch(err => {
-            console.log(err);
+            console.log('err', err.response.status);
         })
     }
 
