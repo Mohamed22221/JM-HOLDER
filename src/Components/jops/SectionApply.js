@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
+import { toast } from "react-toastify";
+
 const SectionApply = () => {
     const initialState = {
         Fname: '',
@@ -32,6 +34,7 @@ const SectionApply = () => {
         e.preventDefault()
         postFromData('jobs', data).then(res => {
             setData(initialState)
+            toast.dark("sent successfully!");
         })
     }
   return (

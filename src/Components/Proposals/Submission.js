@@ -2,7 +2,7 @@ import React ,{useState} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
-
+import { toast } from "react-toastify";
 const Submission = () => {
     const initialData = {
         Fname: "",
@@ -48,6 +48,7 @@ const Submission = () => {
         postFromData('proposal', proposal).then(res => {
             console.log('initialData', initialData);
             setProposal(initialData)
+            toast.dark("sent successfully!");
         }).catch(err => {
             console.log(err);
         })

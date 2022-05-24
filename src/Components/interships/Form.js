@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import {postFromData} from './../../helpers/api_helper';
-
+import { toast } from "react-toastify";
 
 const Form = () => {
 
@@ -33,9 +33,10 @@ const Form = () => {
          e.preventDefault()
          postFromData('internships', data).then(res => {
              setData(initialState)
+            toast.dark("sent successfully!");
          })
      }
-
+ 
 
     return (
         <StyleForm>
