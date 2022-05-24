@@ -8,15 +8,15 @@
     transition: 0.5s;
 }
 .main-nav-color{
-  background-color: whitesmoke;
+  background-color: rgb(39, 39, 39);
   
 }
 .main-nav-color nav ul li a {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 nav {
   
-    color: #000;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +111,7 @@ nav {
       flex-direction: column;
       position: fixed;
       top: 60px;
-      background: whitesmoke;
+      background-color: rgb(39, 39, 39);
       width: 100%;
       height: 100%;
       left: -1150px;
