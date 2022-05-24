@@ -160,19 +160,20 @@ position: relative;
 height: 100%;
 transform: translateY(-70px);
 z-index: 10;
-
+background-color: var(--font);
+color: white;
 `
 const StyleSectionSubmation = styled.div`
-margin: 30px 0 10px 0 ;
+margin: 0px 0 10px 0 ;
     p{
         margin-top: 10px;
         padding: 10px 0;
-        color: var(--font);
+        color: white;
     }
     .item-ul{
         display: flex;
         flex-direction: column;
-        color: var(--font);
+        color: white;
         span{
             padding: 5px;
             &::first-letter{

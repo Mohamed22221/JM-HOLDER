@@ -128,6 +128,10 @@ margin: 80px 5px 20px 5px;
 .item-terms{
     padding: 10px 0;
 
+
+}
+h3{
+    color: var(--primary-color);
 }
 h2{
     text-align: center;

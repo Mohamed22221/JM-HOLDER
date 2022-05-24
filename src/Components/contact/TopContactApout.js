@@ -1,8 +1,11 @@
 import { Container } from '@mui/material'
 import React from 'react'
 import styled from 'styled-components'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { FaInstagramSquare } from 'react-icons/fa'
+import { BsLinkedin } from 'react-icons/bs'
+
+
+
 const TopContactApout = () => {
   return (
 
@@ -13,14 +16,14 @@ const TopContactApout = () => {
         </div>
         <div className='main-office'>
         <h1>Main Office</h1>
-        <a>40 Park Ave, Brooklyn, New York</a>
-        <a>1-800-111-2222</a>
-        <a>contact@example.com</a>
+        <a href='https://goo.gl/maps/WFXuS2CZdYm26zFf8'>Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor</a>
+        <a href='tel:22958181'>22958181</a>
+        <a href='mailto:info@jmgroupkm.com'>info@jmgroupkm.com</a>
         </div>
         <div className='social'>
         <h1>social</h1>
-        <FacebookIcon className='icon-social'/>
-        <LinkedInIcon className='icon-social'/>
+        <a href='https://instagram.com/jmholding.kw?igshid=YmMyMTA2M2Y=' target="_blank"><FaInstagramSquare className='icon-social'/></a>
+        <a href='https://www.linkedin.com/company/jm-holdingkw/' target="_blank"><BsLinkedin className='icon-social'/></a>
         </div>
         </StyleTopContact>
         </Container>
@@ -58,6 +61,7 @@ width:100%
         font-size: 14px;
         transition: 0.3s;
         cursor: pointer;
+        color: var(--font);
         &:hover{
          color:var(--primary-color) ;
         }
@@ -65,6 +69,8 @@ width:100%
 }
 .icon-social{
     cursor: pointer;
+    font-size: 22px;
+    margin: 0 6px;
 }
 
 `

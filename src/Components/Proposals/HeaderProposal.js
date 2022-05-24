@@ -1,5 +1,5 @@
 import React from 'react'
-import backsection7 from"../../assets/backsection7.jpg"
+import backsection7 from"../../assets/backsection1.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'

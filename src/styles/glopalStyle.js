@@ -50,10 +50,19 @@ body{
     background-color: white;
      height: calc(100% - 70px );
      width: 100%;
-    
+     ::-webkit-scrollbar {
+       width: 10px;
 }
-.loading-css{
-  height: 1000px;
+ 
+    ::-webkit-scrollbar-track {
+       background-color: var(--font);
+}
+ 
+    ::-webkit-scrollbar-thumb {
+       background-color: var(--primary-color);
+       
+}
+    
 }
 
 
