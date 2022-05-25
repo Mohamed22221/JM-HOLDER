@@ -33,12 +33,18 @@ label{
     color: white;
 }
 input{
+    :-webkit-autofill {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
     border:  none;
     padding: 25px 25px;
-    background-color: transparent;
+    background-color: var(--font);
+    color: white;
     ::placeholder{
         color: white;
+        
     }
+
     
 }
 `
