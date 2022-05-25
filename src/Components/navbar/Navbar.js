@@ -36,7 +36,7 @@ const Navbar = () => {
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
         
           
-          {/*<li><Link onClick={boxHandler} to='/' >HOME</Link></li>*/}
+          <li><Link onClick={boxHandler} to='/' >HOME</Link></li>
           <li> <Link onClick={boxHandler} to="/About" >  ABOUT</Link></li>
          {/* <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li> */}
          {/* <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>*/}
