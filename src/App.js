@@ -17,6 +17,15 @@ import GivingbBack from "./bages/GivingbBack";
 import Terms from "./Components/glopal/Terms";
 import './styles/style.css';
 import ScrollToTop from './ScrollToTop'
+import { injectStyle } from "react-toastify/dist/inject-style";
+import { ToastContainer, toast } from "react-toastify";
+
+// CALL IT ONCE IN YOUR APP
+if (typeof window !== "undefined") {
+  injectStyle();
+}
+
+
 function App() {
   useEffect(()=>{
     AOS.init({
@@ -24,7 +33,13 @@ function App() {
     });
   },[])
 
-  
+
+  // const StyledToastContainer = styled(ToastContainer).attrs({
+  //   className: 'toast-container',
+  //   toastClassName: 'toast',
+  //   bodyClassName: 'body',
+  //   progressClassName: 'progress',
+  // })`
   return (
     <>
     <Navbar/> 
@@ -45,6 +60,7 @@ function App() {
         </Routes>
 
      <Fotter/>
+     <ToastContainer progressClassName='progress' autoClose={5000} />
     </>
   );
 }

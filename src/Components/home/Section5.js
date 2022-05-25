@@ -12,6 +12,8 @@ const Section5 = () => {
       air adventure thrills they have ever experienced complete with
        unforgettable moments. Your safety is our most important mission and 
        for this reason" 
+       title="Read More"
+       links = "/internships"
       /> 
     </MainSectionfife>
   )
