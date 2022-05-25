@@ -30,11 +30,15 @@ position: relative;
 }
 label{
     padding: 10px;
-    color: var(--primary-color);
+    color: white;
 }
 input{
     border:  none;
     padding: 25px 25px;
+    background-color: transparent;
+    ::placeholder{
+        color: white;
+    }
     
 }
 `

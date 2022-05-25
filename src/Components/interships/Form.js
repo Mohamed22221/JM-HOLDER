@@ -94,6 +94,7 @@ form{
         flex-direction: column;
         margin: 5px 0;
         padding: 5px 0;
+        color: white;
         @media (max-width:780px) {
             width: 100%;
         }

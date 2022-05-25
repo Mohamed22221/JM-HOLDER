@@ -62,6 +62,7 @@ height: 100%;
 transform: translateY(-70px);
 z-index: 10;
 padding: 30px 0;
+color: white;
 .main-ships{
     padding: 5px 0;
     h1{

@@ -47,7 +47,7 @@ html {
   }
 body{
   font-family: 'Cairo', sans-serif;
-    background-color: white;
+    background-color: var(--font);
      height: calc(100% - 70px );
      width: 100%;
      ::-webkit-scrollbar {

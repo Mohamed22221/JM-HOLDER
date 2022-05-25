@@ -34,6 +34,7 @@ const StyleTopContact = styled.div`
 height: 200px;
 display: flex;
 justify-content: space-evenly;
+color: white;
 @media (max-width:570px) {
 justify-content: flex-start;
 flex-direction: column;
@@ -43,6 +44,9 @@ height: 280px;
 width: 450px;
 @media (max-width:570px) {
 width:100%
+}
+h1{
+    color: var(--primary-color);
 }
 
 }
@@ -61,7 +65,7 @@ width:100%
         font-size: 14px;
         transition: 0.3s;
         cursor: pointer;
-        color: var(--font);
+        color: white;
         &:hover{
          color:var(--primary-color) ;
         }
