@@ -32,22 +32,12 @@ const SectionApply = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // postFromData('jobs', data).then(res => {
-        //     setData(initialState)
-        //     toast.dark("sent successfully!");
-        // })
-
-         const formData = new FormData()
-        for (let item in data) {
-            formData.append(item, data[item])
-        }
-        Axios.post('https://www.jmgroupkw.com/jm/api/store/jobs', formData).then(response => {
-            console.log('res', response);
+        postFromData('jobs', data).then(res => {
             setData(initialState)
             toast.dark("sent successfully!");
-        }).catch(err => {
-            console.log('err', err.response.status);
         })
+
+       
     }
   return (
     <StyleApplay>

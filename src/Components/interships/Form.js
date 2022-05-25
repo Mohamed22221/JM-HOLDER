@@ -31,24 +31,23 @@ const Form = () => {
 
      const handleSubmit = async (e) => {
         e.preventDefault()
-        // await postFromData('internships', data).then(res => {
-        //      setData(initialState)
-        //     toast.dark("sent successfully!");
-        //     console.log('klddklkldfjdkjldfkjldfkjldfkldfklfjjjjjjjj', res);
-        //  }).catch(err => {
-        //      console.log('dfdfdklfdkllndf', err);
-        //  })
-        const formData = new FormData()
-         for (let item in data) {
-             formData.append(item, data[item])
-         }
-        Axios.post('https://www.jmgroupkw.com/jm/api/store/internships', formData).then(response => {
-            console.log('res', response);
+         postFromData('internships', data).then(res => {
             setData(initialState)
             toast.dark("sent successfully!");
-        }).catch(err => {
-            console.log('err', err.response.status);
-        })
+         })
+
+
+        // const formData = new FormData()
+        //  for (let item in data) {
+        //      formData.append(item, data[item])
+        //  }
+        // Axios.post('https://www.jmgroupkw.com/jm/api/store/internships', formData).then(response => {
+        //     console.log('res', response);
+        //     setData(initialState)
+        //     toast.dark("sent successfully!");
+        // }).catch(err => {
+        //     console.log('err', err.response.status);
+        // })
 
         // console.log('this');
      }
