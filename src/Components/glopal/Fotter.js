@@ -169,6 +169,7 @@ button{
 `
 
 const ImgLogo = styled.div`
+
 `
 const NavFotter = styled.nav`
     display: flex;
