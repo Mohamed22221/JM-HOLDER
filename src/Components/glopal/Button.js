@@ -27,7 +27,7 @@ button{
   border: 1px solid transparent;
   font-weight: 600;
   @media (max-width:550px) {
-    font-size: 20px;
+    font-size: 22;
   }
   &:hover{
   border-color: var(--primary-color);

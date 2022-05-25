@@ -11,7 +11,7 @@ const HeaderHome = ({Titleh1,paragraph,title,links}) => {
     <MainHeader >
     <h1 data-aos="zoom-in" >{Titleh1}</h1>
     <p data-aos="fade-up" >{paragraph}</p>
-    <Button title={title} links={links} />
+    <Button  title={title} links={links} />
     </MainHeader>
     </Container>
    

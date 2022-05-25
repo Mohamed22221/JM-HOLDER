@@ -1,5 +1,5 @@
 import React from 'react'
-import backsection7 from"../../assets/backsection1.jpg"
+import backsection8 from"../../assets/backsection8.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
@@ -21,7 +21,7 @@ const StyleHeaderProposal = styled.div`
 opacity: 0;
 transition: 0.4s;
 position: relative;
-background-image: url(${backsection7});
+background-image: url(${backsection8});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
