@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import backsection2 from "../../assets/backsection22.jpeg"
+
 import styled from 'styled-components'
-import Logo from '../../assets/logo.svg'
+import Logo1 from '../../assets/logo.svg'
 import { Container } from '@mui/material'
 import { Link } from "react-router-dom";
 const Fotter = () => {
@@ -20,7 +20,7 @@ const Fotter = () => {
       <Container maxWidth="xl">
         <MainFotter join={join}>
           <ImgLogo>
-            <img src={Logo} />
+            <img src={Logo1} />
           </ImgLogo>
           <NavFotter>
 
@@ -62,10 +62,7 @@ const StyleFotter = styled.footer`
 position: absolute;
 right: 0;
 left: 0;
-background-image: url(${backsection2});
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+background-color: var(--font);
 height: 390px;
 transform: translateY(-70px);
 z-index: 10;
@@ -97,6 +94,7 @@ justify-content: space-evenly;
 h4{
   cursor: pointer;
   padding: 10px 0;
+  color: white;
     @media (max-width:550px) {
         margin-top: 10px;
     }
@@ -119,7 +117,7 @@ h3{
 }
 
 .join{
-display:  ${props => props.join ? "block" : "none "};
+  display:  ${props => props.join ? "block" : "none "};
    padding: 10px 0;
 input,button{
   padding: 5px 14px;
@@ -169,7 +167,11 @@ button{
 `
 
 const ImgLogo = styled.div`
-
+img{
+  
+ 
+  width: 180px;
+}
 `
 const NavFotter = styled.nav`
     display: flex;
