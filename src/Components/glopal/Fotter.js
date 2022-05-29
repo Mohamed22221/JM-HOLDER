@@ -20,7 +20,7 @@ const Fotter = () => {
       <Container maxWidth="xl">
         <MainFotter join={join}>
           <ImgLogo>
-            <img src={Logo1} />
+          <Link  to="/JM-HOLDER" > <img src={Logo1} /></Link>
           </ImgLogo>
           <NavFotter>
 
@@ -124,7 +124,7 @@ input,button{
   background-color: transparent;
   font-weight: bold;
   font-size: 17px;
-  color: var(--font);
+  color: white;
 }
 input{
   width: 450px;
@@ -132,7 +132,7 @@ input{
   border-right:none ;
   
   ::placeholder{
-    color: var(--font);
+    color: white;
   }
   @media (max-width:750px) {
     width: 200px;
