@@ -113,6 +113,7 @@ h3{
 @media (max-width:750px ) {
   .Successfully p{
   padding-top: 30px;
+  color: white;
 }
 }
 
