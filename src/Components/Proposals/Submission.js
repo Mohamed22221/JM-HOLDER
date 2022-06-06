@@ -59,19 +59,6 @@ const Submission = () => {
             setLoading(false);
 
         })
-
-
-        // const formData = new FormData()
-        // for (let item in proposal) {
-        //     formData.append(item, proposal[item])
-        // }
-        // Axios.post('https://www.jmgroupkw.com/jm/api/store/proposal', formData).then(response => {
-        //     console.log('res', response);
-        //     setProposal(initialData)
-        //     toast.dark("sent successfully!");
-        // }).catch(err => {
-        //     console.log('err', err.response.status);
-        // })
     }
 
     
