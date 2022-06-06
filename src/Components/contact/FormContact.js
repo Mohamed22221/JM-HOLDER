@@ -56,7 +56,7 @@ const FormContact = () => {
 
           <ItemInput>
               <label>your Phone</label>
-              <input placeholder='Type your Phone' id='phone' type='text' value={contact.phone} onChange={HandelChange} />
+              <input placeholder='Type your Phone' id='phone' type='number' value={contact.phone} onChange={HandelChange} />
           </ItemInput>
            
           <ItemInput>
