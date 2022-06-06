@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, Fragment} from 'react'
 import styled from 'styled-components'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
@@ -13,6 +13,7 @@ const Form = () => {
         file2: null,
     }
     const [data, setData] = useState(initialState);
+    const [loading, setLoading] = useState(false)
 
     const handelChange = (e) => {
          if (e.target.type === 'file') {
@@ -31,25 +32,18 @@ const Form = () => {
 
      const handleSubmit = async (e) => {
         e.preventDefault()
+        setLoading(true)
          postFromData('internships', data).then(res => {
             setData(initialState)
             toast.dark("sent successfully!");
-         })
+         setLoading(false);
+        }).catch(err => {
+            setLoading(false);
+
+        })
 
 
-        // const formData = new FormData()
-        //  for (let item in data) {
-        //      formData.append(item, data[item])
-        //  }
-        // Axios.post('https://www.jmgroupkw.com/jm/api/store/internships', formData).then(response => {
-        //     console.log('res', response);
-        //     setData(initialState)
-        //     toast.dark("sent successfully!");
-        // }).catch(err => {
-        //     console.log('err', err.response.status);
-        // })
-
-        // console.log('this');
+      
      }
  
 
@@ -77,7 +71,64 @@ const Form = () => {
                     </div>
                 </div>
                 <div className='button'>
-                    <button>Submit</button>
+                    <button disabled={loading ? true : false}>
+                            {!loading ? 'Submit' : 
+                                <Fragment>
+                                    sending...
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{shapeRendering: 'auto'}} width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                                    <g transform="rotate(0 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(30 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(60 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(90 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(120 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(150 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(180 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(210 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(240 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(270 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(300 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(330 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g>
+                                    </svg>
+
+                                </Fragment> }
+                        </button>
                 </div>
                 
 
@@ -142,7 +193,7 @@ form{
           padding: 10px 0;
             button{
                 all: unset;
-                padding: 5px 48px;
+                padding: 5px 28px;
                 border: 1px solid ;
                 cursor: pointer;
                 border-radius: 4px;
@@ -151,6 +202,7 @@ form{
                     background-color: var(--primary-color);
                     color: white;
                 }
+                display: flex;
             }
         }
     }

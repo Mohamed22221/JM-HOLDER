@@ -9,3 +9,11 @@
 .progress{
   background-color:#C3A461 !important;
 }
+
+button[disabled]{
+  cursor: no-drop !important;
+  opacity: .4 !important;
+}
+button[disabled]:hover{
+  background-color: transparent !important;
+}
