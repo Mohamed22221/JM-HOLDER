@@ -9,7 +9,7 @@ import Portfolio from "./bages/Portfolio";
 import Contact from "./bages/Contact";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Propisals from "./bages/Propisals";
 import Jops from "./bages/Jops";
 import InterShips from "./bages/InterShips";
@@ -19,7 +19,7 @@ import './styles/style.css';
 import ScrollToTop from './ScrollToTop'
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
-
+import { useTranslation } from 'react-i18next';
 // CALL IT ONCE IN YOUR APP
 if (typeof window !== "undefined") {
   injectStyle();
@@ -40,8 +40,15 @@ function App() {
   //   bodyClassName: 'body',
   //   progressClassName: 'progress',
   // })`
+
+
+  const { t, i18n } = useTranslation();
+  const [Dir , setDir] = useState("ltr")
+  const [language , setLang] = useState("en")
+
+  
   return (
-    <>
+    <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"}>
     <Navbar/> 
       <ScrollToTop />
       <Routes>
@@ -61,7 +68,7 @@ function App() {
 
      <Fotter/>
      <ToastContainer progressClassName='progress' autoClose={5000} />
-    </>
+     </div>
   );
 }
 const StyleApp = styled.div`

@@ -4,15 +4,19 @@ import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { motion } from 'framer-motion'
 import Button from '../glopal/Button'
+import { useTranslation } from 'react-i18next';
+
 const MainHeaderHome = ({}) => {
+  const { t, i18n } = useTranslation();
+
   return (
-    <MainHeader as={motion.div} animate={{ opacity: 1 }}>
+    <MainHeader as={motion.div} animate={{ opacity: 1 }} >
       <div>
       <HeaderHome 
-      Titleh1="PEOPLE, KNOWLEDGE, VALUES"
-      paragraph="Jm-Holding is a venture capital firm investing in talented founders building long-term value by developing sound operations at home and abroad."   
-      title="Read more"
-      links="/About"
+       Titleh1= {t('titleHeader')} 
+       paragraph={t('disHeader')}  
+       title="Read more"
+       links="/About"
      /> 
        
        </div>
