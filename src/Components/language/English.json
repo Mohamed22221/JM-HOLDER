@@ -1,6 +1,35 @@
 {
-    "titleHeader" : "PEOPLE, KNOWLEDGE, VALUES",
-    "disHeader" : "Jm-Holding is a venture capital firm investing in talented founders building long-term value by developing sound operations at home and abroad."
-    
+    "nav" : {
+        "HOME"  : "HOME" ,
+        "ABOUT" : "ABOUT" ,
+        "PROPOSALS" : "PROPOSALS" ,
+        "JOBS" : "JOBS" ,
+        "INTERNSHIPS" : "INTERNSHIPS" ,
+        "CONTACT" :  "CONTACT"
+    } ,
+    "glopal" : {
+        "readMore" : "Read More"
+    } ,
+    "header" : {
+        "titleHeader" : "PEOPLE, KNOWLEDGE, VALUES",
+        "disHeader" : "Jm-Holding is a venture capital firm investing in talented founders building long-term value by developing sound operations at home and abroad." 
+       
+    },
+    "headerPoroposal" : {
+        "titleHeaderPoroposal" : "PEOPLE, KNOWLEDGE, VALUES111",
+        "disHeaderPoroposal" : "In our humble small team, we are together. This is the beginning. Staying together is progress. Work is success. We have the ability to work with a common vision. We take responsibility for each other and the companies we work with equally." 
+       
+    },
+    "headerJops" : {
+        "titleHeaderheaderJops" : "PEOPLE, KNOWLEDGE, VALUES11",
+        "disHeaderheaderJops" : "In our humble small team, we are together. This is the beginning. Staying together is progress. Work is success. We have the ability to work with a common vision. We take responsibility for each other and the companies we work with equally." 
+       
+    },
+    "headerInterships" : {
+        "titleHeaderInterships" : "PEOPLE, KNOWLEDGE, VALUES11",
+        "disHeaderInterships" : "We are true believers in encouraging young adults to accrue as , much practical experience in the job market as possible." 
+       
+    }
+
 
 }

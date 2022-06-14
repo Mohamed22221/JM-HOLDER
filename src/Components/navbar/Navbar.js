@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 
-    //change color in scroll
+  //change color in scroll
   const [color, setColor] = useState(false);
   const ChangeColor = ()=>{
       if (window.scrollY >= 70) {
@@ -24,7 +24,17 @@ const Navbar = () => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+   //close navbar
   const boxHandler = () => {
+    setToggle(false);
+  };
+  //toogle language wepsite
+  const languageEn = () => {
+    {i18n.changeLanguage("en") }
+    setToggle(false);
+  };
+  const languageAR = () => {
+    {i18n.changeLanguage("ar")}
     setToggle(false);
   };
   return ( 
@@ -41,17 +51,17 @@ const Navbar = () => {
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
         
           
-          <li><Link onClick={boxHandler} to='/' >HOME</Link></li>
-          <li> <Link onClick={boxHandler} to="/About" >  ABOUT</Link></li>
+          <li><Link onClick={boxHandler} to='/' >{t('nav.HOME')}</Link></li>
+          <li> <Link onClick={boxHandler} to="/About" >{t('nav.ABOUT')}  </Link></li>
          {/* <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li> */}
          {/* <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>*/}
-          <li><Link onClick={boxHandler} to='/proposal' >PROPOSALS</Link></li>
-          <li><Link onClick={boxHandler} to='/Jops' >JOBS</Link></li>
-          <li><Link onClick={boxHandler} to='/internships' >INTERNSHIPS</Link></li>
+          <li><Link onClick={boxHandler} to='/proposal' >{t('nav.PROPOSALS')}</Link></li>
+          <li><Link onClick={boxHandler} to='/Jops' >{t('nav.JOBS')}</Link></li>
+          <li><Link onClick={boxHandler} to='/internships' >{t('nav.INTERNSHIPS')}</Link></li>
           {/*<li><Link onClick={boxHandler} to='/givingback' >GIVING BACK</Link></li> */}
-          <li><Link onClick={boxHandler}  to="/Contact">CONTACT</Link></li>
-          {i18n.language == "ar" && <button className="language" onClick={() => {i18n.changeLanguage("en")}}> En</button> }
-          {i18n.language == "en" && <button className="language" onClick={() => {i18n.changeLanguage("ar")}}>Ar</button> }
+          <li><Link onClick={boxHandler}  to="/Contact">{t('nav.CONTACT')}</Link></li>
+          {i18n.language == "ar" && <button className="language" onClick={languageEn}> En</button> }
+          {i18n.language == "en" && <button className="language" onClick={languageAR }>Ar</button> }
           
           
 

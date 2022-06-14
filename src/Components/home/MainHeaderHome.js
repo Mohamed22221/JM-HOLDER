@@ -13,9 +13,9 @@ const MainHeaderHome = ({}) => {
     <MainHeader as={motion.div} animate={{ opacity: 1 }} >
       <div>
       <HeaderHome 
-       Titleh1= {t('titleHeader')} 
-       paragraph={t('disHeader')}  
-       title="Read more"
+       Titleh1= {t('header.titleHeader')} 
+       paragraph={t('header.disHeader')}  
+       title= {t('glopal.readMore')}
        links="/About"
      /> 
        

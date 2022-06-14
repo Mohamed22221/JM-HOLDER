@@ -2,17 +2,16 @@ import React from 'react'
 import backsection5 from"../../assets/backsection5.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
+import { useTranslation } from 'react-i18next'
 
 const Section4 = () => {
+  const { t, i18n } = useTranslation();
   return (
     <MainSectionFour>
           <HeaderHome
-      Titleh1="PEOPLE, KNOWLEDGE, VALUES"
-      paragraph="In our humble small team, we are together. This is the beginning.
-        Staying together is progress. Work is success. We have the ability to
-        work with a common vision. We take responsibility for each other and
-        the companies we work with equally"
-       title="Read More"
+      Titleh1={t("headerJops.titleHeaderheaderJops")}
+      paragraph={t("headerJops.disHeaderheaderJops")}
+       title={t("glopal.readMore")}
        links = "/Jops"
       /> 
     </MainSectionFour>
