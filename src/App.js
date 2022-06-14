@@ -20,6 +20,7 @@ import ScrollToTop from './ScrollToTop'
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
 import { useTranslation } from 'react-i18next';
+import Loading from "./Components/glopal/Loading";
 // CALL IT ONCE IN YOUR APP
 if (typeof window !== "undefined") {
   injectStyle();
@@ -27,9 +28,14 @@ if (typeof window !== "undefined") {
 
 
 function App() {
+  const [loader, setLoader] = useState(true);
+
   useEffect(()=>{
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000);
     AOS.init({
-      duration:2000
+      duration:3000
     });
   },[])
 
@@ -41,13 +47,15 @@ function App() {
   //   progressClassName: 'progress',
   // })`
 
-
+  //state language
   const { t, i18n } = useTranslation();
   const [Dir , setDir] = useState("ltr")
   const [language , setLang] = useState("en")
 
   
   return (
+    <>
+    {loader && <Loading/>}
     <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"}>
     <Navbar/> 
       <ScrollToTop />
@@ -69,6 +77,7 @@ function App() {
      <Fotter/>
      <ToastContainer progressClassName='progress' autoClose={5000} />
      </div>
+     </>
   );
 }
 const StyleApp = styled.div`

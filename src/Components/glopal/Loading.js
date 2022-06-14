@@ -18,7 +18,7 @@ right: 0;
 left: 0;
 bottom: 0;
 height: 100%;
-z-index: 50;
+z-index: 250;
 
   .loader {
   position: fixed;
@@ -31,7 +31,7 @@ z-index: 50;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--font);
   transition: opacity 1.75s, visibility 1.75s;
   
 }
@@ -43,8 +43,8 @@ z-index: 50;
 
 .loader::after {
   content: "";
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border: 15px solid var(--primary-color);
   border-top-color: white;
   border-radius: 50%;
