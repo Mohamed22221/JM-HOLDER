@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState, Fragment} from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
@@ -23,6 +23,7 @@ const Submission = () => {
         file3: null,
     }
     const [proposal, setProposal] = useState(initialData)
+    const [loading, setLoading] = useState(false)
   
     const HandelProposal = async (e) =>{
         const data = {...proposal}
@@ -46,25 +47,18 @@ const Submission = () => {
         }
     }
 
-    const handelSubmet = (e) =>{
+    const handelSubmit = (e) =>{
         e.preventDefault()
+        console.log('TEst');
+        setLoading(true)
         postFromData('proposal', proposal).then(res => {
             setProposal(initialData)
             toast.dark("sent successfully!");
+            setLoading(false);
+        }).catch(err => {
+            setLoading(false);
+
         })
-
-
-        // const formData = new FormData()
-        // for (let item in proposal) {
-        //     formData.append(item, proposal[item])
-        // }
-        // Axios.post('https://www.jmgroupkw.com/jm/api/store/proposal', formData).then(response => {
-        //     console.log('res', response);
-        //     setProposal(initialData)
-        //     toast.dark("sent successfully!");
-        // }).catch(err => {
-        //     console.log('err', err.response.status);
-        // })
     }
 
     
@@ -82,7 +76,7 @@ const Submission = () => {
                     <span>-Market Size –   The company’s addressable market is sufficiently large to sustain high potential startups while displaying clear growth.</span>
                     <span>-Exit Strategy – The company has a clear viable exit strategy with a reasonable expectation of a high return on investment over a 3-5 years.</span>
                 </div>
-                <form onSubmit={handelSubmet}>
+                <form onSubmit={handelSubmit}>
                     <>
                     <label>Founder:</label>
                     <div className='two-input'>
@@ -159,8 +153,63 @@ const Submission = () => {
                         </div>
                     </div>
                     <div className='button'>
-                        <button>
-                            Submit
+                        <button disabled={loading ? true : false}>
+                            {!loading ? 'Submit' : 
+                                <Fragment>
+                                    sending...
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{shapeRendering: 'auto'}} width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                                    <g transform="rotate(0 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(30 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(60 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(90 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(120 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(150 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(180 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(210 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(240 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(270 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(300 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g><g transform="rotate(330 50 50)">
+                                        <rect x={47} y={24} rx={3} ry={6} width={6} height={12} fill="#c3a461">
+                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" />
+                                        </rect>
+                                    </g>
+                                    </svg>
+
+                                </Fragment> }
                         </button>
                     </div>
                 </form>
@@ -268,7 +317,7 @@ margin: 0px 0 10px 0 ;
         .button{
             button{
                 all: unset;
-                padding: 5px 48px;
+                padding: 5px 28px;
                 border: 1px solid ;
                 cursor: pointer;
                 border-radius: 4px;
@@ -277,6 +326,7 @@ margin: 0px 0 10px 0 ;
                     background-color: var(--primary-color);
                     color: white;
                 }
+                display: flex;
             }
         }
     }
