@@ -4,13 +4,15 @@ import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const HeaderJops = () => {
+  const { t, i18n } = useTranslation();
   return (
     <StyleHeaderJops as={motion.div} animate={{ opacity: 1 }}>
     <Container maxWidth="xl">
    <HeaderHome
-    Titleh1="OUR DOORS ARE ALWAYS OPEN TO INNOVATION, DEDICATION, AND TEAM SPIRIT "
+    Titleh1={t("jops.titleJops")}
     /> 
     </Container>
     </StyleHeaderJops>

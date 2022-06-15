@@ -5,17 +5,16 @@ import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 const HeaderAbout = () => {
+  const { t, i18n } = useTranslation();
   return (
     <StyleHeaderAbout as={motion.div} animate={{ opacity: 1 }}>
       <Container maxWidth="xl">
      <HeaderHome
-      Titleh1="About"
-      paragraph="We offer our clients the most complete and unique open 
-      air adventure thrills they have ever experienced complete with
-       unforgettable moments. Your safety is our most important mission and 
-       for this reason"   
-      title="Read more"
+      Titleh1={t("about.titleAbout")}
+      paragraph={t("about.disAbout")} 
+      title={t("glopal.readMore")}
        links="/About" 
       /> 
       </Container>

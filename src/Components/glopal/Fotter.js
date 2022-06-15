@@ -4,10 +4,12 @@ import styled from 'styled-components'
 import Logo1 from '../../assets/logo.svg'
 import { Container } from '@mui/material'
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 const Fotter = () => {
+  const { t, i18n } = useTranslation();
+
   const [join , setJoin] = useState(false)
   const [Successfully , setSuccessfully] = useState(false)
-
   const ClickJoinNewsLetter = () =>{
     setJoin(true)
   }
@@ -25,33 +27,32 @@ const Fotter = () => {
           <NavFotter>
 
             
-            <Link to="/About" >  ABOUT</Link>
+            <Link to="/About" >{t("fotter.about")}</Link>
            {/* <Link to="/Team"  >TEAM </Link> */}
-          {/*<Link to='/Portfolio' >PORTFOLIO</Link> */}
-            <Link to='/proposal' >JOBS</Link>
-            <Link to='/Jops' >INTERNSHIPS</Link>
-           {/* <Link to='/internships' >GIVING BACK</Link> */}
-            
-            <Link to='/Contact' >CONTACT</Link>
+            {/*<Link to='/Portfolio' >PORTFOLIO</Link> */}
+            <Link to='/proposal' >{t("fotter.proposals")}</Link>
+            <Link to='/Jops' >{t("fotter.jops")}</Link>
+            <Link to='/internships' >{t("fotter.internships")}</Link> 
+            <Link to='/Contact' >{t("fotter.contact")}</Link>
 
           </NavFotter>
           
           { Successfully ==false ?
           <div className='center'>
-          <h4 onClick={ClickJoinNewsLetter}>Join Our NewsLetter</h4>
+          <h4 onClick={ClickJoinNewsLetter}>{t("fotter.join")}</h4>
           <div className='join'>
-            <input type="email" placeholder='Enter your email here' required  />
-            <button onClick={SubscribeSuccessfully}>Subscribe</button>
+            <input type="email" placeholder={t("fotter.placeholder")} required  />
+            <button onClick={SubscribeSuccessfully}>{t("fotter.subscribe")}</button>
             </div>
           </div> :
           <div className='Successfully'>
-            <p>Successfully saved the request.</p>
+            <p>{t("fotter.successfully")}</p>
           </div>
           
           }
           <div className='terms'>
           <h3>JM HOLDING @2022</h3>
-          <Link to='/Terms'>Terms and Conditions</Link>
+          <Link to='/Terms'>{t("fotter.terms")}</Link>
           </div>
         </MainFotter>
       </Container>
@@ -110,11 +111,15 @@ h3{
 .center{
   text-align: center;
 }
-@media (max-width:750px ) {
+.Successfully p{
+   color: white;
+   @media (max-width:750px ) {
   .Successfully p{
   padding-top: 30px;
-  color: white;
+ 
 }
+}
+
 }
 
 .join{
@@ -130,7 +135,7 @@ input,button{
 input{
   width: 450px;
   border: 2px solid rgba(255, 255, 255, 1);
-  border-right:none ;
+
   
   ::placeholder{
     color: white;

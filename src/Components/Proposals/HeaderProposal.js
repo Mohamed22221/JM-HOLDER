@@ -4,14 +4,16 @@ import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const HeaderProposal = () => {
+  const [t , i18] = useTranslation()
   return (
     <StyleHeaderProposal as={motion.div} animate={{ opacity: 1 }}>
     <Container maxWidth="xl">
    <HeaderHome
-    Titleh1="APPLY FOR FUNDING"
-    paragraph="We are committed to investing in the next generation of entrepreneurs with willing minds that are ready to go the extra mile for what they believe in."   
+    Titleh1={t("proposals.titleProposals")}
+    paragraph={t("proposals.disProposals")}   
     /> 
     </Container>
   </StyleHeaderProposal>

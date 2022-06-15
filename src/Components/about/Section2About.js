@@ -2,17 +2,19 @@ import React from 'react'
 import backsection7 from"../../assets/backsection7.jpg"
 import styled from 'styled-components'
 import { Container } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 
 
 const Section2About = () => {
+  const { t, i18n } = useTranslation();
   return (
     <StyleSection2About>
        
             <MainSection2About>
             <Container maxWidth="xl">
-            <h1>AT JM Holding</h1>
-            <p>We offer our clients the most complete and unique open air adventure thrills they have  experienced complete with unforgettable moments.  </p>
-            <p>We offer our clients the most complete and unique open air adventure thrills they have  experienced complete with unforgettable moments. </p>
+            <h1>{t("about.titleAboutJm")}</h1>
+            <p>{t("about.disAboutJmP1")}  </p>
+            <p>{t("about.disAboutJmP2")} </p>
             </Container>
             </MainSection2About>
        

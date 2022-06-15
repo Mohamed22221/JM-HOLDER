@@ -3,8 +3,10 @@ import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
-import Axios from 'axios';
+import { useTranslation } from 'react-i18next';
+
 const Submission = () => {
+    const [t , i18] = useTranslation()
     const initialData = {
         Fname: "",
         Lname: "",
@@ -67,34 +69,34 @@ const Submission = () => {
     <ManiStyleSectionSubmation>
         <Container maxWidth="xl">
             <StyleSectionSubmation>
-                <h1>PROPOSAL SUBMISSION</h1>
-                <p>JM-HOLDING is a Venture Capital firm that looks to invest and empower entrepreneurs globally. We are excited to see entrepreneurs from many walks of life reach out to us with their ideas, and we relish the opportunity to learn more about their venture.</p>
-                <p>JM-HOLDING  investment mandate is to make equity and equity-like investments in high-growth businesses with preference to invest alongside other venture capital funds. With this in mind, we have specified certain decision criteria for our investments in order to ensure the maximum likelihood of success:</p>
+                <h1>{t("proposals.titleProposalsSup")}</h1>
+                <p>{t("proposals.disProposalsP1")}</p>
+                <p>{t("proposals.disProposalsP2")}</p>
                 <div className='item-ul'> 
-                    <span>-Team – The company has a complete core team with a relevant track record.</span>
-                    <span>-Operations/Financials – The company has been operating for at least two full years, currently revenue generating, and with an attractive financial history.</span>
-                    <span>-Market Size –   The company’s addressable market is sufficiently large to sustain high potential startups while displaying clear growth.</span>
-                    <span>-Exit Strategy – The company has a clear viable exit strategy with a reasonable expectation of a high return on investment over a 3-5 years.</span>
+                    <span>{t("proposals.disProposalsSpan1")}</span>
+                    <span>{t("proposals.disProposalsSpan2")}</span>
+                    <span>{t("proposals.disProposalsSpan3")}</span>
+                    <span>{t("proposals.disProposalsSpan4")}</span>
                 </div>
                 <form onSubmit={handelSubmit}>
                     <>
-                    <label>Founder:</label>
+                    <label>{t("proposals.titleLapelFounder")}</label>
                     <div className='two-input'>
-                        <input placeholder='first Name*' value={proposal.Fname} id='Fname' required type="text" onChange={(e) => HandelProposal(e)}/>
-                        <input placeholder='last Name*' value={proposal.Lname} id='Lname' required type="text" onChange={(e) => HandelProposal(e)} />
+                        <input placeholder={t("proposals.placeholderFounderfirstName")} value={proposal.Fname} id='Fname' required type="text" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder={t("proposals.placeholderFounderlastName")} value={proposal.Lname} id='Lname' required type="text" onChange={(e) => HandelProposal(e)} />
                     </div>
                     <div className='two-input'>
-                        <input placeholder='title*' value={proposal.title} id='title' required type="text" onChange={(e) => HandelProposal(e)}/>
-                        <input placeholder='Phone*' value={proposal.phone} id='phone' required type="number" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder={t("proposals.placeholderFounderTitle")} value={proposal.title} id='title' required type="text" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder={t("proposals.placeholderFounderPhone")} value={proposal.phone} id='phone' required type="number" onChange={(e) => HandelProposal(e)}/>
                     </div>
                     <div className='two-input'>                        
-                        <input placeholder='Email*' value={proposal.email} id='email' required type="email" onChange={(e) => HandelProposal(e)}/>
+                        <input placeholder={t("proposals.placeholderFounderEmail")} value={proposal.email} id='email' required type="email" onChange={(e) => HandelProposal(e)}/>
                     </div>
                     </>
                     <div className='one-input'>
-                    <label>Company:</label>
-                    <input placeholder='Company Name*' value={proposal.Company_Name} id='Company_Name' required type="text" onChange={(e) => HandelProposal(e)} />
-                    <input placeholder='Country Name*' value={proposal.country} id='country' required type="text" onChange={(e) => HandelProposal(e)}/>
+                    <label>{t("proposals.titleLapelCompany")}</label>
+                    <input placeholder={t("proposals.placeholderCompanyCompanyName")} value={proposal.Company_Name} id='Company_Name' required type="text" onChange={(e) => HandelProposal(e)} />
+                    <input placeholder={t("proposals.placeholderCompanyCountryName")} value={proposal.country} id='country' required type="text" onChange={(e) => HandelProposal(e)}/>
                     <select name="cindustry" className="form-control" value={proposal.cindustry} id='cindustry' required onChange={(e) => HandelProposal(e)}>
 						<option hidden="">Industry *</option>
 						<option value="Artificial Intelligence ">Artificial Intelligence  </option>
@@ -119,11 +121,11 @@ const Submission = () => {
 					</select>
                     </div>
                     <div className='date-input'>
-                        <label>Date Founded *</label>
+                        <label>{t("proposals.titleLapelDate")}</label>
                         <div>
-                            <input placeholder='dd' value={proposal.d} id='d' required onChange={(e) => HandelProposal(e)} />
-                            <input placeholder='mm' value={proposal.m} id="m" required onChange={(e) => HandelProposal(e)} />
-                            <input placeholder='yy' value={proposal.y} id="y" required onChange={(e) => HandelProposal(e)} />
+                            <input placeholder={t("proposals.titleLapelDatedd")}value={proposal.d} id='d' required onChange={(e) => HandelProposal(e)} />
+                            <input placeholder={t("proposals.titleDatemm")} value={proposal.m} id="m" required onChange={(e) => HandelProposal(e)} />
+                            <input placeholder={t("proposals.titleDateyy")} value={proposal.y} id="y" required onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>
                     <div className='one-input'>
@@ -137,18 +139,18 @@ const Submission = () => {
 					</select>
                     </div>
                     <div className='Attachments'>
-                        <label>Attachments:</label>
-                        <p>Kindly attach your company presentation and any relevant files</p>
+                        <label>{t("proposals.Attachments")}</label>
+                        <p>{t("proposals.AttachmentsP")}</p>
                         <div className='file-Attachments'>
-                            <p>Size Limit 10 MB</p>
+                            <p>{t("proposals.AttachmentsLimit")}</p>
                             <input type="file" id='file' required  onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
-                            <p>Size Limit 10 MB</p>
+                            <p>{t("proposals.AttachmentsLimit")}</p>
                             <input type="file" id='file2' required onChange={(e) => HandelProposal(e)} />
                         </div>
                         <div className='file-Attachments'>
-                            <p>Size Limit 10 MB</p>
+                            <p>{t("proposals.AttachmentsLimit")}</p>
                             <input type="file" id='file3' required onChange={(e) => HandelProposal(e)} />
                         </div>
                     </div>

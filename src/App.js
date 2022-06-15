@@ -33,9 +33,9 @@ function App() {
   useEffect(()=>{
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 1000);
     AOS.init({
-      duration:3000
+      duration:1500
     });
   },[])
 

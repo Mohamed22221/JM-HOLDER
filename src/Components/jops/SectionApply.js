@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import { Container } from '@mui/material'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
-import Axios from "axios"
+import { useTranslation } from 'react-i18next'
 const SectionApply = () => {
+    const { t, i18n } = useTranslation();
     const initialState = {
         Fname: '',
         Lname: '',
@@ -49,19 +50,19 @@ const SectionApply = () => {
     <StyleApplay>
          <Container maxWidth="xl">
          <form onSubmit={handleSubmit}>
-           <h2>JOIN US</h2>
+           <h2>{t("jops.joinH2")}</h2>
                     <>
-                    <label>Founder:</label>
+                    <label>{t("jops.labelFounder")}</label>
                     <div className='two-input'>
-                        <input placeholder='first Name*' name='Fname' required value={data.Fname} onChange={handelChange} type="text" />
-                        <input placeholder='last Name*' name='Lname' required value={data.Lname} onChange={handelChange} type="text" />
+                        <input placeholder={t("jops.founderfirstName")} name='Fname' required value={data.Fname} onChange={handelChange} type="text" />
+                        <input placeholder={t("jops.founderlastName")} name='Lname' required value={data.Lname} onChange={handelChange} type="text" />
                     </div>
 
                     </>
                     <div className='one-input'>
-                    <input placeholder='Contact Number*' name='phone' required value={data.phone} onChange={handelChange} type="number" />
-                    <input placeholder='Email*' type="email" name='email' required value={data.email} onChange={handelChange} />
-                    <input placeholder='Specialization Sector*' type="text" name='sector' required value={data.sector} onChange={handelChange} />
+                    <input placeholder={t("jops.founderContactNumber")} name='phone' required value={data.phone} onChange={handelChange} type="number" />
+                    <input placeholder={t("jops.founderEmail")} type="email" name='email' required value={data.email} onChange={handelChange} />
+                    <input placeholder={t("jops.founderSpecialization")} type="text" name='sector' required value={data.sector} onChange={handelChange} />
 
                     </div>
 
@@ -69,16 +70,16 @@ const SectionApply = () => {
 
                     </div>
                     <div className='Attachments'>
-                        <label>Attach your CV</label>
+                        <label>{t("jops.labelAttach")}</label>
                         <div className='file-Attachments'>
-                            <p>Size Limit 5 MB</p>
+                            <p>{t("jops.founderLimit")}</p>
                             <input type="file" name='file' onChange={handelChange} />
                         </div>
 
                     </div>
                     <div className='one-input'>
-                    <p>* If the file being uploaded is more than 5 MB, place a Dropbox link or any cloud solution in the field below</p>
-                    <input placeholder='Url To Dropbox or any Cloud Solution*' type="text" name='cv_link' required value={data.cv_link} onChange={handelChange} />
+                    <p>{t("jops.jopsP")}</p>
+                    <input placeholder={t("jops.jopsPlaceholder")} type="text" name='cv_link' required value={data.cv_link} onChange={handelChange} />
                     </div>
                     
                     <div className='button'>
