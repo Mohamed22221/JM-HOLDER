@@ -4,15 +4,16 @@ import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const HeaderShips = () => {
+  const { t, i18n } = useTranslation();
   return (
     <StyleHeaderShips as={motion.div} animate={{ opacity: 1 }}>
       <Container maxWidth="xl">
      <HeaderHome
-      Titleh1="JM HOLDING VENTURE ANALYST "
-      paragraph="We are true believers in encouraging young adults to accrue as , 
-      much practical experience in the job market as possible."   
+      Titleh1={t("internships.titleInternships")}
+      paragraph={t("internships.disInternships")}  
       /> 
       </Container>
     </StyleHeaderShips>

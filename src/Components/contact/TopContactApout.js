@@ -3,25 +3,28 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaInstagramSquare } from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
+import { useTranslation } from 'react-i18next'
 
 
 
 const TopContactApout = () => {
+    const { t, i18n } = useTranslation();
+
   return (
 
         <Container maxWidth="xl">
         <StyleTopContact>
         <div className='title'>
-        <h1>We're Ready to Work with You. Get in Touch</h1>
+        <h2>{t("contact.ContactAboutH1")}</h2>
         </div>
         <div className='main-office'>
-        <h1>Main Office</h1>
+        <h2>{t("contact.ContactAboutOffice")}</h2>
         <a href='https://goo.gl/maps/WFXuS2CZdYm26zFf8'>Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor</a>
         <a href='tel:22958181'>22958181</a>
         <a href='mailto:info@jmgroupkm.com'>info@jmgroupkm.com</a>
         </div>
         <div className='social'>
-        <h1>social</h1>
+        <h2>{t("contact.ContactAboutSocialh1")}</h2>
         <a href='https://instagram.com/jmholding.kw?igshid=YmMyMTA2M2Y=' target="_blank"><FaInstagramSquare className='icon-social'/></a>
         <a href='https://www.linkedin.com/company/jm-holdingkw/' target="_blank"><BsLinkedin className='icon-social'/></a>
         </div>
@@ -45,8 +48,9 @@ width: 450px;
 @media (max-width:570px) {
 width:100%
 }
-h1{
+h2{
     color: var(--primary-color);
+    font-size:28px
 }
 
 }
@@ -56,8 +60,8 @@ h1{
 }
 .main-office , .social{
 
-    h1{
-        font-size: 18px;
+    h2{
+        
         color: var(--primary-color);
 
     }

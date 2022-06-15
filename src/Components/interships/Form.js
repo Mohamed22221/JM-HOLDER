@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
 import Axios from "axios"
+import { useTranslation } from 'react-i18next';
 const Form = () => {
 
-
+    const { t, i18n } = useTranslation();
       const initialState = {
         name: '',
         email: '',
@@ -52,21 +53,21 @@ const Form = () => {
 
             <form onSubmit={handleSubmit}>
                 <div className='one-input'>
-                    <input placeholder='Full Name*' required type="text" value={data.name} name='name' onChange={handelChange} />
-                    <input placeholder='Email*' type="email" required value={data.email} name='email' onChange={handelChange} />
+                    <input placeholder={t("internships.InterPlaceholderName")} required type="text" value={data.name} name='name' onChange={handelChange} />
+                    <input placeholder={t("internships.InterPlaceholderEmail")} type="email" required value={data.email} name='email' onChange={handelChange} />
                 </div>
                 <div className='Attachments'>
-                    <label>Attach your transcript</label>
+                    <label>{t("internships.InterLabelTranscript")}</label>
                     <div className='file-Attachments'>
-                        <p>Size Limit 5 MB</p>
+                        <p>{t("internships.InterTranscriptP")}</p>
                         <input type="file" required onChange={handelChange} name='file' />
                     </div>
 
                 </div>
                 <div className='Attachments'>
-                    <label>Attach your resume</label>
+                    <label>{t("internships.InterLabelResume")}</label>
                     <div className='file-Attachments'>
-                        <p>Size Limit 5 MB</p>
+                        <p>{t("internships.InterResumeP")}</p>
                         <input type="file" required onChange={handelChange} name='file2' />
                     </div>
                 </div>

@@ -21,7 +21,9 @@
     },
     "glopal" : {
         "readMore" : "اقرأ أكثر",
-        "submit" :"تقديم"
+        "submit" :"تقديم",
+        "Send" :"أرسال رساله"
+
     },
     "header" : {
         "titleHeader" : "الناس والمعرفة والقيم " ,
@@ -89,6 +91,56 @@
         "founderLimit" : "حد الحجم 5 ميجا بايت" ,
         "jopsP" : "* إذا كان الملف الجاري تحميله أكبر من 5 ميغابايت، فضع رابط Dropbox أو أي حل سحابي في الحقل أدناه" ,
         "jopsPlaceholder" : "عنوان Url إلى Dropbox أو أي حل سحابي *"
+    } ,
+    "internships" : {
+        "titleInternships" : "محلل مشاريع جي إم القابضة",
+        "disInternships" : "نحن نؤمن حقًا بتشجيع الشباب على اكتساب أكبر قدر ممكن من الخبرة العملية في سوق العمل. " ,
+        "InternshipsProgram" : "نظرة عامة على البرنامج",
+        "InternshipsProgramP" : "برنامج Jm-Holding Venture Analyst Internship هو برنامج تدريب مدته ستة أسابيع يوفر للأفراد المختارين مقدمة مكثفة عن رأس المال الاستثماري. بصفتك عضوًا في فريقنا، ستكتسب فهمًا شاملاً لرسم خرائط القطاع وإنشاء الصفقات والاجتهاد والتنفيذ لخلق القيمة في شركات المحفظة. ستعمل بشكل تعاوني مع فريقنا لتقييم الفرص الاستثمارية وتنفيذها ودفع النمو داخل شركات محفظتنا. لاكتساب الخبرة الكاملة، خلال فترة التدريب، سيتم إرسالك إلى واحدة أو أكثر من شركات المحفظة المحلية لدينا، مما يعرضك للشركات الناشئة المليئة بالأشخاص الرائعين والأشخاص المستعدين لبذل جهد إضافي. ",
+        "ProgramSpan1" : "-يجب أن يكون المتقدم خريجًا جديدًا بمعدل تراكمي أعلى من 3.0 (أو ما يعادله)",
+        "ProgramSpan2" : "- يتم تقديم البرنامج مرتين في السنة ، يناير ويوليو",
+        "ProgramSpan3" : "- سيتم اختيار متدربين اثنين لكل برنامج تدريب داخلي",
+        "InternshipsAdmissions" : "معايير القبول",
+        "InternshipsAdmissionsP" : "تتم مراجعة المرشحين وفقًا لمجموعة من المعايير ومقارنتها بين جميع المرشحين. تشمل المعايير على سبيل المثال لا الحصر:",
+        "AdmissionsSpan1" : "-حضر سمعة ونوعية الجامعة (الجامعات)",
+        "AdmissionsSpan2" : "- الدرجة (الشهادات) التي تم الحصول عليها والأداء الأكاديمي",
+        "AdmissionsSpan3" : "-مقابلة",
+        "InternshipsRegistration" : "تسجيل",
+        "RegistrationSpan1" : "- 1 ديسمبر - 31 ديسمبر لبرنامج يناير ",
+        "RegistrationSpan2" : "- 1 يونيو - 30 يونيو لبرنامج يوليو",
+        "InternshipsInterviews" : "المقابلات",
+        "InterviewsSpan1" : "- 2 يناير - 13 يناير لبرنامج يناير",
+        "InterviewsSpan2" : "- 3 يوليو - 14 يوليو لبرنامج يوليو",
+        "InternshipsPeriod" : "فترة التدريب",
+        "PeriodSpan1" : "- 16 يناير - 24 فبراير لبرنامج يناير",
+        "PeriodSpan2" : "-17 يوليو - 25 أغسطس لبرنامج يوليو",
+        "ApplicantDetails" : "تفاصيل مقدم الطلب",
+        "InterPlaceholderName" : "الاسم الكامل*",
+        "InterPlaceholderEmail" : "البريد الإلكتروني*",
+        "InterLabelTranscript" : "إرفاق النسخة الخاصة بك",
+        "InterTranscriptP" : "حد الحجم 5 ميجا بايت",
+        "InterLabelResume" : "إرفاق السيرة الذاتية",
+        "InterResumeP" : "حد الحجم 5 ميجا بايت"
+
+    },
+    "contact" : {
+        "titleContact" : "اتصال",
+        "disContact" : "نحن نقدم لعملائنا الإثارة الأكثر اكتمالا وفريدة من نوعها في الهواء الطلق التي مروا بها على الإطلاق مع لحظات لا تُنسى. سلامتك هي أهم رسالتنا ولهذا السبب" ,
+        "ContactAboutH1" : " نحن على استعداد للعمل معك. ابقى على تواصل",
+        "ContactAboutOffice" : "المكتب الرئيسي",
+        "ContactAboutMaps" : "Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor",
+        "ContactAboutTel" : "22958181",
+        "ContactAboutEmail" : "info@jmgroupkm.com",
+        "ContactAboutSocialh1" : " التواصل الاجتماعي" ,
+        "ContactLabelName" : "اسمك" ,
+        "ContactPlaceholderName" : "اكتب اسمك" ,
+        "ContactLabelEmail" : "بريدك الالكتروني" ,
+        "ContactPlaceholderEmail" : "اكتب بريدك الإلكتروني" ,
+        "ContactLabelPhone" : "هاتفك" ,
+        "ContactPlaceholderPhone" : "اكتب هاتفك " ,
+        "ContactLabelmessage" : "رسالتك" ,
+        "ContactPlaceholdermessage" : "اكتب رسالتك إرسال الرسالة" 
+  
     }
 
 }

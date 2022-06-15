@@ -2,15 +2,14 @@ import React from 'react'
 import backsection12 from"../../assets/backsection12.jpg"
 import styled from 'styled-components'
 import HeaderHome from '../glopal/HeaderHome'
+import { useTranslation } from 'react-i18next'
 const HeaderContact = () => {
+  const { t, i18n } = useTranslation();
   return (
     <StyleHeaderContact>
           <HeaderHome 
-      Titleh1="Contact"
-      paragraph="We offer our clients the most complete and unique open 
-      air adventure thrills they have ever experienced complete with
-       unforgettable moments. Your safety is our most important mission and 
-       for this reason"   
+           Titleh1={t("contact.titleContact")}
+           paragraph={t("contact.disContact")}
       /> 
     </StyleHeaderContact>
   )

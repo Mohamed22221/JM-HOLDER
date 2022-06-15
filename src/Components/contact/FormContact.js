@@ -6,7 +6,9 @@ import InputForm from './InputForm'
 import Button from '../../Components/glopal/Button'
 import {postFromData} from './../../helpers/api_helper';
 import { toast } from "react-toastify";
+import { useTranslation } from 'react-i18next'
 const FormContact = () => {
+  const { t, i18n } = useTranslation();
   const [ typeInput , settypeInput] = useState('')
   console.log(typeInput)
 
@@ -45,23 +47,23 @@ const FormContact = () => {
     <StyleForm>
         <form onSubmit={handelSubmit}>
           <ItemInput>
-              <label>your name</label>
-              <input placeholder='Type your name' id='name' type='text' value={contact.name} onChange={HandelChange} />
+              <label>{t("contact.ContactLabelName")}</label>
+              <input placeholder={t("contact.ContactPlaceholderName")} id='name' type='text' value={contact.name} onChange={HandelChange} />
           </ItemInput>
 
           <ItemInput>
-              <label>your email</label>
-              <input placeholder='Type your email' id='email' type='email' value={contact.email} onChange={HandelChange} />
+              <label>{t("contact.ContactLabelEmail")}</label>
+              <input placeholder={t("contact.ContactPlaceholderEmail")} id='email' type='email' value={contact.email} onChange={HandelChange} />
           </ItemInput>
 
           <ItemInput>
-              <label>your Phone</label>
-              <input placeholder='Type your Phone' id='phone' type='number' value={contact.phone} onChange={HandelChange} />
+              <label>{t("contact.ContactLabelPhone")}</label>
+              <input placeholder={t("contact.ContactPlaceholderPhone")} id='phone' type='number' value={contact.phone} onChange={HandelChange} />
           </ItemInput>
            
           <ItemInput>
-              <label>your message</label>
-              <input placeholder='Type your message' id='message' type='text' value={contact.message} onChange={HandelChange} />
+              <label>{t("contact.ContactLabelmessage")}</label>
+              <input placeholder={t("contact.ContactPlaceholdermessage")} id='message' type='text' value={contact.message} onChange={HandelChange} />
           </ItemInput>
 
           <button disabled={loading ? true : false}>
@@ -162,29 +164,7 @@ button{
    color:black ;
    transition: 0.5s;
   }
-  &::after{
-  content: "";
-  position :absolute ;
-  background-color: var(--primary-color);
-  transition: 0.5s;
-  left: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  width:0%;
-  height: 100%;
-  overflow: hidden;
-  color: white;
-  z-index: 0;
 
-  }
-  &:hover::after{
- 
-  color: white;
-  width: 100%;
-  z-index: -1;
-    
-  }
   &:hover span{
   color: white;
 

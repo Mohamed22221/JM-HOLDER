@@ -21,7 +21,8 @@
     },
     "glopal" : {
         "readMore" : "Read More",
-        "submit" :"Submit"
+        "submit" :"Submit",
+        "Send" :"SEND MESSAGE"
     } ,
     "header" : {
         "titleHeader" : "PEOPLE, KNOWLEDGE, VALUES",
@@ -90,6 +91,55 @@
         "founderLimit" : "Size Limit 5 MB" ,
         "jopsP" : "* If the file being uploaded is more than 5 MB, place a Dropbox link or any cloud solution in the field below" ,
         "jopsPlaceholder" : "Url To Dropbox or any Cloud Solution*"
+    },
+    "internships" : {
+        "titleInternships" : "JM HOLDING VENTURE ANALYST",
+        "disInternships" : "We are true believers in encouraging young adults to accrue as , much practical experience in the job market as possible. " ,
+        "InternshipsProgram" : "Program Overview",
+        "InternshipsProgramP" : "The Jm-Holding Venture Analyst Internship Program is a six week internship program that provides selected individuals with an intensive introduction to Venture Capital. As a member of our team you will gain a holistic understanding of sector mapping, deal origination, diligence and execution to value creation in portfolio companies. You will work collaboratively with our team to evaluate and execute investment opportunities and drive growth within our portfolio companies. To gain full experience, during the internship you will be sent out to one or more of our local portfolio companies, exposing you to start-ups filled with go-getters and people who are willing to go the extra mile.",
+        "ProgramSpan1" : "-Applicant must be a fresh graduate with a GPA above a 3.0 (or equivalent)",
+        "ProgramSpan2" : "-The program is conduced twice yearly, January & July",
+        "ProgramSpan3" : "-Two interns will be chosen per internship program",
+        "InternshipsAdmissions" : "Admissions Criteria",
+        "InternshipsAdmissionsP" : "Candidates are reviewed against a set of criterions and compared amongst all candidates. Criteria includes but is not limited to:",
+        "AdmissionsSpan1" : "-Reputation and quality of university(ies) attended",
+        "AdmissionsSpan2" : "-Degree(s) obtained & academic performance",
+        "AdmissionsSpan3" : "-Interview",
+        "InternshipsRegistration" : "Registration",
+        "RegistrationSpan1" : "-December 1 – December 31 for the January Program ",
+        "RegistrationSpan2" : "-June 1 – June 30 for the July Program",
+        "InternshipsInterviews" : "Internship Period",
+        "InterviewsSpan1" : "-January 16 – February 24 for the January Program  ",
+        "InterviewsSpan2" : "-July 17 – August 25 for the July Program",
+        "InternshipsPeriod" : "Internship Period",
+        "PeriodSpan1" : "-January 16 – February 24 for the January Program",
+        "PeriodSpan2" : "-July 17 – August 25 for the July Program",
+        "ApplicantDetails" : "Applicant Details",
+        "InterPlaceholderName" : "Full Name*",
+        "InterPlaceholderEmail" : "Email*",
+        "InterLabelTranscript" : "Attach your transcript*",
+        "InterTranscriptP" : "Size Limit 5 MB*",
+        "InterLabelResume" : "Attach your resume*",
+        "InterResumeP" : "Size Limit 5 MB*"
+    },
+    "contact" : {
+        "titleContact" : "Contact",
+        "disContact" : "We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason " ,
+        "ContactAboutH1" : "We're Ready to Work with You. Get in Touch",
+        "ContactAboutOffice" : "Main Office",
+        "ContactAboutMaps" : "Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor",
+        "ContactAboutTel" : "22958181",
+        "ContactAboutEmail" : "info@jmgroupkm.com",
+        "ContactAboutSocialh1" : "social" ,
+        "ContactLabelName" : "your name" ,
+        "ContactPlaceholderName" : "Type your name" ,
+        "ContactLabelEmail" : "your email" ,
+        "ContactPlaceholderEmail" : "Type your email" ,
+        "ContactLabelPhone" : "your Phone" ,
+        "ContactPlaceholderPhone" : "Type your Phone" ,
+        "ContactLabelmessage" : "your message" ,
+        "ContactPlaceholdermessage" : "Type your message" 
+  
     }
 
 
