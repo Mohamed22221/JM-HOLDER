@@ -14,6 +14,9 @@
 .main-nav-color nav ul li a {
   color: rgb(255, 255, 255);
 }
+.main-nav-color nav ul li a.active {
+  color: var(--primary-color);
+}
 nav {
   
     color: rgb(255, 255, 255);
@@ -41,6 +44,9 @@ nav {
     font-size: 20px;
     
 }
+a.active{
+  color: var(--primary-color);
+}
 
  nav ul {
     display: flex;
@@ -65,7 +71,7 @@ nav {
     font-size: 16px;
   }
   
-  nav ul li a::after {
+  nav ul li a::after  {
     content: "";
     position: absolute;
     height: 0.2rem;
@@ -74,6 +80,11 @@ nav {
     top: 1.8rem;
     background:var(--primary-color);
     transition: 0.3s linear;
+  }
+   a.active::after {
+    
+    background:var(--primary-color);
+    width: 100%;
   }
   
   nav ul li a:hover::after {

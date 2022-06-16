@@ -1,53 +1,48 @@
-import Home from "./bages/Home";
-import Fotter from "./Components/glopal/Fotter";
-import Navbar from "./Components/navbar/Navbar";
+// Routes pages 
 import {Routes,Route} from "react-router-dom";
+import Navbar from "./Components/navbar/Navbar";
+import Fotter from "./Components/glopal/Fotter";
+import Home from "./bages/Home";
 import About from "./bages/About";
-import styled from 'styled-components'
 import Team from "./bages/Team";
 import Portfolio from "./bages/Portfolio";
 import Contact from "./bages/Contact";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect, useState } from "react";
 import Propisals from "./bages/Propisals";
 import Jops from "./bages/Jops";
 import InterShips from "./bages/InterShips";
 import GivingbBack from "./bages/GivingbBack";
 import Terms from "./Components/glopal/Terms";
-import './styles/style.css';
+//global librarys and pages
+import { useEffect, useState } from "react";
+import Loading from "./Components/glopal/Loading";
 import ScrollToTop from './ScrollToTop'
+import ScrollTop from "./Components/glopal/ScrollTop";
+
+// librarys
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
 import { useTranslation } from 'react-i18next';
-import Loading from "./Components/glopal/Loading";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './styles/style.css';
+
 // CALL IT ONCE IN YOUR APP
 if (typeof window !== "undefined") {
   injectStyle();
 }
 
-
 function App() {
   const [loader, setLoader] = useState(true);
-
   useEffect(()=>{
     setTimeout(() => {
       setLoader(false);
-    }, 2500);
+    }, 2800);
     AOS.init({
       duration:1500
     });
   },[])
 
-
-  // const StyledToastContainer = styled(ToastContainer).attrs({
-  //   className: 'toast-container',
-  //   toastClassName: 'toast',
-  //   bodyClassName: 'body',
-  //   progressClassName: 'progress',
-  // })`
-
-  //state language
+  //state toggle language En & Ar 
   const { t, i18n } = useTranslation();
   const [Dir , setDir] = useState("ltr")
   const [language , setLang] = useState("en")
@@ -59,6 +54,7 @@ function App() {
     <div dir={i18n.language == "en" ? Dir : "rtl"} lang={i18n.language == "en" ? language : "ar"}>
     <Navbar/> 
       <ScrollToTop />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="JM-HOLDER" element={<Home />} />
@@ -71,8 +67,7 @@ function App() {
         <Route path="internships" element={<InterShips />} />
         <Route path="givingback" element={<GivingbBack />} />
         <Route path="Terms" element={<Terms />} />
-        
-        </Routes>
+      </Routes>
 
      <Fotter/>
      <ToastContainer progressClassName='progress' autoClose={5000} />
@@ -80,8 +75,6 @@ function App() {
      </>
   );
 }
-const StyleApp = styled.div`
 
-`
 
 export default App;

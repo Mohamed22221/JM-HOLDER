@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import Logo from"../../assets/logo.svg"
 const Loading = () => {
 
   return (
     <>
-<Circles>
-<div className="loader"></div>
-</Circles>
+      <Circles>
+       <img src={Logo}  />
+        <div className="loader"></div>
+      </Circles>
+      </>
 
-    </>
   )
 }
 const Circles = styled.div`
@@ -19,8 +21,15 @@ left: 0;
 bottom: 0;
 height: 100%;
 z-index: 250;
-
-  .loader {
+img{
+   width: 180px;
+    z-index: 280;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .loader   {
   position: fixed;
   top: 0;
   left: 0;

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Button, Container } from '@mui/material';
 import "./Navbar.css";
 import Logo from"../../assets/logo.svg"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
@@ -43,23 +43,23 @@ const Navbar = () => {
     <Container maxWidth="xl">
       <nav>
           <div className="logo">
-          <Link onClick={boxHandler} to="/JM-HOLDER" >
+          <NavLink onClick={boxHandler} to="/JM-HOLDER" >
           <img src={Logo}/>
-          </Link>
+          </NavLink>
            
         </div>
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
         
           
-          <li><Link onClick={boxHandler} to='/' >{t('nav.HOME')}</Link></li>
-          <li> <Link onClick={boxHandler} to="/About" >{t('nav.ABOUT')}  </Link></li>
-         {/* <li><Link onClick={boxHandler} to="/Team"  >TEAM </Link></li> */}
-         {/* <li><Link onClick={boxHandler} to='/Portfolio' >PORTFOLIO</Link></li>*/}
-          <li><Link onClick={boxHandler} to='/proposal' >{t('nav.PROPOSALS')}</Link></li>
-          <li><Link onClick={boxHandler} to='/Jops' >{t('nav.JOBS')}</Link></li>
-          <li><Link onClick={boxHandler} to='/internships' >{t('nav.INTERNSHIPS')}</Link></li>
-          {/*<li><Link onClick={boxHandler} to='/givingback' >GIVING BACK</Link></li> */}
-          <li><Link onClick={boxHandler}  to="/Contact">{t('nav.CONTACT')}</Link></li>
+          <li><NavLink onClick={boxHandler} to='/' >{t('nav.HOME')} </NavLink></li>
+          <li> <NavLink onClick={boxHandler} to="/About" >{t('nav.ABOUT')}  </NavLink></li>
+         {/* <li><NavLink onClick={boxHandler} to="/Team"  >TEAM </NavLink></li> */}
+         {/* <li><NavLink onClick={boxHandler} to='/Portfolio' >PORTFOLIO</NavLink></li>*/}
+          <li><NavLink onClick={boxHandler} to='/proposal' >{t('nav.PROPOSALS')}</NavLink></li>
+          <li><NavLink onClick={boxHandler} to='/Jops' >{t('nav.JOBS')}</NavLink></li>
+          <li><NavLink onClick={boxHandler} to='/internships' >{t('nav.INTERNSHIPS')}</NavLink></li>
+          {/*<li><NavLink onClick={boxHandler} to='/givingback' >GIVING BACK</NavLink></li> */}
+          <li><NavLink onClick={boxHandler}  to="/Contact">{t('nav.CONTACT')}</NavLink></li>
           {i18n.language == "ar" && <button className="language" onClick={languageEn}> En</button> }
           {i18n.language == "en" && <button className="language" onClick={languageAR }>Ar</button> }
           

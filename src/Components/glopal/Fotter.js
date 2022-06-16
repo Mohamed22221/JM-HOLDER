@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Logo1 from '../../assets/logo.svg'
 import { Container } from '@mui/material'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 const Fotter = () => {
   const { t, i18n } = useTranslation();
@@ -22,18 +22,18 @@ const Fotter = () => {
       <Container maxWidth="xl">
         <MainFotter join={join}>
           <ImgLogo>
-          <Link  to="/JM-HOLDER" > <img src={Logo1} /></Link>
+          <NavLink  to="/JM-HOLDER" > <img src={Logo1} /></NavLink>
           </ImgLogo>
           <NavFotter>
 
             
-            <Link to="/About" >{t("fotter.about")}</Link>
-           {/* <Link to="/Team"  >TEAM </Link> */}
-            {/*<Link to='/Portfolio' >PORTFOLIO</Link> */}
-            <Link to='/proposal' >{t("fotter.proposals")}</Link>
-            <Link to='/Jops' >{t("fotter.jops")}</Link>
-            <Link to='/internships' >{t("fotter.internships")}</Link> 
-            <Link to='/Contact' >{t("fotter.contact")}</Link>
+            <NavLink to="/About" >{t("fotter.about")}</NavLink>
+           {/* <NavLink to="/Team"  >TEAM </NavLink> */}
+            {/*<NavLink to='/Portfolio' >PORTFOLIO</NavLink> */}
+            <NavLink to='/proposal' >{t("fotter.proposals")}</NavLink>
+            <NavLink to='/Jops' >{t("fotter.jops")}</NavLink>
+            <NavLink to='/internships' >{t("fotter.internships")}</NavLink> 
+            <NavLink to='/Contact' >{t("fotter.contact")}</NavLink>
 
           </NavFotter>
           
@@ -52,7 +52,7 @@ const Fotter = () => {
           }
           <div className='terms'>
           <h3>JM HOLDING @2022</h3>
-          <Link to='/Terms'>{t("fotter.terms")}</Link>
+          <NavLink to='/Terms'>{t("fotter.terms")}</NavLink>
           </div>
         </MainFotter>
       </Container>
@@ -68,7 +68,14 @@ height: 390px;
 transform: translateY(-70px);
 z-index: 10;
 padding: 70px 0;
+a.active {
+ color: var(--primary-color);
 
+}
+a.active::after{
+  background-color: var(--primary-color);
+  width: 100%;
+ }
 @media (max-width:800px) {
 background-position: top center;
 height: 450px;
