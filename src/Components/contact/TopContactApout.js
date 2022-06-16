@@ -10,28 +10,28 @@ import { useTranslation } from 'react-i18next'
 const TopContactApout = () => {
     const { t, i18n } = useTranslation();
 
-  return (
+    return (
 
         <Container maxWidth="xl">
-        <StyleTopContact>
-        <div className='title'>
-        <h2>{t("contact.ContactAboutH1")}</h2>
-        </div>
-        <div className='main-office'>
-        <h2>{t("contact.ContactAboutOffice")}</h2>
-        <a href='https://goo.gl/maps/WFXuS2CZdYm26zFf8'>Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor</a>
-        <a href='tel:22958181'>22958181</a>
-        <a href='mailto:info@jmgroupkm.com'>info@jmgroupkm.com</a>
-        </div>
-        <div className='social'>
-        <h2>{t("contact.ContactAboutSocialh1")}</h2>
-        <a href='https://instagram.com/jmholding.kw?igshid=YmMyMTA2M2Y=' target="_blank"><FaInstagramSquare className='icon-social'/></a>
-        <a href='https://www.linkedin.com/company/jm-holdingkw/' target="_blank"><BsLinkedin className='icon-social'/></a>
-        </div>
-        </StyleTopContact>
+            <StyleTopContact>
+                <div className='title'>
+                    <h2>{t("contact.ContactAboutH1")}</h2>
+                </div>
+                <div className='main-office'>
+                    <h2>{t("contact.ContactAboutOffice")}</h2>
+                    <a href='https://goo.gl/maps/WFXuS2CZdYm26zFf8'>{t("contact.ContactAboutMaps")}</a>
+                    <a href='tel:22958181'>22958181</a>
+                    <a href='mailto:info@jmgroupkm.com'>info@jmgroupkm.com</a>
+                </div>
+                <div className='social'>
+                    <h2>{t("contact.ContactAboutSocialh1")}</h2>
+                    <a href='https://instagram.com/jmholding.kw?igshid=YmMyMTA2M2Y=' target="_blank"><FaInstagramSquare className='icon-social' /></a>
+                    <a href='https://www.linkedin.com/company/jm-holdingkw/' target="_blank"><BsLinkedin className='icon-social' /></a>
+                </div>
+            </StyleTopContact>
         </Container>
 
-  )
+    )
 }
 const StyleTopContact = styled.div`
 height: 200px;

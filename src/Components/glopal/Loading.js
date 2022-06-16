@@ -6,6 +6,7 @@ const Loading = () => {
   return (
     <>
       <Circles>
+      <a href="https://usecheck.com/" class="btn-shine" target="_blank">Get early access</a>
        <img src={Logo}  />
         <div className="loader"></div>
       </Circles>
@@ -21,6 +22,8 @@ left: 0;
 bottom: 0;
 height: 100%;
 z-index: 250;
+
+
 img{
    width: 180px;
     z-index: 280;
@@ -65,7 +68,7 @@ img{
     transform: rotate(0turn);
   }
   to {
-    transform: rotate(3turn);
+    transform: rotate(2turn);
   }
 }
 

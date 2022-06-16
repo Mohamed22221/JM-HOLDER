@@ -17,7 +17,6 @@ import { useEffect, useState } from "react";
 import Loading from "./Components/glopal/Loading";
 import ScrollToTop from './ScrollToTop'
 import ScrollTop from "./Components/glopal/ScrollTop";
-
 // librarys
 import { injectStyle } from "react-toastify/dist/inject-style";
 import { ToastContainer, toast } from "react-toastify";
@@ -55,6 +54,7 @@ function App() {
     <Navbar/> 
       <ScrollToTop />
       <ScrollTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="JM-HOLDER" element={<Home />} />
@@ -70,7 +70,7 @@ function App() {
       </Routes>
 
      <Fotter/>
-     <ToastContainer progressClassName='progress' autoClose={5000} />
+     <ToastContainer progressClassName='progress' autoClose={4000} />
      </div>
      </>
   );

@@ -125,6 +125,9 @@ const MainSectionThre= styled.div`
 position: relative;
 transform: translateY(-70px);
 margin: 80px 5px 20px 5px;
+li,p{
+    color: white;
+}
 .item-terms{
     padding: 10px 0;
 
@@ -135,10 +138,12 @@ h3{
 }
 h2{
     text-align: center;
+    color: var(--primary-color);
 }
 ol,ul{
     li{
         margin: 5px 0 0 20px;
+        color: white;
     }
 }
 
@@ -146,6 +151,7 @@ ol,ul{
     padding: 10px;
     li{
         margin-left: 30px;
+        color: white;
     }
 }
 
