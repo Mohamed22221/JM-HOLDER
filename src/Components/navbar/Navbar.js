@@ -61,7 +61,7 @@ const Navbar = () => {
           {/*<li><NavLink onClick={boxHandler} to='/givingback' >GIVING BACK</NavLink></li> */}
           <li><NavLink onClick={boxHandler}  to="/Contact">{t('nav.CONTACT')}</NavLink></li>
           {i18n.language == "ar" && <button className="language" onClick={languageEn}> En</button> }
-          {i18n.language == "en" && <button className="language" onClick={languageAR }>Ar</button> }
+          {i18n.language == "en" && <button className="language" onClick={languageAR}>Ar</button> }
           
           
 

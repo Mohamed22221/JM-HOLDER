@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
-
 import styled from 'styled-components'
 import Logo1 from '../../assets/logo.svg'
+import pdfAr from "../../assets/AMLPOLICYARABIC.pdf"
+import pdfEN from "../../assets/AMLPOLICYENGLISH.pdf"
+
 import { Container } from '@mui/material'
 import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+
 const Fotter = () => {
   const { t, i18n } = useTranslation();
 
@@ -51,7 +54,7 @@ const Fotter = () => {
           
           }
           <div className='terms'>
-          <h3>JM HOLDING @2022</h3>
+          <a href={i18n.language==="en" ? pdfEN : pdfAr} target="_blank" >{t("fotter.police")}</a>
           <NavLink to='/Terms'>{t("fotter.terms")}</NavLink>
           </div>
         </MainFotter>

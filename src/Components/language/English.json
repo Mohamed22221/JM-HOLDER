@@ -17,7 +17,8 @@
         "placeholder" : "Enter your email here",
         "subscribe" : "Subscribe",
         "successfully" : "Successfully saved the request.",
-        "terms" : "Terms and Conditions"
+        "terms" : "Terms and Conditions",
+        "police" : "AML POLICY (Anti money Laundering )"
     },
     "glopal" : {
         "readMore" : "Read More",
