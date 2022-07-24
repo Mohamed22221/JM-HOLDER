@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container } from '@mui/material'
+import { useTranslation } from 'react-i18next';
 const Police = () => {
+ const { t, i18n } = useTranslation();
  return (
   <MainSectionThre>
    <Container>
     <ul>
-     <h2>Introduction</h2>
+     <h2>{t("police.title1")}</h2>
      <p>JM HOLDING Company LLC, trading as JM HOLDING (“the Company”) is incorporated in Kuwait registered
       address at Kuwait City – Qibla – Safat Tower – 26 Floor.
       JM HOLDING is committed to the highest standards of the Anti-Money Laundering (AML) compliance and
