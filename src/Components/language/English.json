@@ -145,6 +145,52 @@
         "line3": "JM HOLDING adheres to the principles of Anti-Money Laundering and actively prevents any actions that aim or facilitate the process of legalizing of illegally gained funds. AML policy means preventing the use of thecompany’s services by criminals, with the aim of money laundering, terrorist financing or other criminal activity.To prevent money laundering, JM HOLDING neither accepts nor pays cash under any circumstances. The company reserves the right to suspend any client’s operation, which can be regarded as illegal or, may be relatedto money laundering in the opinion of the staff." ,
         "li1": "Placement: At this stage, funds are converted into financial instruments, such as checks, bank accounts, and money transfers, or can be used for purchasing high-value goods that can be resold. They can also be physically deposited into banks and non-bank institutions (e.g., currency exchangers). To avoid suspicion by the company, the launderer may as well make several deposits instead of depositing the whole sum at once, this form of placement is called smurfing.",
         "li2": "Layering: Funds are transferred or moved to other accounts and other financial instruments. It is performed to disguise the origin and disrupt the indication of the entity that made the multiple financial transactions. Moving funds around and changing in their form makes it complicated to trace the money being laundered.",
-        "li3": "Integration: Funds get back into circulation as legitimate to purchase goods and services"
-    }
+        "li3": "Integration: Funds get back into circulation as legitimate to purchase goods and services" ,
+        
+        "title3" : "Company Procedures" ,
+        "line4" : "JM HOLDING will make sure that it is dealing with a real person or legal entity. JM HOLDING also perform all the required measures in accordance with applicable law and regulations, issued by monetary authorities. The AML policy is being fulfilled within JM HOLDING by means of the followi " ,
+        "li4" : "know your customer policy and due diligence (KYC)",
+        "li5" : "monitoring of client activity",
+        "li6" : "record keeping Know Your Customer and Due Diligence",
+        "line5" : "Because of the company’s commitment to the AML and KYC policies, each client of the company has to finish a verification procedure. Before JM HOLDING starts any cooperation with the client, the company ensures that satisfactory evidence is produced or such other measures that will produce satisfactory evidence of the identity of any customer or counterparty are taken. The company as well applies heightened scrutiny to clients, who are residents of other countries, identified by credible sources as countries, having inadequate AML standards or that may represent a high risk for crime and corruption and to beneficial owners who resides in and whose funds are sourced from named countries.",
+
+        "title4" : "Individual clients" ,
+        "line6" : "During the process of registration, each client provides personal information, specifically: full name; date of birth; country of origin; and complete residential address. The following documents are required in order to verify the personal information: A client sends the following documents (in case the documents are written in non-Latin characters: to avoid any delays in the verification process, it is necessary to provide a notarized translation of the document in English) because of the requirements of KYC and to confirm the indicated information:" ,
+        "li7" : "Current valid passport (showing the first page of the local or international passport, where the photo and the signature are clearly visible); or",
+        "li8" : "Driving licence which bears a photograph; or",
+        "li9" : "National identity card (showing both front and back pages);",
+        "li10" : "Documents proving current permanent address (such as utility bills, bank statements, etc.) containingthe client’s full name and place of residence. These documents should not be older than 3 months from the date of filing" ,
+        
+        "title5" : "Corporate clients" ,
+        "line7" : "In case the applicant company is listed on a recognized or approved stock exchange or when there is independent evidence to show that the applicant is a wholly owned subsidiary or a subsidiary under the control of such a company, no further steps to verify identity will normally be required. In case the company is unquoted and none of the principal directors or shareholders already has an account with JM HOLDING, the following documentations must be provided:" ,
+        "li11" : "Certificate of Incorporation or any national equivalent;",
+        "li12" : "Memorandum and Articles of Association and statutory statement or any national equivalent;",
+        "li13" : "Certificate of good standing or other proof of registered address of the company;",
+        "li14" : "Resolution of the board of directors to open an account and confer authority on those who will operate it;",
+        "li15" : "Copies of powers of attorney or other authorities given by the directors in relation to the company;",
+        "li16" : "Proof of identity of directors in case he/she will deal with JM HOLDING on behalf of the Customer (according to the Individual identity verification rules described above);" ,
+
+        "title6" : "Monitoring of client activity" ,
+        "line8" : "In addition to gathering information from the clients, JM HOLDING continues to monitor the activity of every client to identify and prevent any suspicious transactions. A suspicious transaction is known as a transaction that is inconsistent with the client’s legitimate business or the usual client’s transaction history known from client activity monitoring. JM HOLDING has implemented the system of monitoring the named transactions (both automatic and, if needed, manual) to prevent using the company’s services by criminals." ,
+        "title7" : "Record keeping" ,
+        "line9" : "Records must be kept of all transaction data and data obtained for the purpose of identification, as well as of all documents related to money laundering topics (e.g. files on suspicious activity reports, documentation of AML account monitoring, etc.). Those records are kept for a minimum of 7 years after the account is closed." ,
+
+        "title8" : "Deposit and withdrawal requirements" ,
+        "line10" : "All deposits and withdrawals on trading accounts held with JM HOLDING the following strict requirements:" ,
+        "li17" : "Funds sent to JM HOLDING must be from a bank account, Credit/Debit card or Alternative Payment Method (KNET, VISA , MYFATOORAH,WIRE TRANSER or others) under the same name as the trading account name with JM HOLDING.",
+        "li18" : "All funds withdrawn from a trading account must go to a bank account, Credit/Debit card or Alternative Payment Method (KNET, VISA, MYFATOORAH, WIRE TRANSFOR or/and others) under the same name as the trading account name with JM HOLDING.",
+        "li19" : " Due to AML / CTF laws JM HOLDING cannot receive or deposit funds to third parties.",
+        "li20" : "All withdrawal requests are processed on First-in-First-Out (FIFO) basis according to the funding source of origination. For example, a deposit is made via Debit/Credit Card; then a subsequent withdrawal request is received. The amount of funds sent back to the relevant Debit/Credit Card, when a withdrawal request is received, may not exceed the original amount deposited from same. Any profits made in excess of the deposited amount will be transferred to a nominated bank account; which must be held in the same name as your trading account.",
+
+        "title9" : "Examples:" ,
+        "li21" : " 1- You deposited $100 via Credit Card and earned a profit of $1,000. Requesting a withdrawal of $1,000, you will get $100 to your Credit Card and the rest $900 to your bank account.",
+        "li22" : "2- You deposited $100 via K-NET and $50 via Credit Card. Requesting a K-NET withdrawal of $120,you will get $100 to KNET and $20 to the card.",
+        "li23" : "All initial withdrawal requests must be verified for safety and security by provision of a bank statement; which includes account holder information and bank details. LDN GLOBAL MARKETS will not accept deposits or withdrawals made under a different name to the registered LDN GLOBAL MARKETS.",
+        "li24" : "f a trading account was credited in a way that cannot be used for funds withdrawal, the funds may be withdrawn to a bank account under the same name as the trading account name with JM HOLDING as long as the client provides satisfactory evidence of the ownership of bank account where the funds originated from as well as the destination bank account.",
+
+        "title10" : "Measures taken" ,
+        "li25" : " In cases of an attempt to execute transactions which JM HOLDING suspects that are related to money laundering or other criminal activity, it will proceed in accordance with the applicable law and report suspicious activity to regulating authority.",
+        "li26" : " JM HOLDING reserves the right to suspend any client’s operation, which can be regarded as i may be related to money laundering in the opinion of the staff. JM HOLDING has complete d to temporarily block the suspicious client account or terminate an existing client relationship."
+    
+    }   
 }
