@@ -1,34 +1,34 @@
 {
   "files": {
     "main.css": "/JM-HOLDER/static/css/main.4a8eebed.css",
-    "main.js": "/JM-HOLDER/static/js/main.d7aa1b9b.js",
-    "static/media/backsection2.jpg": "/JM-HOLDER/static/media/backsection2.01f3af370c947f98d49f.jpg",
-    "static/media/backsection1.jpg": "/JM-HOLDER/static/media/backsection1.3c81910793eaba6d9448.jpg",
-    "static/media/backsection5.jpg": "/JM-HOLDER/static/media/backsection5.79d7a4c74e215b0df569.jpg",
-    "static/media/backsection6.jpg": "/JM-HOLDER/static/media/backsection6.97500d59afbbf631526f.jpg",
+    "main.js": "/JM-HOLDER/static/js/main.efe758da.js",
     "static/media/team5.jpg": "/JM-HOLDER/static/media/team5.e6da7eae69c38c1c5bd8.jpg",
-    "static/media/backsection8.jpg": "/JM-HOLDER/static/media/backsection8.340c15f4dc9367aabd3e.jpg",
-    "static/media/backsection9.jpg": "/JM-HOLDER/static/media/backsection9.7c7efd357c19f4345811.jpg",
-    "static/media/AMLPOLICYARABIC.pdf": "/JM-HOLDER/static/media/AMLPOLICYARABIC.2a99e2a91938d7cf9da6.pdf",
+    "static/media/backsection2.jpg": "/JM-HOLDER/static/media/backsection2.2d4ed604b1e4bc487d91.jpg",
     "static/media/team6.jpg": "/JM-HOLDER/static/media/team6.8ca20d33cfca4176c848.jpg",
+    "static/media/AMLPOLICYARABIC.pdf": "/JM-HOLDER/static/media/AMLPOLICYARABIC.b5808e1e2dea97ac174f.pdf",
     "static/media/AMLPOLICYENGLISH.pdf": "/JM-HOLDER/static/media/AMLPOLICYENGLISH.b5808e1e2dea97ac174f.pdf",
-    "static/media/backsection7.jpg": "/JM-HOLDER/static/media/backsection7.474284b3426b5c1b97fa.jpg",
-    "static/media/backsection12.jpg": "/JM-HOLDER/static/media/backsection12.aeaa5e8f5eb931b99ddc.jpg",
+    "static/media/backsection6.jpg": "/JM-HOLDER/static/media/backsection6.e6000a2d17ae5cd3284c.jpg",
+    "static/media/backsection1.jpg": "/JM-HOLDER/static/media/backsection1.87855ebb45fc801a4def.jpg",
     "static/media/team4.jpg": "/JM-HOLDER/static/media/team4.c91a3b2a03ab11d08fad.jpg",
-    "static/media/backsection10.jpg": "/JM-HOLDER/static/media/backsection10.bf4ae8de8d872e789922.jpg",
     "static/media/team1.jpg": "/JM-HOLDER/static/media/team1.5bae1d73175501987b6a.jpg",
+    "static/media/backsection5.jpg": "/JM-HOLDER/static/media/backsection5.df4727f4731e2fa20455.jpg",
     "static/media/team2.jpg": "/JM-HOLDER/static/media/team2.61048aa8af44456c1eef.jpg",
     "static/media/team3.jpg": "/JM-HOLDER/static/media/team3.2566dc6a9b80fc7dda73.jpg",
-    "static/media/backsection3.jpg": "/JM-HOLDER/static/media/backsection3.2c56b8962e3c4ff33dc7.jpg",
-    "static/media/backsection11.jpg": "/JM-HOLDER/static/media/backsection11.ab3c9180b76e88942ea1.jpg",
+    "static/media/backsection8.jpg": "/JM-HOLDER/static/media/backsection8.d6e0864108679887db87.jpg",
+    "static/media/backsection10.jpg": "/JM-HOLDER/static/media/backsection10.d985fb0e00322c1dcbf4.jpg",
+    "static/media/backsection9.jpg": "/JM-HOLDER/static/media/backsection9.572d0fd6e157b0a1b809.jpg",
+    "static/media/backsection7.jpg": "/JM-HOLDER/static/media/backsection7.51a95f82ee9d3de9f278.jpg",
+    "static/media/backsection12.jpg": "/JM-HOLDER/static/media/backsection12.fb7eb874065d0f50f36c.jpg",
+    "static/media/backsection3.jpg": "/JM-HOLDER/static/media/backsection3.782e85dbb7d9e55d0f9a.jpg",
     "static/media/svg.png": "/JM-HOLDER/static/media/svg.14d52dc1325266ba2978.png",
+    "static/media/backsection11.jpg": "/JM-HOLDER/static/media/backsection11.bbc59187ada76bc66698.jpg",
     "static/media/logo.svg": "/JM-HOLDER/static/media/logo.3357e7150cc2c926745b8eb42950fd1f.svg",
     "index.html": "/JM-HOLDER/index.html",
     "main.4a8eebed.css.map": "/JM-HOLDER/static/css/main.4a8eebed.css.map",
-    "main.d7aa1b9b.js.map": "/JM-HOLDER/static/js/main.d7aa1b9b.js.map"
+    "main.efe758da.js.map": "/JM-HOLDER/static/js/main.efe758da.js.map"
   },
   "entrypoints": [
     "static/css/main.4a8eebed.css",
-    "static/js/main.d7aa1b9b.js"
+    "static/js/main.efe758da.js"
   ]
 }
