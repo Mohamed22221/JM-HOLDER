@@ -24,6 +24,7 @@ import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles/style.css';
+import Police from "./bages/Police";
 
 // CALL IT ONCE IN YOUR APP
 if (typeof window !== "undefined") {
@@ -67,6 +68,9 @@ function App() {
         <Route path="internships" element={<InterShips />} />
         <Route path="givingback" element={<GivingbBack />} />
         <Route path="Terms" element={<Terms />} />
+        <Route path="police" element={<Police />} />
+
+        
       </Routes>
 
      <Fotter/>

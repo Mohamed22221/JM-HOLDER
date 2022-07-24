@@ -1,147 +1,150 @@
 {
-    "nav" : {
-        "HOME"  : "HOME" ,
-        "ABOUT" : "ABOUT" ,
-        "PROPOSALS" : "PROPOSALS" ,
-        "JOBS" : "JOBS" ,
-        "INTERNSHIPS" : "INTERNSHIPS" ,
-        "CONTACT" :  "CONTACT"
-    } ,
-    "fotter" : {
-        "about" : "ABOUT" ,
-        "proposals" : "PROPOSALS" ,
-        "jops" : "JOBS" ,
-        "internships" : "INTERNSHIPS" ,
-        "contact" :  "CONTACT",
-        "join" : "Join Our News Letter",
-        "placeholder" : "Enter your email here",
-        "subscribe" : "Subscribe",
-        "successfully" : "Successfully saved the request.",
-        "terms" : "Terms and Conditions",
-        "police" : "AML POLICY (Anti money Laundering )"
+    "nav": {
+        "HOME": "HOME",
+        "ABOUT": "ABOUT",
+        "PROPOSALS": "PROPOSALS",
+        "JOBS": "JOBS",
+        "INTERNSHIPS": "INTERNSHIPS",
+        "CONTACT": "CONTACT"
     },
-    "glopal" : {
-        "readMore" : "Read More",
-        "submit" :"Submit",
-        "Send" :"SEND MESSAGE"
-    } ,
-    "header" : {
-        "titleHeader" : "PEOPLE, KNOWLEDGE, VALUES",
-        "disHeader" : "Jm-Holding is a venture capital firm investing in talented founders building long-term value by developing sound operations at home and abroad." 
-       
+    "fotter": {
+        "about": "ABOUT",
+        "proposals": "PROPOSALS",
+        "jops": "JOBS",
+        "internships": "INTERNSHIPS",
+        "contact": "CONTACT",
+        "join": "Join Our News Letter",
+        "placeholder": "Enter your email here",
+        "subscribe": "Subscribe",
+        "successfully": "Successfully saved the request.",
+        "terms": "Terms and Conditions",
+        "police": "AML POLICY (Anti money Laundering )"
     },
-    "headerPoroposal" : {
-        "titleHeaderPoroposal" : "PEOPLE, KNOWLEDGE, VALUES111",
-        "disHeaderPoroposal" : "In our humble small team, we are together. This is the beginning. Staying together is progress. Work is success. We have the ability to work with a common vision. We take responsibility for each other and the companies we work with equally." 
-       
+    "glopal": {
+        "readMore": "Read More",
+        "submit": "Submit",
+        "Send": "SEND MESSAGE"
     },
-    "headerJops" : {
-        "titleHeaderheaderJops" : "PEOPLE, KNOWLEDGE, VALUES11",
-        "disHeaderheaderJops" : "In our humble small team, we are together. This is the beginning. Staying together is progress. Work is success. We have the ability to work with a common vision. We take responsibility for each other and the companies we work with equally." 
-       
+    "header": {
+        "titleHeader": "PEOPLE, KNOWLEDGE, VALUES",
+        "disHeader": "Jm-Holding is a venture capital firm investing in talented founders building long-term value by developing sound operations at home and abroad."
     },
-    "headerInterships" : {
-        "titleHeaderInterships" : "PEOPLE, KNOWLEDGE, VALUES11",
-        "disHeaderInterships" : "We are true believers in encouraging young adults to accrue as , much practical experience in the job market as possible." 
-       
+    "headerPoroposal": {
+        "titleHeaderPoroposal": "PEOPLE, KNOWLEDGE, VALUES111",
+        "disHeaderPoroposal": "In our humble small team, we are together. This is the beginning. Staying together is progress. Work is success. We have the ability to work with a common vision. We take responsibility for each other and the companies we work with equally."
     },
-    "about" : {
-        "titleAbout" : "About",
-        "disAbout" : "We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason " ,
-        "titleAboutJm" : "AT JM Holding" ,
-        "disAboutJmP1" : "We offer our clients the most complete and unique open air adventure thrills they have experienced complete with unforgettable moments." ,
-        "disAboutJmP2" : "We offer our clients the most complete and unique open air adventure thrills they have experienced complete with unforgettable moments." 
+    "headerJops": {
+        "titleHeaderheaderJops": "PEOPLE, KNOWLEDGE, VALUES11",
+        "disHeaderheaderJops": "In our humble small team, we are together. This is the beginning. Staying together is progress. Work is success. We have the ability to work with a common vision. We take responsibility for each other and the companies we work with equally."
     },
-    "proposals" : {
-        "titleProposals" : "APPLY FOR FUNDING",
-        "disProposals" : "We are committed to investing in the next generation of entrepreneurs with willing minds that are ready to go the extra mile for what they believe in. " ,
-        "titleProposalsSup" : "PROPOSAL SUBMISSION" ,
-        "disProposalsP1" : "JM-HOLDING is a Venture Capital firm that looks to invest and empower entrepreneurs globally. We are excited to see entrepreneurs from many walks of life reach out to us with their ideas, and we relish the opportunity to learn more about their venture." ,
-        "disProposalsP2" : "JM-HOLDING  investment mandate is to make equity and equity-like investments in high-growth businesses with preference to invest alongside other venture capital funds. With this in mind, we have specified certain decision criteria for our investments in order to ensure the maximum likelihood of success:" ,
-        "disProposalsSpan1" : "-Team – The company has a complete core team with a relevant track record." ,
-        "disProposalsSpan2" : "-Operations/Financials – The company has been operating for at least two full years, currently revenue generating, and with an attractive financial history." ,
-        "disProposalsSpan3" : "-Market Size –   The company’s addressable market is sufficiently large to sustain high potential startups while displaying clear growth." ,
-        "disProposalsSpan4" : "-Exit Strategy – The company has a clear viable exit strategy with a reasonable expectation of a high return on investment over a 3-5 years." ,
-        "titleLapelFounder" : "Founder:",
-        "placeholderFounderfirstName" : "first Name",
-        "placeholderFounderlastName" : "last Name",
-        "placeholderFounderTitle" : "title",
-        "placeholderFounderPhone" : "Phone",
-        "placeholderFounderEmail" : "Email",
-        "titleLapelCompany" : "Company",
-        "placeholderCompanyCompanyName" : "Company Name",
-        "placeholderCompanyCountryName" : "Country Name",
-        "titleLapelDate" : "Date Founded *",
-        "titleLapelDatedd" : "dd",
-        "titleDatemm" : "mm",
-        "titleDateyy" : "yy",
-        "Attachments" : "Attachments:",
-        "AttachmentsP" : "Kindly attach your company presentation and any relevant files:",
-        "AttachmentsLimit" : "Size Limit 10 MB"
+    "headerInterships": {
+        "titleHeaderInterships": "PEOPLE, KNOWLEDGE, VALUES11",
+        "disHeaderInterships": "We are true believers in encouraging young adults to accrue as , much practical experience in the job market as possible."
     },
-    "jops" : {
-        "titleJops" : "OUR DOORS ARE ALWAYS OPEN TO INNOVATION, DEDICATION, AND TEAM SPIRIT" ,
-        "joinH2" : "JOIN US" ,
-        "labelFounder" : "Founder:" ,
-        "founderfirstName" : "first Name*" ,
-        "founderlastName" : "last Name*" ,
-        "founderContactNumber" : "Contact Number*" ,
-        "founderEmail" : "Email*" ,
-        "founderSpecialization" : "Specialization Sector*" ,
-        "labelAttach" : "Attach your CV" ,
-        "founderLimit" : "Size Limit 5 MB" ,
-        "jopsP" : "* If the file being uploaded is more than 5 MB, place a Dropbox link or any cloud solution in the field below" ,
-        "jopsPlaceholder" : "Url To Dropbox or any Cloud Solution*"
+    "about": {
+        "titleAbout": "About",
+        "disAbout": "We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason ",
+        "titleAboutJm": "AT JM Holding",
+        "disAboutJmP1": "We offer our clients the most complete and unique open air adventure thrills they have experienced complete with unforgettable moments.",
+        "disAboutJmP2": "We offer our clients the most complete and unique open air adventure thrills they have experienced complete with unforgettable moments."
     },
-    "internships" : {
-        "titleInternships" : "JM HOLDING VENTURE ANALYST",
-        "disInternships" : "We are true believers in encouraging young adults to accrue as , much practical experience in the job market as possible. " ,
-        "InternshipsProgram" : "Program Overview",
-        "InternshipsProgramP" : "The Jm-Holding Venture Analyst Internship Program is a six week internship program that provides selected individuals with an intensive introduction to Venture Capital. As a member of our team you will gain a holistic understanding of sector mapping, deal origination, diligence and execution to value creation in portfolio companies. You will work collaboratively with our team to evaluate and execute investment opportunities and drive growth within our portfolio companies. To gain full experience, during the internship you will be sent out to one or more of our local portfolio companies, exposing you to start-ups filled with go-getters and people who are willing to go the extra mile.",
-        "ProgramSpan1" : "-Applicant must be a fresh graduate with a GPA above a 3.0 (or equivalent)",
-        "ProgramSpan2" : "-The program is conduced twice yearly, January & July",
-        "ProgramSpan3" : "-Two interns will be chosen per internship program",
-        "InternshipsAdmissions" : "Admissions Criteria",
-        "InternshipsAdmissionsP" : "Candidates are reviewed against a set of criterions and compared amongst all candidates. Criteria includes but is not limited to:",
-        "AdmissionsSpan1" : "-Reputation and quality of university(ies) attended",
-        "AdmissionsSpan2" : "-Degree(s) obtained & academic performance",
-        "AdmissionsSpan3" : "-Interview",
-        "InternshipsRegistration" : "Registration",
-        "RegistrationSpan1" : "-December 1 – December 31 for the January Program ",
-        "RegistrationSpan2" : "-June 1 – June 30 for the July Program",
-        "InternshipsInterviews" : "Internship Period",
-        "InterviewsSpan1" : "-January 16 – February 24 for the January Program  ",
-        "InterviewsSpan2" : "-July 17 – August 25 for the July Program",
-        "InternshipsPeriod" : "Internship Period",
-        "PeriodSpan1" : "-January 16 – February 24 for the January Program",
-        "PeriodSpan2" : "-July 17 – August 25 for the July Program",
-        "ApplicantDetails" : "Applicant Details",
-        "InterPlaceholderName" : "Full Name*",
-        "InterPlaceholderEmail" : "Email*",
-        "InterLabelTranscript" : "Attach your transcript*",
-        "InterTranscriptP" : "Size Limit 5 MB*",
-        "InterLabelResume" : "Attach your resume*",
-        "InterResumeP" : "Size Limit 5 MB*"
+    "proposals": {
+        "titleProposals": "APPLY FOR FUNDING",
+        "disProposals": "We are committed to investing in the next generation of entrepreneurs with willing minds that are ready to go the extra mile for what they believe in. ",
+        "titleProposalsSup": "PROPOSAL SUBMISSION",
+        "disProposalsP1": "JM-HOLDING is a Venture Capital firm that looks to invest and empower entrepreneurs globally. We are excited to see entrepreneurs from many walks of life reach out to us with their ideas, and we relish the opportunity to learn more about their venture.",
+        "disProposalsP2": "JM-HOLDING  investment mandate is to make equity and equity-like investments in high-growth businesses with preference to invest alongside other venture capital funds. With this in mind, we have specified certain decision criteria for our investments in order to ensure the maximum likelihood of success:",
+        "disProposalsSpan1": "-Team – The company has a complete core team with a relevant track record.",
+        "disProposalsSpan2": "-Operations/Financials – The company has been operating for at least two full years, currently revenue generating, and with an attractive financial history.",
+        "disProposalsSpan3": "-Market Size –   The company’s addressable market is sufficiently large to sustain high potential startups while displaying clear growth.",
+        "disProposalsSpan4": "-Exit Strategy – The company has a clear viable exit strategy with a reasonable expectation of a high return on investment over a 3-5 years.",
+        "titleLapelFounder": "Founder:",
+        "placeholderFounderfirstName": "first Name",
+        "placeholderFounderlastName": "last Name",
+        "placeholderFounderTitle": "title",
+        "placeholderFounderPhone": "Phone",
+        "placeholderFounderEmail": "Email",
+        "titleLapelCompany": "Company",
+        "placeholderCompanyCompanyName": "Company Name",
+        "placeholderCompanyCountryName": "Country Name",
+        "titleLapelDate": "Date Founded *",
+        "titleLapelDatedd": "dd",
+        "titleDatemm": "mm",
+        "titleDateyy": "yy",
+        "Attachments": "Attachments:",
+        "AttachmentsP": "Kindly attach your company presentation and any relevant files:",
+        "AttachmentsLimit": "Size Limit 10 MB"
     },
-    "contact" : {
-        "titleContact" : "Contact",
-        "disContact" : "We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason " ,
-        "ContactAboutH1" : "We're Ready to Work with You. Get in Touch",
-        "ContactAboutOffice" : "Main Office",
-        "ContactAboutMaps" : "Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor",
-        "ContactAboutTel" : "22958181",
-        "ContactAboutEmail" : "info@jmgroupkm.com",
-        "ContactAboutSocialh1" : "social" ,
-        "ContactLabelName" : "your name" ,
-        "ContactPlaceholderName" : "Type your name" ,
-        "ContactLabelEmail" : "your email" ,
-        "ContactPlaceholderEmail" : "Type your email" ,
-        "ContactLabelPhone" : "your Phone" ,
-        "ContactPlaceholderPhone" : "Type your Phone" ,
-        "ContactLabelmessage" : "your message" ,
-        "ContactPlaceholdermessage" : "Type your message" 
-  
+    "jops": {
+        "titleJops": "OUR DOORS ARE ALWAYS OPEN TO INNOVATION, DEDICATION, AND TEAM SPIRIT",
+        "joinH2": "JOIN US",
+        "labelFounder": "Founder:",
+        "founderfirstName": "first Name*",
+        "founderlastName": "last Name*",
+        "founderContactNumber": "Contact Number*",
+        "founderEmail": "Email*",
+        "founderSpecialization": "Specialization Sector*",
+        "labelAttach": "Attach your CV",
+        "founderLimit": "Size Limit 5 MB",
+        "jopsP": "* If the file being uploaded is more than 5 MB, place a Dropbox link or any cloud solution in the field below",
+        "jopsPlaceholder": "Url To Dropbox or any Cloud Solution*"
+    },
+    "internships": {
+        "titleInternships": "JM HOLDING VENTURE ANALYST",
+        "disInternships": "We are true believers in encouraging young adults to accrue as , much practical experience in the job market as possible. ",
+        "InternshipsProgram": "Program Overview",
+        "InternshipsProgramP": "The Jm-Holding Venture Analyst Internship Program is a six week internship program that provides selected individuals with an intensive introduction to Venture Capital. As a member of our team you will gain a holistic understanding of sector mapping, deal origination, diligence and execution to value creation in portfolio companies. You will work collaboratively with our team to evaluate and execute investment opportunities and drive growth within our portfolio companies. To gain full experience, during the internship you will be sent out to one or more of our local portfolio companies, exposing you to start-ups filled with go-getters and people who are willing to go the extra mile.",
+        "ProgramSpan1": "-Applicant must be a fresh graduate with a GPA above a 3.0 (or equivalent)",
+        "ProgramSpan2": "-The program is conduced twice yearly, January & July",
+        "ProgramSpan3": "-Two interns will be chosen per internship program",
+        "InternshipsAdmissions": "Admissions Criteria",
+        "InternshipsAdmissionsP": "Candidates are reviewed against a set of criterions and compared amongst all candidates. Criteria includes but is not limited to:",
+        "AdmissionsSpan1": "-Reputation and quality of university(ies) attended",
+        "AdmissionsSpan2": "-Degree(s) obtained & academic performance",
+        "AdmissionsSpan3": "-Interview",
+        "InternshipsRegistration": "Registration",
+        "RegistrationSpan1": "-December 1 – December 31 for the January Program ",
+        "RegistrationSpan2": "-June 1 – June 30 for the July Program",
+        "InternshipsInterviews": "Internship Period",
+        "InterviewsSpan1": "-January 16 – February 24 for the January Program  ",
+        "InterviewsSpan2": "-July 17 – August 25 for the July Program",
+        "InternshipsPeriod": "Internship Period",
+        "PeriodSpan1": "-January 16 – February 24 for the January Program",
+        "PeriodSpan2": "-July 17 – August 25 for the July Program",
+        "ApplicantDetails": "Applicant Details",
+        "InterPlaceholderName": "Full Name*",
+        "InterPlaceholderEmail": "Email*",
+        "InterLabelTranscript": "Attach your transcript*",
+        "InterTranscriptP": "Size Limit 5 MB*",
+        "InterLabelResume": "Attach your resume*",
+        "InterResumeP": "Size Limit 5 MB*"
+    },
+    "contact": {
+        "titleContact": "Contact",
+        "disContact": "We offer our clients the most complete and unique open air adventure thrills they have ever experienced complete with unforgettable moments. Your safety is our most important mission and for this reason ",
+        "ContactAboutH1": "We're Ready to Work with You. Get in Touch",
+        "ContactAboutOffice": "Main Office",
+        "ContactAboutMaps": "Kuwait-Al Qibla Fahad Al Salem St , Safat Tower 26th Floor",
+        "ContactAboutTel": "22958181",
+        "ContactAboutEmail": "info@jmgroupkm.com",
+        "ContactAboutSocialh1": "social",
+        "ContactLabelName": "your name",
+        "ContactPlaceholderName": "Type your name",
+        "ContactLabelEmail": "your email",
+        "ContactPlaceholderEmail": "Type your email",
+        "ContactLabelPhone": "your Phone",
+        "ContactPlaceholderPhone": "Type your Phone",
+        "ContactLabelmessage": "your message",
+        "ContactPlaceholdermessage": "Type your message"
+    },
+    "police": {
+        "title1": "Introduction",
+        "title2": "General",
+        "line1": "JM HOLDING Company LLC, trading as JM HOLDING (“the Company”) is incorporated in Kuwait registeredaddress at Kuwait City – Qibla – Safat Tower – 26 Floor.JM HOLDING is committed to the highest standards of the Anti-Money Laundering (AML) compliance and Counter-Terrorism Financing (CTF). To help the governments first and the financial services industry fight thefunding of terrorism and money laundering activities, law requires all financial institutions to obtain, verify, andrecord information that identifies each person opening an account.",
+        "line2": "Money laundering – the process of converting funds, received from illegal activities (such as fraud, corruption,terrorism, etc.), into other funds or investments that look legitimate to hide or distort the real source of funds.The process of money laundering can be divided into three sequential stages:",
+        "line3": "JM HOLDING adheres to the principles of Anti-Money Laundering and actively prevents any actions that aim or facilitate the process of legalizing of illegally gained funds. AML policy means preventing the use of thecompany’s services by criminals, with the aim of money laundering, terrorist financing or other criminal activity.To prevent money laundering, JM HOLDING neither accepts nor pays cash under any circumstances. The company reserves the right to suspend any client’s operation, which can be regarded as illegal or, may be relatedto money laundering in the opinion of the staff." ,
+        "li1": "Placement: At this stage, funds are converted into financial instruments, such as checks, bank accounts, and money transfers, or can be used for purchasing high-value goods that can be resold. They can also be physically deposited into banks and non-bank institutions (e.g., currency exchangers). To avoid suspicion by the company, the launderer may as well make several deposits instead of depositing the whole sum at once, this form of placement is called smurfing.",
+        "li2": "Layering: Funds are transferred or moved to other accounts and other financial instruments. It is performed to disguise the origin and disrupt the indication of the entity that made the multiple financial transactions. Moving funds around and changing in their form makes it complicated to trace the money being laundered.",
+        "li3": "Integration: Funds get back into circulation as legitimate to purchase goods and services"
     }
-
-
 }

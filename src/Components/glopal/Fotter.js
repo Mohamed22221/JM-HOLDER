@@ -54,7 +54,7 @@ const Fotter = () => {
           
           }
           <div className='terms'>
-          <a href={i18n.language==="en" ? pdfEN : pdfAr} target="_blank" >{t("fotter.police")}</a>
+          <NavLink to="/police" >{t("fotter.police")}</NavLink>
           <NavLink to='/Terms'>{t("fotter.terms")}</NavLink>
           </div>
         </MainFotter>
