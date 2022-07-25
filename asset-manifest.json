@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/JM-HOLDER/static/css/main.4a8eebed.css",
-    "main.js": "/JM-HOLDER/static/js/main.efe758da.js",
+    "main.js": "/JM-HOLDER/static/js/main.96ff0026.js",
     "static/media/team5.jpg": "/JM-HOLDER/static/media/team5.e6da7eae69c38c1c5bd8.jpg",
     "static/media/backsection2.jpg": "/JM-HOLDER/static/media/backsection2.2d4ed604b1e4bc487d91.jpg",
     "static/media/team6.jpg": "/JM-HOLDER/static/media/team6.8ca20d33cfca4176c848.jpg",
@@ -25,10 +25,10 @@
     "static/media/logo.svg": "/JM-HOLDER/static/media/logo.3357e7150cc2c926745b8eb42950fd1f.svg",
     "index.html": "/JM-HOLDER/index.html",
     "main.4a8eebed.css.map": "/JM-HOLDER/static/css/main.4a8eebed.css.map",
-    "main.efe758da.js.map": "/JM-HOLDER/static/js/main.efe758da.js.map"
+    "main.96ff0026.js.map": "/JM-HOLDER/static/js/main.96ff0026.js.map"
   },
   "entrypoints": [
     "static/css/main.4a8eebed.css",
-    "static/js/main.efe758da.js"
+    "static/js/main.96ff0026.js"
   ]
 }
