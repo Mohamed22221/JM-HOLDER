@@ -44,8 +44,8 @@ function App() {
 
   //state toggle language En & Ar 
   const { t, i18n } = useTranslation();
-  const [Dir , setDir] = useState("ltr")
-  const [language , setLang] = useState("en")
+  const [Dir ] = useState("ltr")
+  const [language ] = useState("en")
 
   
   return (

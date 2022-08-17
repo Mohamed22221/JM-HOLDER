@@ -14,7 +14,6 @@ const Section2About = () => {
             <Container maxWidth="xl">
             <h1>{t("about.titleAboutJm")}</h1>
             <p>{t("about.disAboutJmP1")}  </p>
-            <p>{t("about.disAboutJmP2")} </p>
             </Container>
             </MainSection2About>
        
